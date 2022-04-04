@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts (Montserrat + Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS animations library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Altre impostazioni del sito -->
+    <title>CRREO | Supercharge your growth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
+
+  </head>
+  <body>
+
+    <!-- Popup "Join now" -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>To get started, let us know a bit about you</h2>
+        <h3>We’ll get you launched as soon as we can.</h3>
+        <a class="close" href="#">&times;</a>
+        <form action="https://formsubmit.co/50c06c16737dc0ecb0a90d17b7fbd12b" method="POST">
+           <input type="text" name="name" class="text-box" placeholder="Your name" required>
+           <input type="email" name="email" class="text-box" placeholder="Your email" required>
+           <textarea name="comment" id="comment" placeholder="Description" rows="8"></textarea>
+           <input name="_formsubmit_id" type="text" style="display:none">
+           <input type="hidden" name="_subject" value="New client!">
+           <input type="hidden" name="_next" value="index.html">
+           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_template" value="table">
+           <input type="hidden" name="_next" value="http://localhost/CRREO/">
+           <h3 style="color: #7F7FB9;">We’ll get back to you shortly !</h3>
+           <button class="send-btn" type="submit"><p>Send</p></button>
+        </form>
+      </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+      <div class="popup">
+        <h2>Want to know more?</h2>
+        <h3>Let us know and we’ll get in touch shortly.</h3>
+        <a class="close" href="#">&times;</a>
+        <form action="https://formsubmit.co/50c06c16737dc0ecb0a90d17b7fbd12b" method="POST">
+         <input type="text" name="name" class="text-box" placeholder="Your name" required>
+         <input type="email" name="email" class="text-box" placeholder="Your email" required>
+         <textarea name="comment" id="comment" placeholder="Description" rows="8"></textarea>
+         <input name="_formsubmit_id" type="text" style="display:none">
+         <input type="hidden" name="_subject" value="New client!">
+         <input type="hidden" name="_next" value="index.html">
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_template" value="table">
+         <input type="hidden" name="_next" value="http://localhost/CRREO/">
+         <h3 style="color: #7F7FB9;">We’ll get back to you shortly !</h3>
+         <button class="send-btn" type="submit"><p>Send</p></button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Header -->
+    <div class="header">
+      <a id="ciao" href="#hero"><img class="logo" src="resources/logo.webp"></a>
+      <div class="links">
+        <a href="#"><h4 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Creators</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Fans</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="800" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Plans</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Contact</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">About us</h4></a>
+      </div>
+      <div class="scalebutton" id="header-button">
+        <a href="#popup1">
+          <button data-aos="fade-left" data-aos-duration="2000" data-aos-offset="-15" data-aos-delay="700">
+            <img src="resources/circled-arrow.webp">
+            <h5><span>Join now</span></h5>
+          </button>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu">
+        <a href="#"><h4 class="hover-underline-animation">Creators</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">Fans</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">Plans</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">Contact</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">About us</h4></a>
+      </div>
+
+    </div>
+
+    <!-- Hero -->
+    <div class="hero" id="hero">
+      <div class="hero__texts">
+        <h2>Let your fans</h2>
+        <h2><span id="line">donate</span><span> sponsor</span> you</h2>
+        <div id=scrolltext>
+          Supercharge your
+            <div id=flip>
+              <div><div style="transform: translateY(-2px);">growth</div></div>
+              <div><div>growth</div></div>
+              <div><div>income</div></div>
+              <div><div>subscribers</div></div>
+              <div><div>sponsorship</div></div>
+              <div><div>business</div></div>
+            </div>
+        </div>
+        <div class="scalebutton">
+          <div class="big-button">
+            <a href="#popup1">
+              <h3>Join now</h3>
+              <img src="resources/right-arrow.webp">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__photos">
+        <img src="resources/hero-photo.webp">
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="introduction">
+      <img id="white-logo" src="resources/white-logo.webp">
+      <h2>The only growth platform for creators.<br>Powered by <span>fans</span></h2>
+      <p>Let your fans participate in growing your income, building your brand, and winning sponsorships. Get insights and mentorship from industry leaders. Become a pro, build a business.</p>
+      <div class="scalebutton">
+        <a href="#popup1">
+          <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+            <img src="resources/circled-arrow.webp">
+            <h5>Get started</h5>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Presentation -->
+    <div class="presentation">
+      <div class="presentation_card" id="c1" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="presentation_block">
+          <img class="presentation_icon" src="resources/presentation-icon-1.webp">
+          <h2>A new way to fund your growth</h2>
+          <p>Earn upfront income in addition to your current <br>monetization streams. <br><br>Finance new projects or equipment. <br>Multiply share of your fans in paid <br>program. </p>
+          <div class="scalebutton">
+            <a href="#popup1">
+              <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+                <img src="resources/circled-arrow.webp">
+                <h5>Get started</h5>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="presentation_image">
+          <img src="resources/presentation-image-1.webp">
+        </div>
+      </div>
+      <div class="presentation_card" id="c2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="presentation_image">
+          <img src="resources/presentation-image-2.webp">
+        </div>
+        <div class="presentation_block" style="transform: translateX(7vw)">
+          <img class="presentation_icon" src="resources/presentation-icon-2.webp">
+          <h2>Boost engagement and participation <br>among your super fans</h2>
+          <p>Ask your fans for backing and endorsement, not a <br>donation. <br><br>Incentivize your community to engage and participate<br> in making you successful.</p>
+          <div class="scalebutton">
+            <a href="#popup1">
+              <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+                <img src="resources/circled-arrow.webp">
+                <h5>Get started</h5>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="presentation_card" id="c3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="presentation_block">
+          <img class="presentation_icon" src="resources/presentation-icon-3.webp">
+          <h2>Win new brand sponsorships</h2>
+          <p>Explore new brand sponsorship <br>channels and tools. <br><br>Setup custom <br>brand deals for you and your fans. </p>
+          <div class="scalebutton">
+            <a href="#popup1">
+              <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+                <img src="resources/circled-arrow.webp">
+                <h5>Get started</h5>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="presentation_image">
+          <img src="resources/presentation-image-3.webp">
+        </div>
+      </div>
+      <div class="presentation_card" id="c4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="presentation_image">
+          <img src="resources/presentation-image-4.webp">
+        </div>
+        <div class="presentation_block" style="transform: translateX(7vw)">
+          <img class="presentation_icon" src="resources/presentation-icon-4.webp">
+          <h2>Get growth insights and coaching</h2>
+          <p>Work with actionable insights from custom <br>analytics. Connect to industry leaders and mentors. <br><br>Join community with other creators and <br>exchange learnings. </p>
+          <div class="scalebutton">
+            <a href="#popup1">
+              <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+                <img src="resources/circled-arrow.webp">
+                <h5>Get started</h5>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="presentation_card" id="c5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="presentation_block">
+          <img class="presentation_icon" src="resources/presentation-icon-5.webp">
+          <h2>Tap new business opportunities</h2>
+          <p>Launch e-commerce or merchandise store <br>for your fans. <br><br>Explore new content distribution channels.</p>
+          <div class="scalebutton">
+            <a href="#popup1">
+              <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+                <img src="resources/circled-arrow.webp">
+                <h5>Get started</h5>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="presentation_image">
+          <img src="resources/presentation-image-5.webp">
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages -->
+    <div class="advantages">
+      <h2>At the core, a unique membership program for<br>creators and their fans. The <span>future</span> of creators’<br>relationship with their super fans.</h2>
+      <div class="text-block" data-aos="fade-left" data-aos-offset="-10" data-aos-duration="1000">
+        <h3>One-time backing or monthly <br>contribution? Why not have both!</h3>
+        <p>Build an exclusive membership program with <br>flexibility for you to collect upfront <br>sponsorship or monthly contributions. <br>You know best how to use those funds!</p>
+      </div>
+      <div class="text-block-right" data-aos="fade-right" data-aos-offset="-10" data-aos-delay="200" data-aos-duration="1000">
+        <h3>Share your success with members</h3>
+        <p>Continue developing exclusive content, <br>exceptional perks, and member-only brand <br>deals. As you grow, share new rewards and <br>benefits with your members.</p>
+      </div>
+      <div class="text-block" data-aos="fade-left" data-aos-offset="-10" data-aos-delay="400" data-aos-duration="1000">
+        <h3>Offer more than a subscription or <br>donation</h3>
+        <p>Enable fans to take part and directly benefit <br>from your success. <br>Being a sponsor promotes active <br>engagement from your members.</p>
+      </div>
+      <div class="text-block-right" data-aos="fade-right" data-aos-offset="-10" data-aos-delay="600" data-aos-duration="1000">
+        <h3>Growing value for you – and your fans</h3>
+        <p>Share created value with your members and <br>let them be part of your growth story. <br>Automatically earn more as you grow. </p>
+      </div>
+      <div class="scalebutton">
+        <a href="#popup1">
+          <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+            <img src="resources/circled-arrow.webp">
+            <h5>Get started</h5>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Info (description + start) -->
+    <div class="info">
+      <div class="description">
+        <img src="resources/logo.webp" class="centred-logo">
+        <h2>We’ll build your program so you can<br><span>focus<span> on your creative work!</h2>
+        <div class="cards">
+          <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-offset="-10">
+            <h3><span>Build</span> an exclusive membership program.</h3>
+            <p>Fan benefits may include member-only content, digital tools or assets, exclusive brand promotions, voting rights, virtual club room, community message board, one-on-one chats with you, or more.</p>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-offset="-10" data-aos-delay="350">
+            <h3><span>Offer</span> membership to your fans.</h3>
+            <p>Decide how many members you admit. Set required one-time sponsorship or monthly contributions from members. Use generated funds to invest in your creative work.</p>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-offset="-10" data-aos-delay="700">
+            <h3><span>Engage</span> with your member community.</h3>
+            <p>Grow the community and build value for you and your members. Share back your growth with your fans. Further monetize add-ons that you introduce.</p>
+          </div>
+        </div>
+        <div class="scalebutton">
+          <a href="#popup1">
+            <button href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+              <img src="resources/circled-arrow.webp">
+              <h5>Join now</h5>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="start">
+        <h2>How to get started</h2>
+        <div class="start-block">
+          <img src="resources/number-1.webp">
+          <div class="start-text">
+            <h3>Tell us your <span>plans</span> and aspirations.</h3>
+            <p>We’ll get together and discuss your aspirations and growth plans. <br>We’ll help you sharpen the plan and get it ready for your fans.</p>
+          </div>
+        </div>
+        <div class="start-block">
+          <img src="resources/number-2.webp">
+          <div class="start-text">
+            <h3><span>Design</span> your CRREO program.</h3>
+            <p>We’ll work with you to customize CRREO offering for you and your fans. <br>You will be the decision maker on key design choices. </p>
+          </div>
+        </div>
+        <div class="start-block">
+          <img src="resources/number-3.webp">
+          <div class="start-text">
+            <h3><span>Launch</span> program and welcome your super fans as members.</h3>
+            <p>Launch the program on CRREO and introduce it to your fans. <br>We’ll help you run and manage the program. </p>
+          </div>
+        </div>
+        <div class="scalebutton">
+          <a href="#popup2">
+            <button href="#" class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-35" data-aos-delay="0">
+              <img src="resources/circled-arrow.webp">
+              <h5>Learn more</h5>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why us -->
+    <div class="why-us">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-10">
+        <div class="why-us__content">
+          <img src="resources/logo.webp">
+          <div class="why-us-blocks">
+            <div class="why-us-block">
+              <h2>Why us</h2>
+              <h3>We know what it feels like to be a talented creator without the resources, tools and reach that professional media houses have. That’s why we used our <span>20 years of experience</span> to build CRREO and help individual creators like you supercharge their growth, earn sponsorship income and enable participation of their superfans.<br><br>At CRREO we’re working to <span>accelerate the growth</span> of content creators and creative minds active on major platforms.</h3>
+              <img src="resources/social.webp">
+            </div>
+            <div class="why-us-block" id="why-img">
+              <img src="resources/us.webp">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer">
+      <img src="resources/logo.webp">
+      <p>ⓒ 2022 CRREO Technologies</p>
+      <p><a href="#">About  </a>    |    <a href="#">  Contact  </a>    |    <a href="#">  Policy  </a>    |    <a href="#">  Policy  </a></p>
+    </div>
+
+    <!-- Collegamento al file javascript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
