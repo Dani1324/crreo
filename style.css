@@ -1082,6 +1082,23 @@ textarea{
     margin-bottom: 3.3vw;
   }
 
+  @keyframes show{
+    0% {margin-top: -6.745vw;}
+    16.66% {margin-top: -6.746vw;}
+    19.32% {margin-top: -13.64vw;}
+    33.32% {margin-top: -13.64vw;}
+    35.98% {margin-top: -20.53vw;}
+    50.00% {margin-top: -20.53vw;}
+    52.66% {margin-top: -27.426vw;}
+    66.66% {margin-top: -27.426vw;}
+    69.32% {margin-top: -34.32vw;}
+    83.32% {margin-top: -34.32vw;}
+    85.98% {margin-top: -44vw;}
+    85.99% {margin-top: -2vw;}
+    87.0% {margin-top: -6.746vw;}
+    100.0% {margin-top: -6.746vw;}
+  }
+
   .big-button{
     width: 29vw;
     height: 10vw;
