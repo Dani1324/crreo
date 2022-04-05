@@ -1077,14 +1077,14 @@ textarea{
 
   #flip > div > div {
     color: #C8102E;
-    padding: 0.295vw 0.88vw 0.29vw 0;
+    padding: 0.295vw 0.88vw 0.39vw 0;
     height: 3.3vw;
-    margin-bottom: 3.2vw;
+    margin-bottom: 3.1vw;
   }
 
   @keyframes show{
     0% {margin-top: -6.75vw;}
-    16.66% {margin-top: -6.748vw;}
+    16.66% {margin-top: -6.740vw;}
     19.32% {margin-top: -13.34vw;}
     33.32% {margin-top: -13.34vw;}
     35.98% {margin-top: -20.215vw;}
