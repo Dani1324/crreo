@@ -1079,20 +1079,20 @@ textarea{
     color: #C8102E;
     padding: 0.295vw 0.88vw 0.29vw 0;
     height: 3.3vw;
-    margin-bottom: 3.3vw;
+    margin-bottom: 3.2vw;
   }
 
   @keyframes show{
-    0% {margin-top: -6.745vw;}
-    16.66% {margin-top: -6.746vw;}
-    19.32% {margin-top: -13.64vw;}
-    33.32% {margin-top: -13.64vw;}
-    35.98% {margin-top: -20.53vw;}
-    50.00% {margin-top: -20.53vw;}
-    52.66% {margin-top: -27.426vw;}
-    66.66% {margin-top: -27.426vw;}
-    69.32% {margin-top: -34.32vw;}
-    83.32% {margin-top: -34.32vw;}
+    0% {margin-top: -6.743vw;}
+    16.66% {margin-top: -6.743vw;}
+    19.32% {margin-top: -13.34vw;}
+    33.32% {margin-top: -13.34vw;}
+    35.98% {margin-top: -20.25vw;}
+    50.00% {margin-top: -20.25vw;}
+    52.66% {margin-top: -27.08vw;}
+    66.66% {margin-top: -27.08vw;}
+    69.32% {margin-top: -33.72vw;}
+    83.32% {margin-top: -33.72vw;}
     85.98% {margin-top: -44vw;}
     85.99% {margin-top: -2vw;}
     87.0% {margin-top: -6.746vw;}
