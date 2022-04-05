@@ -149,9 +149,9 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 #flip > div > div {
   color: #C8102E;
   font-weight: 600;
-  padding: 0.29vw 0.88vw 0.29vw 0;
+  padding: 0.294vw 0.88vw 0.294vw 0;
   height: 3.3vw;
-  margin-bottom: 3.35vw;
+  margin-bottom: 3.3vw;
   display: inline-block;
 }
 
@@ -170,8 +170,8 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   83.32% {margin-top: -34.32vw;}
   85.98% {margin-top: -44vw;}
   85.99% {margin-top: -2vw;}
-  87.0% {margin-top: -6.746vw;}
-  100.0% {margin-top: -6.746vw;}
+  87.0% {margin-top: -6.736vw;}
+  100.0% {margin-top: -6.736vw;}
 }
 
 .big-button{
@@ -668,10 +668,9 @@ textarea{
     #flip{ height: 4.2vw; margin: -0.186vw 0 0 0.64vw;}
 
     #flip > div > div {
-      color: #C8102E;
       padding: 0.29vw 0.88vw 0.29vw 0;
       height: 3.3vw;
-      margin-bottom: 3.3vw;
+      margin-bottom: 3.35vw;
     }
 
     .big-button{
