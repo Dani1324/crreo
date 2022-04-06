@@ -176,7 +176,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 }
 
 @-webkit-keyframes show{
-  0% {margin-top: -6.71vw;}
+  0% {margin-top: -6.6vw;}
   /*16.66% {margin-top: -6.740vw;}
   19.32% {margin-top: -13.723vw;}
   33.32% {margin-top: -13.723vw;}
