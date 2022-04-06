@@ -176,8 +176,8 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 }
 
 @-webkit-keyframes show{
-  0% {margin-top: -6.75vw;}
-  16.66% {margin-top: -6.740vw;}
+  0% {margin-top: -6.69vw;}
+  /*16.66% {margin-top: -6.740vw;}
   19.32% {margin-top: -13.723vw;}
   33.32% {margin-top: -13.723vw;}
   35.98% {margin-top: -20.69vw;}
@@ -188,8 +188,8 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   83.32% {margin-top: -34.3045vw;}
   85.98% {margin-top: -44vw;}
   85.99% {margin-top: -2vw;}
-  87.0% {margin-top: -6.766vw;}
-  100.0% {margin-top: -6.766vw;}
+  87.0% {margin-top: -6.766vw;}*/
+  100.0% {margin-top: -6.69vw;}
 }
 
 .big-button{
@@ -711,7 +711,7 @@ textarea{
 
     @-webkit-keyframes show{
       0% {margin-top: -6.75vw;}
-      16.66% {margin-top: -6.740vw;}
+      /*16.66% {margin-top: -6.740vw;}
       19.32% {margin-top: -13.690vw;}
       33.32% {margin-top: -13.690vw;}
       35.98% {margin-top: -20.69vw;}
@@ -722,7 +722,7 @@ textarea{
       83.32% {margin-top: -34.3276vw;}
       85.98% {margin-top: -44vw;}
       85.99% {margin-top: -2vw;}
-      87.0% {margin-top: -6.766vw;}
+      87.0% {margin-top: -6.766vw;}*/
       100.0% {margin-top: -6.766vw;}
     }
 
@@ -1155,7 +1155,7 @@ textarea{
 
   @-webkit-keyframes show{
     0% {margin-top: -6.700vw;}
-    16.66% {margin-top: -6.740vw;}
+    /*16.66% {margin-top: -6.740vw;}
     19.32% {margin-top: -13.610vw;}
     33.32% {margin-top: -13.610vw;}
     35.98% {margin-top: -20.320vw;}
@@ -1166,7 +1166,7 @@ textarea{
     83.32% {margin-top: -33.90vw;}
     85.98% {margin-top: -44vw;}
     85.99% {margin-top: -2vw;}
-    87.0% {margin-top: -6.700vw;}
+    87.0% {margin-top: -6.700vw;}*/
     100.0% {margin-top: -6.700vw;}
   }
 
