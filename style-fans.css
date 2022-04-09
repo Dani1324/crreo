@@ -133,6 +133,17 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   font-weight: 800;
 }
 
+#subtitle{
+  color: #000074;
+  font-family: 'Montserrat';
+  font-size: 1.62vw;
+  font-weight: 200;
+  padding-top: 2.94vw;
+  margin-bottom: 9vh;
+  width: 100%;
+  display: flex;
+}
+
 #scrolltext{
   color: #000074;
   font-family: 'Montserrat';
@@ -519,8 +530,9 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   font-family: 'Nunito';
   text-align: center;
   font-size: 1.55vw;
-  padding-bottom: 2.5vw;
+  padding-bottom: 1.9vw;
   color: #000074;
+  line-height: 1.2;
 }
 
 .popup h3{
@@ -674,6 +686,14 @@ textarea{
 
     .hero__texts span{ color: #C8102E; text-shadow: rgba(255, 255, 255, 0.23) 0px 3px 15px;}
     #line{ color: #000074; text-decoration-color: #C8102E;}
+
+    #subtitle{
+      color: #fff;
+      font-size: 3.4vw;
+      padding-top: 5vw;
+      margin-bottom: 8vh;
+      text-shadow: rgba(255, 255, 255, 0.1) 0px 3px 15px;
+    }
 
     #scrolltext{
       color: #fff;
@@ -978,7 +998,7 @@ textarea{
     /* Popup content style */
     .popup h2{
       font-size: 3.5vw;
-      padding-bottom: 7.8vw;
+      padding-bottom: 6.5vw;
       color: #000074;
     }
 
@@ -1117,6 +1137,14 @@ textarea{
 
   .hero__texts span{ color: #C8102E;}
   #line{ color: #000074; text-decoration-color: #C8102E;}
+
+  #subtitle{
+    color: #fff;
+    font-size: 4vw;
+    padding-top: 5vw;
+    margin-bottom: 8vh;
+    text-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+  }
 
   #scrolltext{
     color: #fff;
@@ -1422,7 +1450,7 @@ textarea{
   /* Popup content style */
   .popup h2{
     font-size: 3.5vw;
-    padding-bottom: 8vw;
+    padding-bottom: 6.5vw;
     color: #000074;
   }
 
