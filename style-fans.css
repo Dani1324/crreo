@@ -284,18 +284,12 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .info{
   width: 80vw;
   padding: 13.5vw 10vw 4vw 10vw;
-  color: #000075;
-  background-image: url('resources/info-bg.webp');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
+  color: #fff;
+  background-color: #000075;
 }
 
-.info span{ color: #C8102E;}
 .centred-logo{ width: 9vw; margin: 0 35.5vw;}
 .info .scalebutton{ margin: 0 auto 8vw auto; width: 10.27vw;}
-.description{ border-bottom: 0.073vw solid #C0BEBB; margin-bottom: 10vw;}
-.description .scalebutton{ margin: 0 auto 8vw auto; width: 8.9vw;}
 
 .info h2{
   font-family: 'Nunito';
@@ -325,17 +319,6 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   letter-spacing: 0.0366vw;
 }
 
-.cards{ width: 100%; display: flex;}
-
-.card{
-  width: 26%;
-  margin: 0 3.66% 8vw 3.66%;
-  padding: 4vw 2.2vw;
-  background-color: #fff;
-  border-radius: 0.73vw;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .start h3{
   font-family: 'Montserrat';
   font-weight: 400;
@@ -355,48 +338,9 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .start .scalebutton{ margin-top: 10vw;}
 
 
-/* Why us*/
-.why-us{ width: 100vw; background-color: #000075; padding: 4vw 0 0 0; margin-bottom: 10vw;}
-
-.why-us__content{
-  background-color: #fff;
-  width: 70vw;
-  padding: 0 5vw 6vw 5vw;
-  margin: 0vw 10vw;
-  border-radius: 0.8vw;
-  transform: translateY(6vw);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  color: #000074;
-}
-
-.why-us__content img{ width: 7vw; margin: 5vw 31.5vw;}
-.why-us__content .why-us-blocks{ width: 100%; display: flex;}
-.why-us__content .why-us-blocks .why-us-block{ width: 47%; padding: 0 3%;}
-.why-us__content .why-us-blocks .why-us-block img{ width: 100%; margin: 0;}
-
-.why-us__content h2{
-  font-family: 'Nunito';
-  font-weight: 600;
-  font-size: 1.6vw;
-  width: 100%;
-  padding: 1.3vw 0 1.6vw 0;
-}
-
-.why-us__content h3{
-  font-family: 'Montserrat';
-  font-weight: 300;
-  font-size: 1.05vw;
-  width: 100%;
-  line-height: 1.25;
-  padding-bottom: 0.4vw;
-}
-
-.why-us__content span{ font-weight: 500;}
-
-
 /* Footer */
 .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-.footer img{ width: 7vw; margin: 1.5vw 46.5vw; opacity: 60%;}
+.footer img{ width: 7vw; margin: 1.5vw 46.5vw; opacity: 100%;}
 
 .footer p{
   font-family: 'Montserrat';
@@ -744,16 +688,11 @@ textarea{
       width: 80vw;
       margin: 0;
       padding: 13.5vw 10vw 4vw 10vw;
-      background-image: url('resources/info-bg2.webp');
     }
 
-    .info span{ color: #C8102E;}
     .centred-logo{ width: 14vw; margin: 5vw 33vw 0 33vw;}
     .info .scalebutton{ margin: 0 auto 8vw auto; width: 22.5vw;}
     .info .scalebutton button{ width: 22.5vw;}
-    .description .scalebutton button{ width: 19vw;}
-    .description{ border-bottom: 0.073vw solid #C0BEBB; margin-bottom: 10vw;}
-    .description .scalebutton{ margin: 0 auto 8vw auto; width: 19vw;}
 
     .info h2{
       font-size: 4vw;
@@ -776,20 +715,6 @@ textarea{
       letter-spacing: 0.0366vw;
     }
 
-    .cards{ width: 80vw; display: block; margin-bottom: 5vw;}
-
-    .card{
-      width: 50vw;
-      margin: 0 11.3vw 8vw 11.3vw;
-      padding: 4vw 3.7vw;
-      background-color: #fff;
-      border-radius: 1.23vw;
-      box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 15px 0px;
-      white-space: normal;
-      display:inline-block;
-      flex-direction: column;
-    }
-
     .start h3{
       font-size: 3.1vw;
       width: 100%;
@@ -808,38 +733,9 @@ textarea{
     .start .scalebutton{ margin-top: 10vw;}
 
 
-    /* Why us*/
-    .why-us{ width: 100vw; background-color: #000075; padding: 4vw 0 0 0; margin-bottom: 15vw;}
-
-    .why-us__content{
-      background-image: url('resources/why-bg.webp');
-      background-size: cover;
-      border-radius: 1.3vw;
-      transform: translateY(9vw);
-    }
-
-    .why-us__content img{ width: 11vw; margin: 8vw 29.5vw 5vw 29.5vw;}
-    .why-us__content .why-us-blocks{ width: 97%; display: flex; padding-left: 3%;}
-    .why-us__content .why-us-blocks .why-us-block{ width: 95%; padding: 0;}
-    .why-us__content .why-us-blocks .why-us-block img{ width: 65%; margin: 0; float: right;}
-    #why-img{ display: none;}
-
-    .why-us__content h2{
-      font-size: 3.1vw;
-      padding: 2.3vw 0 3.5vw 0;
-    }
-
-    .why-us__content h3{
-      font-size: 2.7vw;
-      width: 95%;
-      line-height: 1.6;
-      padding-bottom: 0.4vw;
-    }
-
-
     /* Footer */
     .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-    .footer img{ width: 10vw; margin: 2.5vw 45vw; opacity: 60%;}
+    .footer img{ width: 10vw; margin: 2.5vw 45vw; opacity: 100%;}
 
     .footer p{
       font-size: 2vw;
@@ -1131,16 +1027,11 @@ textarea{
     width: 80vw;
     margin: 0;
     padding: 13.5vw 10vw 4vw 10vw;
-    background-image: url('resources/info-bg2.webp');
   }
 
-  .info span{ color: #C8102E;}
   .centred-logo{ width: 14vw; margin: 5vw 33vw 0 33vw;}
   .info .scalebutton{ margin: 0 auto 8vw auto; width: 22.5vw;}
   .info .scalebutton button{ width: 22.5vw;}
-  .description .scalebutton button{ width: 19vw;}
-  .description{ border-bottom: 0.073vw solid #C0BEBB; margin-bottom: 10vw;}
-  .description .scalebutton{ margin: 0 auto 8vw auto; width: 19vw;}
 
   .info h2{
     font-size: 4vw;
@@ -1163,20 +1054,6 @@ textarea{
     letter-spacing: 0.0366vw;
   }
 
-  .cards{ width: 80vw; display: block; margin-bottom: 5vw;}
-
-  .card{
-    width: 50vw;
-    margin: 0 11.3vw 8vw 11.3vw;
-    padding: 4vw 3.7vw;
-    background-color: #fff;
-    border-radius: 1.23vw;
-    box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 15px 0px;
-    white-space: normal;
-    display:inline-block;
-    flex-direction: column;
-  }
-
   .start h3{
     font-size: 3.2vw;
     width: 100%;
@@ -1195,38 +1072,9 @@ textarea{
   .start .scalebutton{ margin-top: 10vw;}
 
 
-  /* Why us*/
-  .why-us{ width: 100vw; background-color: #000075; padding: 4vw 0 0 0; margin-bottom: 15vw;}
-
-  .why-us__content{
-    background-image: url('resources/why-bg.webp');
-    background-size: cover;
-    border-radius: 1.3vw;
-    transform: translateY(9vw);
-  }
-
-  .why-us__content img{ width: 11vw; margin: 8vw 29.5vw 5vw 29.5vw;}
-  .why-us__content .why-us-blocks{ width: 97%; display: flex; padding-left: 3%;}
-  .why-us__content .why-us-blocks .why-us-block{ width: 95%; padding: 0;}
-  .why-us__content .why-us-blocks .why-us-block img{ width: 65%; margin: 0; float: right;}
-  #why-img{ display: none;}
-
-  .why-us__content h2{
-    font-size: 3.5vw;
-    padding: 2.3vw 0 3.5vw 0;
-  }
-
-  .why-us__content h3{
-    font-size: 2.7vw;
-    width: 95%;
-    line-height: 1.6;
-    padding-bottom: 0.4vw;
-  }
-
-
   /* Footer */
   .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-  .footer img{ width: 12vw; margin: 2.5vw 44vw; opacity: 60%;}
+  .footer img{ width: 12vw; margin: 2.5vw 44vw; opacity: 100%;}
 
   .footer p{
     font-size: 2.1vw;
