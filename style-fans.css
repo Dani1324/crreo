@@ -69,7 +69,7 @@ button:active{ box-shadow: rgba(100, 100, 111, 0.25) 0px 2px 6px 0px;}
 .scalebutton:active{ transform: scale(0.95);}
 button img{ position: static; width: 1.41vw; padding: 0.49vw 0.35vw 0 0.49vw;}
 button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.56vw 0 0 0.21vw; white-space: nowrap;}
-.btn-1{ width: 10.27vw;}
+.btn-1{ width: 9.2vw;}
 
 .hamburger{ display: none;}
 
@@ -221,135 +221,63 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .hero__photos img{ width: 100%;}
 
 
-/* Introduction */
-.introduction{
-  width: 80vw;
-  height: 47vw;
-  padding: 2vh 10vw;
-  margin-bottom: 18vh;
-  background-image: url('resources/intro-bg.webp');
+/* Advantages */
+.advantages{
+  background-image: url('resources/advantages-bg.webp');
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-}
-
-.introduction span{ color: #C8102E; font-weight: 700;}
-#white-logo{ width: 9vw; margin: 9vw 35.5vw 5vw 35.5vw;}
-
-.introduction h2{
-  font-family: 'Nunito';
-  font-weight: 400;
-  font-size: 2.1vw;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2.2vw;
-  line-height: 1.3;
-}
-
-.introduction p{
-  font-family: 'Montserrat';
-  font-weight: 100;
-  font-size: 1.20vw;
-  color: #fff;
-  width: 60%;
-  text-align: center;
-  padding: 0 20%;
-  line-height: 2;
-  margin-bottom: 5.0vw;
-}
-
-.introduction .scalebutton{ margin: 0 auto; width: 10.27vw;}
-
-
-/* Presentation */
-.presentation{
-  width: 80vw;
-  padding: 1vw 10vw;
-}
-
-.presentation .scalebutton{ width: 10.27vw;}
-
-.presentation_card{
-  background-color: #fff;
-  border-radius: 0.73vw;
-  padding: 6.5vw 5.5vw 6.5vw 0;
-  margin-bottom: 7vw;
-  display: flex;
-}
-
-.presentation_block{ width: 55%; padding-left: 5.5vw;}
-.presentation_icon{ width: 3.4vw;}
-
-.presentation_block h2{
-  font-family: 'Nunito';
-  font-weight: 600;
-  font-size: 1.5vw;
-  color: #000075;
-  width: 100%;
-  line-height: 1.2;
-  margin: 1vw 0 1.3vw 0;
-}
-
-.presentation_block p{
-  font-family: 'Montserrat';
-  font-weight: 300;
-  font-size: 1.02vw;
-  color: #000075;
-  width: 100%;
-  line-height: 1.4;
-  margin-bottom: 2.1vw;
-}
-
-.presentation_image { width: 45%; float: left; padding-left: 5.5vw;}
-.presentation_image img{ width: 100%;}
-
-
-/* Advantages */
-.advantages{
-  background-color: #000075;
   width: 70vw;
   padding: 15vw 15vw 10vw 15vw;
   margin-top: 10vh;
-  color: #fff;
+  color: #000075;
 }
 
-.advantages span{ color: #C8102E; font-weight: 600;}
 .text-block{ width: 100%;}
-.text-block-right{ width: 40%; padding-left: 60%;}
+.text-block-right{ width: 45%; padding-left: 55%; text-align: right;}
 
-.advantages h2{
+.advantages h1{
   font-family: 'Nunito';
-  font-weight: normal;
+  font-weight: 600;
   font-size: 1.65vw;
   width: 100%;
   line-height: 1.25;
   letter-spacing: 0.11vw;
-  margin: 1vw 0 10vw 0;
+  margin: 0.5vw 0;
+  text-align: center;
+}
+
+.advantages h2{
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.2vw;
+  width: 60%;
+  line-height: 1.5;
+  letter-spacing: 0.06vw;
+  margin: 0 20% 10vw 20%;
   text-align: center;
 }
 
 .advantages h3{
   font-family: 'Nunito';
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1.3vw;
   width: 100%;
   line-height: 1.4;
-  letter-spacing: 0.11vw;
   margin-bottom: 0.7vw;
 }
 
 .advantages p{
   font-family: 'Montserrat';
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1vw;
   width: 100%;
   line-height: 1.2;
-  letter-spacing: 0.11vw;
+  letter-spacing: 0.06vw;
   margin-bottom: 3vw;
 }
 
-.advantages .scalebutton{ margin: 10vw auto 0 auto; width: 10.27vw;}
+.advantages .scalebutton{ margin: 10vw auto 0 auto; width: 9.2vw;}
 
 
 /* Info */
@@ -659,7 +587,7 @@ textarea{
 
     .scalebutton{ transition: all 0.20s; width: 21vw;}
     .scalebutton:active{ transform: scale(0.95);}
-    .btn-1{ width: 21vw;}
+    .btn-1{ width: 19vw; border-radius: 1.3vw;}
 
 
     /* Hero */
@@ -766,97 +694,34 @@ textarea{
     /* Underline animation */
     .hover-underline-animation:after { height: 0.23vw;}
 
-    /* Introduction */
-    .introduction{
-      width: 80vw;
-      height: 82vw;
-      padding: 2vh 10vw;
-      margin-bottom: 10vh;
-      background-image: url('resources/intro-bg2.webp');
-    }
-
-    #white-logo{ width: 16vw; margin: 9vw 32vw 10vw 32vw;}
-    .introduction h2{ font-size: 3.8vw; margin-bottom: 4.2vw;}
-    .introduction span{ font-size: 4.2vw;}
-
-    .introduction p{
-      font-size: 2.7vw;
-      width: 80%;
-      padding: 0 10%;
-      margin-bottom: 7vw;
-      line-height: 1.4;
-    }
-
-    .introduction .scalebutton{ margin: 0 auto; width: 21vw;}
-
-
-    /* Presentation */
-    .presentation{
-      width: 80vw;
-      padding: 1vw 10vw;
-    }
-
-    .presentation_card{
-      background-color: #fff;
-      border-radius: 0.73vw;
-      padding: 6.5vw 5.5vw 6.5vw 0;
-      margin-bottom: 11vw;
-      display: flex;
-    }
-
-    #c1{ background-image: url('resources/presentation-bg1.webp'); background-size: cover;}
-    #c2{ background-image: url('resources/presentation-bg2.webp'); background-size: cover;}
-    #c3{ background-image: url('resources/presentation-bg3.webp'); background-size: cover;}
-    #c4{ background-image: url('resources/presentation-bg4.webp'); background-size: cover;}
-    #c5{ background-image: url('resources/presentation-bg5.webp'); background-size: cover;}
-
-    .presentation_block{ width: 95%; padding-left: 5.5vw;}
-    .presentation_icon{ width: 6vw;}
-
-    .presentation_block h2{
-      font-size: 3.8vw;
-      color: #000075;
-      width: 90%;
-      line-height: 1.1;
-      margin: 4vw 0 3vw 0;
-      text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
-    }
-
-    .presentation_block p{
-      font-size: 2.7vw;
-      font-weight: 400;
-      width: 80%;
-      margin-bottom: 7vw;
-      text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
-    }
-
-    .presentation_block p br, .presentation_block h2 br{display: none;}
-    .presentation_image { width: 5%; float: left; padding-left: 5.5vw;}
-    .presentation_image img{ display: none;}
-
-    #c2 .presentation_icon, #c4 .presentation_icon{ float: right;}
-    #c2 .presentation_block, #c4 .presentation_block{ width: 70%;}
-    #c2 .presentation_block h2, #c4 .presentation_block h2{ margin-top: 10vw; text-align: right; transform: translateX(5vw);}
-    #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right;}
-    #c2 .presentation_block .scalebutton, #c4 .presentation_block .scalebutton{ margin-top: 12vw; margin-left: calc(59.7%);}
-
 
     /* Advantages */
     .advantages{
+      background-image: url('resources/advantages-bg2.webp');
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
       width: 70vw;
       padding: 15vw 15vw 10vw 15vw;
       margin-top: 10vh;
-      color: #fff;
+      color: #000075;
     }
 
     .advantages br{ display: none;}
     .text-block-right{ width: 85%; padding-left: 15%;}
     .text-block{ width: 85%; padding-right: 15%;}
 
-    .advantages h2{
+    .advantages h1{
       font-size: 3.8vw;
       line-height: 1.25;
-      margin: 1vw 0 10vw 0;
+      margin: 1vw 0 3vw 0;
+    }
+
+    .advantages h2{
+      font-size: 2.7vw;
+      line-height: 1.2;
+      margin: 0 0 17vw 0;
+      width: 100%;
     }
 
     .advantages h3{
@@ -871,7 +736,7 @@ textarea{
       margin-bottom: 12vw;
     }
 
-    .advantages .scalebutton{ margin: 20vw auto 8vw auto; width: 21vw;}
+    .advantages .scalebutton{ margin: 20vw auto 8vw auto; width: 19vw;}
 
 
     /* Info */
@@ -1221,96 +1086,29 @@ textarea{
   /* Underline animation */
   .hover-underline-animation:after { height: 0.23vw;}
 
-  /* Introduction */
-  .introduction{
-    width: 80vw;
-    height: 90vw;
-    padding: 2vh 10vw;
-    margin-bottom: 10vh;
-    background-image: url('resources/intro-bg2.webp');
-  }
-
-  #white-logo{ width: 16vw; margin: 9vw 32vw 8vw 32vw;}
-  .introduction h2{ font-size: 4.2vw; margin-bottom: 4.2vw;}
-  .introduction span{ font-size: 4.2vw;}
-
-  .introduction p{
-    font-size: 3vw;
-    width: 80%;
-    padding: 0 10%;
-    margin-bottom: 7vw;
-  }
-
-  .introduction .scalebutton{ margin: 0 auto; width: 21vw;}
-
-
-  /* Presentation */
-  .presentation{
-    width: 80vw;
-    padding: 1vw 10vw;
-  }
-
-  .presentation_card{
-    background-color: #fff;
-    border-radius: 0.73vw;
-    padding: 6.5vw 5.5vw 6.5vw 0;
-    margin-bottom: 11vw;
-    display: flex;
-  }
-
-  #c1{ background-image: url('resources/presentation-bg1.webp'); background-size: cover;}
-  #c2{ background-image: url('resources/presentation-bg2.webp'); background-size: cover;}
-  #c3{ background-image: url('resources/presentation-bg3.webp'); background-size: cover;}
-  #c4{ background-image: url('resources/presentation-bg4.webp'); background-size: cover;}
-  #c5{ background-image: url('resources/presentation-bg5.webp'); background-size: cover;}
-
-  .presentation_block{ width: 95%; padding-left: 5.5vw;}
-  .presentation_icon{ width: 6vw;}
-
-  .presentation_block h2{
-    font-size: 3.9vw;
-    color: #000075;
-    width: 90%;
-    line-height: 1.2;
-    margin: 4vw 0 1.3vw 0;
-    text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
-  }
-
-  .presentation_block p{
-    font-size: 2.7vw;
-    font-weight: 400;
-    width: 80%;
-    margin-bottom: 3.5vw;
-    text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
-  }
-
-  .presentation_block p br, .presentation_block h2 br{display: none;}
-  .presentation_image { width: 5%; float: left; padding-left: 5.5vw;}
-  .presentation_image img{ display: none;}
-
-  #c2 .presentation_icon, #c4 .presentation_icon{ float: right;}
-  #c2 .presentation_block, #c4 .presentation_block{ width: 70%;}
-  #c2 .presentation_block h2, #c4 .presentation_block h2{ margin-top: 10vw; text-align: right; transform: translateX(5vw);}
-  #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right;}
-  #c2 .presentation_block .scalebutton, #c4 .presentation_block .scalebutton{ margin-top: 12vw; margin-left: calc(59.3%);}
-
 
   /* Advantages */
   .advantages{
     width: 70vw;
     padding: 15vw 15vw 10vw 15vw;
     margin-top: 10vh;
-    color: #fff;
+    color: #000075;
   }
 
   .advantages br{ display: none;}
   .text-block-right{ width: 85%; padding-left: 15%;}
   .text-block{ width: 85%; padding-right: 15%;}
 
-  .advantages h2{
+  .advantages h1{
     font-size: 4.0vw;
     line-height: 1.25;
-    margin: 1vw 0 10vw 0;
+    margin: 1vw 0 3.5vw 0;
+  }
+
+  .advantages h2{
+    font-size: 3vw;
+    line-height: 1.2;
+    margin-bottom: 17vw;
   }
 
   .advantages h3{
