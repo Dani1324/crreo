@@ -457,7 +457,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 /* Footer */
 .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-.footer img{ width: 7vw; margin: 1.5vw 46.5vw; opacity: 60%;}
+.footer img{ width: 7vw; margin: 1.5vw 46.5vw; opacity: 100%;}
 
 .footer p{
   font-family: 'Montserrat';
@@ -755,7 +755,7 @@ textarea{
       background-image: url('resources/intro-bg2.webp');
     }
 
-    #white-logo{ width: 16vw; margin: 9vw 32vw 10vw 32vw;}
+    #white-logo{ width: 12vw; margin: 9vw 34vw 2vw 34vw;}
     .introduction h2{ font-size: 3.8vw; margin-bottom: 4.2vw;}
     .introduction span{ font-size: 4.2vw;}
 
@@ -954,7 +954,7 @@ textarea{
 
     /* Footer */
     .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-    .footer img{ width: 10vw; margin: 2.5vw 45vw; opacity: 60%;}
+    .footer img{ width: 10vw; margin: 2.5vw 45vw; opacity: 100%;}
 
     .footer p{
       font-size: 2vw;
@@ -1400,7 +1400,7 @@ textarea{
 
   /* Footer */
   .footer{ width: 100vw; margin: 15vw 0 3vw 0;}
-  .footer img{ width: 12vw; margin: 2.5vw 44vw; opacity: 60%;}
+  .footer img{ width: 12vw; margin: 2.5vw 44vw; opacity: 100%;}
 
   .footer p{
     font-size: 2.1vw;

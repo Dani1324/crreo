@@ -290,47 +290,34 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 .centred-logo{ width: 9vw; margin: 0 35.5vw;}
 .info .scalebutton{ margin: 0 auto 8vw auto; width: 10.27vw;}
+#white-logo{ width: 9vw; margin: 9vw 35.5vw 0vw 35.5vw;}
 
 .info h2{
   font-family: 'Nunito';
-  font-weight: normal;
+  font-weight: bold;
   font-size: 2vw;
   width: 100%;
   line-height: 1.15;
-  margin: 5vw 0 10vw 0;
+  margin: 2vw 0 10vw 0;
   text-align: center;
-}
-
-.info h3{
-  font-family: 'Nunito';
-  font-weight: 400;
-  font-size: 1.4vw;
-  width: 100%;
-  line-height: 1.2;
-  padding-bottom: 2vw;
 }
 
 .info p{
   font-family: 'Montserrat';
-  font-weight: 300;
-  font-size: 1.1vw;
+  font-weight: 200;
+  font-size: 1.13vw;
   width: 100%;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.0366vw;
 }
 
-.start h3{
+.info h3{
   font-family: 'Montserrat';
   font-weight: 400;
-  font-size: 1.23vw;
+  font-size: 1.3vw;
   width: 100%;
   line-height: 1.2;
   padding-bottom: 0.25vw;
-}
-
-.start p{
-  font-weight: 100;
-  font-size: 1.23vw;
 }
 
 .start-block{ display: flex; margin-bottom: 6vw}
@@ -692,7 +679,11 @@ textarea{
 
     .centred-logo{ width: 14vw; margin: 5vw 33vw 0 33vw;}
     .info .scalebutton{ margin: 0 auto 8vw auto; width: 22.5vw;}
-    .info .scalebutton button{ width: 22.5vw;}
+    .info .scalebutton button{ width: 20vw;}
+    #white-logo{ width: 16vw; margin: 9vw 32vw 0vw 32vw;}
+    #number-1{ transform: translateY(8vw);}
+    #number-2{ transform: translateY(3.5vw);}
+    #number-3{ transform: translateY(7.5vw);}
 
     .info h2{
       font-size: 4vw;
@@ -720,8 +711,6 @@ textarea{
       width: 100%;
       padding-bottom: 0.25vw;
     }
-
-    .start br{ display: none;}
 
     .start p{
       width: 100%;
@@ -963,7 +952,6 @@ textarea{
     100.0% {margin-top: -6.700vw;}
   }
 
-
   .big-button{
     width: 29vw;
     height: 10vw;
@@ -1032,6 +1020,10 @@ textarea{
   .centred-logo{ width: 14vw; margin: 5vw 33vw 0 33vw;}
   .info .scalebutton{ margin: 0 auto 8vw auto; width: 22.5vw;}
   .info .scalebutton button{ width: 22.5vw;}
+  #white-logo{ width: 16vw; margin: 9vw 32vw 0vw 32vw;}
+  #number-1{ transform: translateY(8.5vw);}
+  #number-2{ transform: translateY(4vw);}
+  #number-3{ transform: translateY(8vw);}
 
   .info h2{
     font-size: 4vw;
@@ -1059,8 +1051,6 @@ textarea{
     width: 100%;
     padding-bottom: 0.25vw;
   }
-
-  .start br{ display: none;}
 
   .start p{
     width: 100%;
