@@ -456,7 +456,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   background: #fff;
   border-radius: 0.366vw;
   width: 33%;
-  height: 35.5vw;
+  height: 36.2vw;
   position: relative;
   transition: all 5s ease-in-out;
   z-index: 200;
@@ -1052,7 +1052,7 @@ textarea{
     margin-bottom: 8vh;
     text-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
   }
-  
+
   #scrolltext span{
     color: #C8102E;
     padding: 0.295vw 0;
