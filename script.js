@@ -65,10 +65,10 @@ TxtRotate.prototype.tick = function() {
 
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
-    this.isDeleting = true;
+    this.isDeleting = this.loopNum != this.toRotate.length - 1; // it should be true if all text had not been displayed
   } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
-    this.loopNum++;
+    if (this.loopNum != this.toRotate.length) this.loopNum++;
     delta = 1000;
   }
 
@@ -92,10 +92,10 @@ window.onload = function() {
 
   css.type = "text/css";
   if (width > 1025) {
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.1vw solid #000075;}";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0vw solid; border-image: linear-gradient(rgb(0, 0, 0, 0) 24%, #000075 0%, #000075 85%, rgb(0, 0, 0, 0) 1%) 1 100%;}";
   }
   else {
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.1vw solid #ffffff;}";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0vw solid; border-image: linear-gradient(rgb(0, 0, 0, 0) 24%, #ffffff 0%, #ffffff 85%, rgb(0, 0, 0, 0) 1%) 1 100%;}";
   }
   document.body.appendChild(css);
 };
