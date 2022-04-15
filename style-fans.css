@@ -179,6 +179,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   right: 10vw;
   top: 0;
   margin-top: 18vh;
+  transform: translateX(-0.32vw);
 }
 
 .video1 video{ width: 100.15%; border-radius: 1.63vw; transform: translate(-0.06%, -0.04%);}
