@@ -556,7 +556,8 @@ textarea{
     .big-button a img{ height: 3.4vw; padding: 2.9vw 0 2.3vw 2.61vw;}
     .hero__photos{ display: none;}
 
-    .hero .video{ display: block; width: 100%; margin: 40vw 0 0 0;}
+    .video{ display: block;}
+    .hero .video{ width: 100%; margin: 40vw 0 0 0;}
     .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074; transform: scaleX(1.01);}
 
 
@@ -859,8 +860,9 @@ textarea{
   .big-button a img{ height: 4vw; padding: 3.1vw 0 2.3vw 2.61vw;}
   .hero__photos{ display: none;}
 
-  .hero .video{ display: block; width: 100%; margin: 40vw 0 0 0;}
-  .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074; transform: scaleX(1.01);}
+  .video{ display: block;}
+  .hero .video{ width: 100%; margin: 40vw 0 0 0;}
+  .hero .video video{ width: 100%; border-radius: 2vw; border: 2.5px solid #000074; transform: scaleX(1.01);}
 
   /* Underline animation */
   .hover-underline-animation:after { height: 0.23vw;}
