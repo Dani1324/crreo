@@ -558,7 +558,7 @@ textarea{
 
     .video{ display: block;}
     .hero .video{ width: 100%; margin: 40vw 0;}
-    .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074; transform: scaleX(1.01); transform: translate(-2vw, -2vw);}
+    .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074;}
 
 
     /* Underline animation */
@@ -862,7 +862,7 @@ textarea{
 
   .video{ display: block;}
   .hero .video{ width: 100%; margin: 40vw 0 0 0;}
-  .hero .video video{ width: 100%; border-radius: 2vw; border: 3px solid #000074; transform: scaleX(1.01);}
+  .hero .video video{ width: 100%; border-radius: 2vw; border: 3px solid #000074;}
 
   /* Underline animation */
   .hover-underline-animation:after { height: 0.23vw;}
