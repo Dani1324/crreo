@@ -203,8 +203,8 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  width: 70vw;
-  padding: 15vw 15vw 10vw 15vw;
+  width: 80vw;
+  padding: 10vw 15vw 10vw 10vw;
   margin-top: 10vh;
   color: #000075;
 }
@@ -219,7 +219,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   width: 100%;
   line-height: 1.25;
   letter-spacing: 0.11vw;
-  margin: 0.5vw 0;
+  margin: 0.5vw 0 1.3vw 0;
   text-align: center;
 }
 
@@ -237,7 +237,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .advantages h3{
   font-family: 'Nunito';
   font-weight: 500;
-  font-size: 1.3vw;
+  font-size: 1.4vw;
   width: 100%;
   line-height: 1.4;
   margin-bottom: 0.7vw;
@@ -246,7 +246,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .advantages p{
   font-family: 'Montserrat';
   font-weight: 300;
-  font-size: 1vw;
+  font-size: 1.1vw;
   width: 100%;
   line-height: 1.2;
   letter-spacing: 0.06vw;
