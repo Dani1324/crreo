@@ -202,7 +202,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .advantages{
   background-image: url('resources/advantages-bg.webp');
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-attachment: fixed;
   width: 80vw;
   padding: 10vw 15vw 10vw 10vw;
@@ -564,7 +564,7 @@ textarea{
     .advantages{
       background-image: url('resources/advantages-bg2.webp');
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
       background-attachment: fixed;
       width: 70vw;
       padding: 15vw 15vw 10vw 15vw;
@@ -863,6 +863,7 @@ textarea{
 
   /* Advantages */
   .advantages{
+    background-image: url('resources/advantages-bg3.webp');
     width: 70vw;
     padding: 15vw 15vw 10vw 15vw;
     margin-top: 10vh;
