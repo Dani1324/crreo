@@ -31,6 +31,7 @@ a{ text-decoration: none; color: #000074; cursor: pointer;}
   height: 1.69vw;
   width: auto;
   transition: opacity 1s;
+  z-index: 999;
 }
 
 .links{
@@ -169,6 +170,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .big-button a img{ height: 1.91vw; padding: 1.1vw 0 1.1vw 1.61vw;}
 
 .hero__photos{ width: 47%;}
+.video{ display: none;}
 
 .video1{
   position: absolute;
@@ -454,7 +456,7 @@ textarea{
     }
 
     .menu a{ color: #fff; width: 0%; display: block; margin: 5vh 0 0 5vw; font-size: 4vw; white-space: nowrap;}
-    .menu--open{ right: 0%;}
+    .menu--open{ right: -35%;}
 
     .hamburger{
       display: block;
@@ -500,18 +502,17 @@ textarea{
 
     /* Hero */
     .hero{
-      background-image: url('resources/hero-bg2.webp');
-      background-size: cover;
+      background-image: url();
       width: 80vw;
       height: 100vw;
-      padding: 26vh 10vw 2vh 10vw;
+      padding: 20vh 10vw 2vh 10vw;
       display: block;
     }
 
     .hero__texts{
       width: 100%;
       height: 20vh;
-      color: #fff;
+      color: #000074;
       padding-top: 0;
     }
 
@@ -526,7 +527,7 @@ textarea{
     #line{ color: #000074; text-decoration-color: #C8102E;}
 
     #subtitle{
-      color: #fff;
+      color: #000074;
       font-size: 3.4vw;
       padding-top: 5vw;
       margin-bottom: 8vh;
@@ -555,6 +556,9 @@ textarea{
     .big-button a img{ height: 3.4vw; padding: 2.9vw 0 2.3vw 2.61vw;}
     .hero__photos{ display: none;}
 
+    .hero .video{ width: 100%; margin: 40vw 0 0 0;}
+    .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074; transform: scaleX(1.01);}
+
 
     /* Underline animation */
     .hover-underline-animation:after { height: 0.23vw;}
@@ -567,7 +571,7 @@ textarea{
       background-position: top;
       background-attachment: fixed;
       width: 70vw;
-      padding: 15vw 15vw 10vw 15vw;
+      padding: 20vw 15vw 10vw 15vw;
       margin-top: 10vh;
       color: #000075;
     }
@@ -756,7 +760,7 @@ textarea{
   }
 
   .menu a{ color: #fff; width: 0%; display: block; margin: 5vh 0 0 5vw; font-size: 5.8vw; white-space: nowrap;}
-  .menu--open{ right: 0%;}
+  .menu--open{ right: -35%;}
 
   .hamburger{
     display: block;
@@ -802,18 +806,17 @@ textarea{
 
   /* Hero */
   .hero{
-    background-image: url('resources/hero-bg2.webp');
-    background-size: cover;
+    background-image: url();
     width: 80vw;
     height: 100vw;
-    padding: 21vh 10vw 2vh 10vw;
+    padding: 16vh 10vw 2vh 10vw;
     display: block;
   }
 
   .hero__texts{
     width: 100%;
     height: 20vh;
-    color: #fff;
+    color: #000074;
     padding-top: 0;
   }
 
@@ -827,7 +830,7 @@ textarea{
   #line{ color: #000074; text-decoration-color: #C8102E;}
 
   #subtitle{
-    color: #fff;
+    color: #000075;
     font-size: 4vw;
     padding-top: 5vw;
     margin-bottom: 8vh;
@@ -856,6 +859,8 @@ textarea{
   .big-button a img{ height: 4vw; padding: 3.1vw 0 2.3vw 2.61vw;}
   .hero__photos{ display: none;}
 
+  .hero .video{ width: 100%; margin: 40vw 0 0 0;}
+  .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074; transform: scaleX(1.01);}
 
   /* Underline animation */
   .hover-underline-animation:after { height: 0.23vw;}
@@ -865,7 +870,7 @@ textarea{
   .advantages{
     background-image: url('resources/advantages-bg3.webp');
     width: 70vw;
-    padding: 15vw 15vw 10vw 15vw;
+    padding: 30vw 15vw 10vw 15vw;
     margin-top: 10vh;
     color: #000075;
   }
