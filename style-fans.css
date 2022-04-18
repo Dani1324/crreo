@@ -347,7 +347,6 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   width: 33%;
   height: 36.2vw;
   position: relative;
-  transition: all 5s ease-in-out;
   z-index: 200;
 }
 
