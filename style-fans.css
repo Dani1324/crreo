@@ -875,9 +875,6 @@ textarea{
     padding: 30vw 15vw 10vw 15vw;
     margin-top: 10vh;
     color: #000075;
-    @media (max-width: @iphone-screen) {
-      background-attachment: scroll;
-    }
   }
 
   .advantages br{ display: none;}
@@ -1044,4 +1041,8 @@ textarea{
     padding-top: 1.7vw;
   }
 
+}
+
+@media (max-width: @iphone-screen) {
+  .advantages{ background-image: url('');}
 }
