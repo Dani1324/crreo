@@ -572,7 +572,7 @@ textarea{
       margin-top: 1.45vw;
       width: 5vw;
       height: 4vw;
-      margin-left: calc(72vw - 4vw - 11.24vw);
+      margin-left: calc(72vw - 3.1vw - 11.24vw);
       z-index: 999;
     }
 
@@ -981,7 +981,7 @@ textarea{
     margin-top: 1.85vw;
     width: 5vw;
     height: 4vw;
-    margin-left: calc(72vw - 4vw - 11.24vw);
+    margin-left: calc(72vw - 3.1vw - 11.24vw);
     z-index: 999;
   }
 
