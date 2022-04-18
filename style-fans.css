@@ -870,10 +870,14 @@ textarea{
   /* Advantages */
   .advantages{
     background-image: url('resources/advantages-bg3.webp');
+    background-attachment: fixed;
     width: 70vw;
     padding: 30vw 15vw 10vw 15vw;
     margin-top: 10vh;
     color: #000075;
+    @media (max-width: @iphone-screen) {
+      background-attachment: scroll;
+    }
   }
 
   .advantages br{ display: none;}
@@ -1000,7 +1004,7 @@ textarea{
 
   .text-box{
     font-family: 'Montserrat';
-    border: 0.2vw solid #000074; 
+    border: 0.2vw solid #000074;
     width: calc(100% - 6vw);
     height: 7.5vw;
     font-size: 2.5vw;
