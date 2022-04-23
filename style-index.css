@@ -245,7 +245,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   display: flex;
 }
 
-.presentation_block{ width: 55%; padding-left: 5.5vw;}
+.presentation_block{ width: 55%; padding: 1.6vw 0 0 5.5vw;}
 .presentation_icon{ width: 3.4vw;}
 
 .presentation_block h2{
@@ -261,7 +261,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .presentation_block p{
   font-family: 'Montserrat';
   font-weight: 300;
-  font-size: 1.02vw;
+  font-size: 1.16vw;
   color: #000075;
   width: 100%;
   line-height: 1.4;
@@ -357,7 +357,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .info p{
   font-family: 'Montserrat';
   font-weight: 300;
-  font-size: 1.1vw;
+  font-size: 1.16vw;
   width: 100%;
   line-height: 1.5;
   letter-spacing: 0.0366vw;
@@ -439,7 +439,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .footer p{
   font-family: 'Montserrat';
   font-weight: 100;
-  font-size: 1.1vw;
+  font-size: 1.16vw;
   width: 100%;
   line-height: 1.25;
   padding-top: 0.3vw;
