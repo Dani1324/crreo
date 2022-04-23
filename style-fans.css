@@ -126,14 +126,6 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 .hero__texts span{ color: #C8102E; padding-right: 0.15vw;}
 
-#line{
-  color: #000074;
-  text-decoration: line-through;
-  text-decoration-color: #C8102E;
-  font-family: 'Nunito';
-  font-weight: 800;
-}
-
 #subtitle{
   color: #000074;
   font-family: 'Montserrat';
@@ -523,7 +515,6 @@ textarea{
     }
 
     .hero__texts span{ color: #C8102E; text-shadow: rgba(255, 255, 255, 0.23) 0px 3px 15px;}
-    #line{ color: #000074; text-decoration-color: #C8102E;}
 
     #subtitle{
       color: #000074;
@@ -836,7 +827,6 @@ textarea{
   }
 
   .hero__texts span{ color: #C8102E;}
-  #line{ color: #000074; text-decoration-color: #C8102E;}
 
   #subtitle{
     color: #000075;

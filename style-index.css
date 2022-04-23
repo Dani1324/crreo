@@ -158,7 +158,34 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .big-button a img{ height: 1.91vw; padding: 1.1vw 0 1.1vw 1.61vw;}
 
 .hero__photos{ width: 47%;}
-.hero__photos img{ width: 100%;}
+.video{ display: none;}
+
+.video1{
+  position: absolute;
+  border: 3px solid #000075;
+  border-radius: 1.8vw;
+  width: 25.15vw;
+  height: 37.7vw;
+  right: 10vw;
+  top: 0;
+  margin-top: 18vh;
+  transform: translateX(-0.32vw);
+}
+
+.video1 video{ width: 100.15%; border-radius: 1.63vw; transform: translate(-0.06%, -0.04%);}
+
+.video2{
+  position: absolute;
+  border: 3px solid #000075;
+  border-radius: 1.8vw;
+  width: 23vw;
+  height: 15.30vw;
+  right: 24.3vw;
+  top: 0vw;
+  margin-top: calc(24vw + 12.3vh);
+}
+
+.video2 video{ width: 100.15%; border-radius: 1.58vw; transform: translate(-0.08%, -0.2%);}
 
 
 /* Introduction */
@@ -248,13 +275,12 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 /* Advantages */
 .advantages{
   background-color: #000075;
-  width: 70vw;
-  padding: 15vw 15vw 10vw 15vw;
+  width: 80vw;
+  padding: 15vw 10vw 10vw 10vw;
   margin-top: 10vh;
   color: #fff;
 }
 
-.advantages span{ color: #C8102E; font-weight: 600;}
 .text-block{ width: 100%;}
 .text-block-right{ width: 40%; padding-left: 60%;}
 
@@ -653,6 +679,11 @@ textarea{
     .big-button a h3{ font-size: 2.8vw; padding: 3.2vw 0 2.5vw 0;}
     .big-button a img{ height: 3.4vw; padding: 2.9vw 0 2.3vw 2.61vw;}
     .hero__photos{ display: none;}
+
+    .video{ display: block;}
+    .hero .video{ width: 100%; margin: 40vw 0;}
+    .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074;}
+
 
 
     /* Underline animation */
@@ -1061,6 +1092,10 @@ textarea{
   .big-button a h3{ font-size: 3.2vw; padding: 3.5vw 0 2.5vw 0;}
   .big-button a img{ height: 4vw; padding: 3.1vw 0 2.3vw 2.61vw;}
   .hero__photos{ display: none;}
+
+  .video{ display: block;}
+  .hero .video{ width: 100%; margin: 40vw 0 0 0;}
+  .hero .video video{ width: 100%; border-radius: 2vw; border: 3px solid #000074;}
 
 
   /* Underline animation */
