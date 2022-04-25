@@ -732,21 +732,21 @@ textarea{
     #c5{ background-image: url('resources/presentation-bg5.webp'); background-size: cover;}
 
     .presentation_block{ width: 95%; padding-left: 5.5vw;}
-    .presentation_icon{ width: 6vw;}
+    .presentation_icon{ width: 8vw;}
 
     .presentation_block h2{
-      font-size: 3.8vw;
+      font-size: 4vw;
       color: #000075;
-      width: 90%;
+      width: 111%;
       line-height: 1.1;
       margin: 4vw 0 3vw 0;
       text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
     }
 
     .presentation_block p{
-      font-size: 2.7vw;
+      font-size: 3vw;
       font-weight: 400;
-      width: 80%;
+      width: 90%;
       margin-bottom: 7vw;
       text-shadow: rgba(255, 255, 255, 0.78) 0px 5px 15px;
     }
@@ -756,10 +756,10 @@ textarea{
     .presentation_image img{ display: none;}
 
     #c2 .presentation_icon, #c4 .presentation_icon{ float: right;}
-    #c2 .presentation_block, #c4 .presentation_block{ width: 70%;}
-    #c2 .presentation_block h2, #c4 .presentation_block h2{ margin-top: 10vw; text-align: right; transform: translateX(5vw);}
-    #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right;}
-    #c2 .presentation_block .scalebutton, #c4 .presentation_block .scalebutton{ margin-top: 12vw; margin-left: calc(59.7%);}
+    #c2 .presentation_block, #c4 .presentation_block{ width: 80%;}
+    #c2 .presentation_block h2, #c4 .presentation_block h2{ margin-top: 11.5vw; text-align: right; transform: translateX(-12.5vw);}
+    #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right; transform: translateX(-6vw);}
+    #c2 .presentation_block img, #c4 .presentation_block img{ transform: translateX(-6vw);}
 
 
     /* Advantages */
