@@ -629,7 +629,7 @@ textarea{
     /* Hero */
     .hero{
       width: 80vw;
-      height: 100vw;
+      height: 130vw;
       padding: 20vh 10vw 2vh 10vw;
       display: block;
     }
@@ -679,7 +679,7 @@ textarea{
     .hero__photos{ display: none;}
 
     .video{ display: block;}
-    .hero .video{ width: 100%; margin: 40vw 0;}
+    .hero .video{ width: 100%; margin: 33vw 0;}
     .hero .video video{ width: 100%; border-radius: 2vw; border: 4px solid #000074;}
 
 
@@ -696,7 +696,7 @@ textarea{
       background-image: url('resources/intro-bg2.webp');
     }
 
-    #white-logo{ width: 12vw; margin: 9vw 34vw 2vw 34vw;}
+    #white-logo{ width: 12vw; margin: 16vw 34vw 2vw 34vw;}
     .introduction h2{ font-size: 3.8vw; margin-bottom: 4.2vw;}
     .introduction span{ font-size: 4.2vw;}
 
@@ -1040,7 +1040,7 @@ textarea{
   /* Hero */
   .hero{
     width: 80vw;
-    height: 100vw;
+    height: 150vw;
     padding: 18vh 10vw 2vh 10vw;
     display: block;
   }
@@ -1090,7 +1090,7 @@ textarea{
   .hero__photos{ display: none;}
 
   .video{ display: block;}
-  .hero .video{ width: 100%; margin: 40vw 0 0 0;}
+  .hero .video{ width: 100%; margin: 30vw 0 0 0;}
   .hero .video video{ width: 100%; border-radius: 2vw; border: 3px solid #000074;}
 
 
@@ -1106,7 +1106,7 @@ textarea{
     background-image: url('resources/intro-bg2.webp');
   }
 
-  #white-logo{ width: 16vw; margin: 9vw 32vw 8vw 32vw;}
+  #white-logo{ width: 16vw; margin: 14vw 32vw 8vw 32vw;}
   .introduction h2{ font-size: 4.2vw; margin-bottom: 4.2vw;}
   .introduction span{ font-size: 4.2vw;}
 
