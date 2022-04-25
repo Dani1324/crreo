@@ -1169,8 +1169,8 @@ textarea{
   #c2 .presentation_icon, #c4 .presentation_icon{ float: right;}
   #c2 .presentation_block, #c4 .presentation_block{ width: 70%;}
   #c2 .presentation_block h2, #c4 .presentation_block h2{ margin-top: 10vw; text-align: right; transform: translateX(5vw);}
-  #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right;}
-  #c2 .presentation_block .scalebutton, #c4 .presentation_block .scalebutton{ margin-top: 12vw; margin-left: calc(59.3%);}
+  #c2 .presentation_block p, #c4 .presentation_block p{ text-align: right; float: right; transform: translateX(0vw);}
+  #c2 .presentation_block img, #c4 .presentation_block img{ transform: translateX(0vw);}
 
 
   /* Advantages */
