@@ -1182,7 +1182,7 @@ textarea{
   }
 
   .advantages br{ display: none;}
-  .text-block-right{ width: 75%; padding-left: 25%;}
+  .text-block-right{ width: 80%; padding-left: 20%;}
   .text-block{ width: 80%; padding-right: 20%;}
 
   .advantages h2{
@@ -1192,15 +1192,15 @@ textarea{
   }
 
   .advantages h3{
-    font-size: 3.2vw;
+    font-size: 3.4vw;
     line-height: 1.4;
     margin-bottom: 1.2vw;
   }
 
   .advantages p{
-    font-size: 2.7vw;
+    font-size: 3.1vw;
     line-height: 1.2;
-    margin-bottom: 12vw;
+    margin-bottom: 15vw;
   }
 
   .advantages .scalebutton{ margin: 20vw auto 8vw auto; width: 21vw;}
