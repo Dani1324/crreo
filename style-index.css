@@ -818,26 +818,28 @@ textarea{
     }
 
     .info h3{
-      font-size: 3.1vw;
+      font-size: 3.8vw;
       line-height: 1.2;
       padding-bottom: 2vw;
+      margin-top: 3vw;
     }
 
     .info p{
-      font-size: 2.8vw;
+      font-size: 3.1vw;
       padding-top: 1vw;
       font-weight: 300;
       width: 95%;
-      line-height: 1.5;
+      line-height: 1.6;
       letter-spacing: 0.0366vw;
+      margin-bottom: 3vw;
     }
 
     .cards{ width: 80vw; display: block; margin-bottom: 5vw;}
 
     .card{
-      width: 50vw;
-      margin: 0 11.3vw 8vw 11.3vw;
-      padding: 4vw 3.7vw;
+      width: 70vw;
+      margin: 0 0vw 8vw 0vw;
+      padding: 4vw 5vw;
       background-color: #fff;
       border-radius: 1.23vw;
       box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 15px 0px;
@@ -1227,26 +1229,28 @@ textarea{
   }
 
   .info h3{
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 1.2;
-    padding-bottom: 5vw;
+    padding-bottom: 4vw;
+    margin-top: 3vw;
   }
 
   .info p{
-    font-size: 2.8vw;
+    font-size: 3.1vw;
     padding-top: 1vw;
     font-weight: 300;
     width: 95%;
-    line-height: 1.5;
+    line-height: 1.6;
     letter-spacing: 0.0366vw;
+    margin-bottom: 3vw;
   }
 
   .cards{ width: 80vw; display: block; margin-bottom: 5vw;}
 
   .card{
-    width: 50vw;
-    margin: 0 11.3vw 8vw 11.3vw;
-    padding: 4vw 3.7vw;
+    width: 70vw;
+    margin: 0 0vw 8vw 0vw;
+    padding: 4vw 5vw;
     background-color: #fff;
     border-radius: 1.23vw;
     box-shadow: rgba(100, 100, 111, 0.12) 0px 7px 15px 0px;
