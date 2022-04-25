@@ -628,18 +628,16 @@ textarea{
 
     /* Hero */
     .hero{
-      background-image: url('resources/hero-bg.webp');
-      background-size: cover;
       width: 80vw;
       height: 100vw;
-      padding: 26vh 10vw 2vh 10vw;
+      padding: 20vh 10vw 2vh 10vw;
       display: block;
     }
 
     .hero__texts{
       width: 100%;
       height: 20vh;
-      color: #fff;
+      color: #000074;
       padding-top: 0;
     }
 
@@ -653,7 +651,7 @@ textarea{
     .hero__texts span{ color: #C8102E; text-shadow: rgba(255, 255, 255, 0.23) 0px 3px 15px;}
 
     #scrolltext{
-      color: #fff;
+      color: #000074;
       font-size: 3.4vw;
       padding-top: 5vw;
       margin-bottom: 8vh;
@@ -766,8 +764,8 @@ textarea{
 
     /* Advantages */
     .advantages{
-      width: 70vw;
-      padding: 15vw 15vw 10vw 15vw;
+      width: 80vw;
+      padding: 15vw 10vw 10vw 10vw;
       margin-top: 10vh;
       color: #fff;
     }
@@ -1041,18 +1039,16 @@ textarea{
 
   /* Hero */
   .hero{
-    background-image: url('resources/hero-bg.webp');
-    background-size: cover;
     width: 80vw;
     height: 100vw;
-    padding: 21vh 10vw 2vh 10vw;
+    padding: 18vh 10vw 2vh 10vw;
     display: block;
   }
 
   .hero__texts{
     width: 100%;
     height: 20vh;
-    color: #fff;
+    color: #000074;
     padding-top: 0;
   }
 
@@ -1065,7 +1061,7 @@ textarea{
   .hero__texts span{ color: #C8102E;}
 
   #scrolltext{
-    color: #fff;
+    color: #000074;
     font-size: 4vw;
     padding-top: 5vw;
     margin-bottom: 8vh;
@@ -1177,8 +1173,8 @@ textarea{
 
   /* Advantages */
   .advantages{
-    width: 70vw;
-    padding: 15vw 15vw 10vw 15vw;
+    width: 80vw;
+    padding: 15vw 10vw 10vw 10vw;
     margin-top: 10vh;
     color: #fff;
   }
