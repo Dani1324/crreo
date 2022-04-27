@@ -4,6 +4,14 @@ AOS.init({
   duration: 1100,
 });
 
+// Apple optimization
+var isMacLike = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+var isIOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
+
+if ( (isMacLike)||(isIOS) ) {
+  document.getElementById('indexAppleVideo2').src = "risorse/videomobile.WebM";
+}
+
 // Text change
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
