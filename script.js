@@ -4,6 +4,10 @@ AOS.init({
   duration: 1100,
 });
 
+$(document).ready(function (){
+  document.getElementById('url-video2').src = "resources/video4.mp4";
+});
+
 // Text change
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
