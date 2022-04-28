@@ -6,13 +6,16 @@ AOS.init({
 
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
-if (width < 1025) {
-  $(document).ready(function() {
-    $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
-  });
-  document.getElementById('url-video1').style.display="none";
-  document.getElementById('url-video2').style.display="none";
-}
+  if (width < 1025) {
+    setTimeout(function() {
+      $(document).ready(function() {
+        $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
+      });
+    }, 1000);
+
+    document.getElementById('url-video1').style.display="none";
+    document.getElementById('url-video2').style.display="none";
+  }
 if (width >= 1025) {
   document.getElementById('url-video1').style.display="block";
   document.getElementById('url-video2').style.display="block";
