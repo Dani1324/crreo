@@ -8,19 +8,15 @@ AOS.init({
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
 if (width < 1025) {
-  setTimeout(function() {
-    $(document).ready(function() {
-      $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
-    });
-  }, 1000);
-
-  document.getElementById('url-video1').style.display="none";
-  document.getElementById('url-video2').style.display="none";
+  $(document).ready(function() {
+    $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
+  });
 }
-
-if (width >= 1025) {
-  document.getElementById('url-video1').style.display="block";
-  document.getElementById('url-video2').style.display="block";
+else {
+  $(document).ready(function() {
+    $("#appear1").html('<video autoplay loop muted poster="resources/poster3.webp" id="url-video1" src="resources/video3.mp4"></video>');
+    $("#appear2").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
+  });
 }
 
 // Text change
