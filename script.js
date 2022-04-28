@@ -4,8 +4,9 @@ AOS.init({
   duration: 1100,
 });
 
-$(document).ready(function (){
-  document.getElementById('url-video2').src = "resources/video4.mp4";
+
+$(document).ready(function() {
+  $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
 });
 
 // Text change
