@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts (Montserrat + Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS animations library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Altre impostazioni del sito -->
+    <title>CRREO | Supercharge your growth</title>
+    <link rel="stylesheet" href="style-plans.css">
+    <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
+
+  </head>
+  <body>
+
+    <!-- Popup -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>To get started, let us know a bit about you</h2>
+        <h3>We’ll get you launched as soon as we can.</h3>
+        <a class="close" onclick="javascript:history.back()">&times;</a>
+        <form action="https://formsubmit.co/50c06c16737dc0ecb0a90d17b7fbd12b" method="POST">
+           <input type="text" name="name" class="text-box" placeholder="Your name" required>
+           <input type="email" name="email" class="text-box" placeholder="Your email" required>
+           <textarea name="comment" id="comment" placeholder="Link to your current channel or web" rows="8"></textarea>
+           <input name="_formsubmit_id" type="text" style="display:none">
+           <input type="hidden" name="_subject" value="New client!">
+           <input type="hidden" name="_next" value="index.html">
+           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_template" value="table">
+           <input type="hidden" name="_next" value="http://crreoco.wwwaz1-ss100.a2hosted.com/index.html">
+           <h3 style="color: #7F7FB9;">We’ll get back to you shortly !</h3>
+           <button class="send-btn" type="submit"><p>Send</p></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <a id="ciao" href="#hero"><img class="logo" src="resources/logo.webp"></a>
+      <div class="links">
+        <a href="index.html"><h4 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Creators</h4></a>
+        <a href="fans.html"><h4 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Fans</h4></a>
+        <a href="#hero" id="ciao"><h4 data-aos="fade-down" data-aos-delay="800" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Plans</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Contact</h4></a>
+        <a href="#"><h4 data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">About</h4></a>
+      </div>
+      <div class="scalebutton" id="header-button">
+        <a href="#popup1">
+          <button data-aos="fade-left" data-aos-duration="2000" data-aos-offset="-15" data-aos-delay="700">
+            <h5><span>Get started</span></h5>
+          </button>
+        </a>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu">
+        <a href="index.html"><h4 class="hover-underline-animation">Creators</h4></a>
+        <a href="fans.html"><h4 class="hover-underline-animation">Fans</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">Plans</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">Contact</h4></a>
+        <a href="#"><h4 class="hover-underline-animation">About</h4></a>
+      </div>
+
+    </div>
+
+    <!-- Content -->
+    <div class="plans_content">
+      <h1>0%</h1>
+      <h2>We do not take a cut of the money you collect from program members.</h2>
+      <h3>That’s right - what you receive from your <br>members is 100% yours.</h3>
+      <p>Credit card processing fee of 2.9% + $ 0.3 per transaction is charged by our card payments provider for transactions that your fans make with a credit card. But good news - there is no transaction fee if your fans pay from their bank account.</p>
+      <h2>Flat and predictable monthly <br>subscription fee</h2>
+      <h3>We are in beta. Let us know if you’re interested to learn more about our growth program features, service tiers and related platform subscription fees.</h3>
+      <center>
+        <a href="#popup1">
+          <button href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
+            <h5>Get started</h5>
+          </button>
+        </a>
+      </center>
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer">
+      <img src="resources/logo.webp">
+      <p>ⓒ 2022 CRREO</p>
+      <p><a href="#">Privacy </a>|<a href="#"> Cookies</a></p>
+    </div>
+
+    <!-- Link to js file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
