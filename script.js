@@ -4,6 +4,19 @@ AOS.init({
   duration: 1100,
 });
 
+// Write html lines
+var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
+if (iOS){
+  $('#mail1').removeAttr("href");
+  document.getElementById("mail1").style.color = "#000075";
+  $('#mail2').removeAttr("href");
+  document.getElementById("mail2").style.color = "#000075";
+  $('#mail3').removeAttr("href");
+  document.getElementById("mail3").style.color = "#000075";
+  $('#mail4').removeAttr("href");
+  document.getElementById("mail4").style.color = "#000075";
+}
+
 // Mobile optimization
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
