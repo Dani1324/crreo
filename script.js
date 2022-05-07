@@ -6,11 +6,19 @@ AOS.init({
 
 // Mobile optimization
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 if (width < 1025) {
-  $(document).ready(function() {
-    $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
-  });
+  if (iOS) {
+    $(document).ready(function() {
+      $("#appear").html('<video autoplay loop muted poster="resources/poster5.webp" id="url-video2" src="resources/video4.mp4"></video>');
+    });
+  }
+  else {
+    $(document).ready(function() {
+      $("#appear").html('<video autoplay loop muted poster="resources/poster4.webp" id="url-video2" src="resources/video4.mp4"></video>');
+    });
+  }
 }
 else {
   $(document).ready(function() {
