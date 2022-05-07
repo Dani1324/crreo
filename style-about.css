@@ -104,7 +104,27 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 
 /* Who we are */
-.who{ width: 81vw; padding: 14vw 9.5vw 0 9.5vw; margin: 0 0 10vw 0; display: flex;}
+.about-intro{ padding-top: 15vw; color: #000075;}
+
+.about-intro h1{
+  font-family: 'Nunito';
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5vw;
+}
+
+.about-intro p{
+  font-family: 'Montserrat';
+  font-size: 1.4vw;
+  text-align: center;
+  line-height: 1.4;
+  width: 60%;
+  margin: 0 20%;
+  font-weight: 300;
+}
+
+.who{ width: 81vw; padding: 12vw 9.5vw 0 9.5vw; margin: 0 0 10vw 0; display: flex;}
 .who .block img{ width: 3vw; margin-bottom: 0.5vw;}
 
 .who .block{
@@ -367,9 +387,24 @@ textarea{
 
 
     /* Who we are */
-    .who{ padding-top: 22vw; margin: 0vw 0 10vw 0; display: block;}
-    .who .block p{ font-size: 3.2vw;}
-    .who .block img{ width: 7vw; margin-bottom: 3vw;}
+    .about-intro{ padding-top: 30vw; color: #000075;}
+
+    .about-intro h1{
+      font-size: 5vw;
+      margin-bottom: 3vw;
+    }
+
+    .about-intro p{
+      font-size: 3.2vw;
+      line-height: 1.4;
+      width: 80%;
+      margin: 0 10%;
+      font-weight: 300;
+    }
+
+    .who{ margin: 0vw 0 10vw 0; display: block;}
+    .who .block p{ font-size: 3.2vw; width: 80vw; text-align: center;}
+    .who .block img{ width: 7vw; margin: 0 36.5vw 3vw 36.5vw;}
 
     .who .block{
       padding: 5vw;
@@ -377,9 +412,9 @@ textarea{
       width: 70vw;
     }
 
-    #right-padding{ padding: 5vw 5vw 5vw 0;}
-    #left-padding{ padding: 5vw 5vw 5vw 0;}
-    #center-padding{ padding: 5vw 5vw 5vw 0;}
+    #right-padding{ padding: 5vw 0vw 5vw 0;}
+    #left-padding{ padding: 5vw 0vw 5vw 0;}
+    #center-padding{ padding: 5vw 0vw 5vw 0;}
 
 
     /* Mission */
