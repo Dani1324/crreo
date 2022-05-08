@@ -136,6 +136,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 .text{
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
   width: 97%;
   padding-right: 3%;
