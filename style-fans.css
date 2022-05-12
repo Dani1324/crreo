@@ -199,8 +199,8 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   background-position: top;
   background-attachment: fixed;
   width: 80vw;
-  padding: 10vw 15vw 10vw 10vw;
-  margin-top: 10vh;
+  padding: 0vw 15vw 10vw 10vw;
+  margin-top: 5vh;
   color: #000075;
 }
 
