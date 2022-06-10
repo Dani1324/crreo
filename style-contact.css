@@ -16,7 +16,7 @@ a{ text-decoration: none; color: #000074; cursor: pointer;}
 /* Header */
 .header{
   width: 80vw;
-  padding: 1.8vh 10vw 1.5vh 10vw;
+  padding: 1vw 10vw 0.8vw 10vw;
   border-bottom: 1.5px solid rgba(235, 232, 229, 1);
   position: fixed;
   top: 0;
