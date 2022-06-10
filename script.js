@@ -234,3 +234,16 @@ function expand(number, subsection, section){
     open[number-1] = "yes";
   }
 }
+
+var expanded = "no";
+
+function expand(){
+  if (expanded == "no") {
+    $(".options").css("height", "27.2vw");
+    expanded = "yes";
+  }
+  else {
+    $(".options").css("height", "11.2vw");
+    expanded = "no";
+  }
+}
