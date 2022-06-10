@@ -110,7 +110,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 
 /* Mail blocks */
-.mail-blocks{ width: 81vw; padding: 14vw 9.5vw 0 9.5vw; margin: 0 0 10vw 0; display: flex;}
+.mail-blocks{ width: 81vw; padding: 14vw 9.5vw 0 9.5vw; display: flex;}
 .mail-blocks a{ color: #0066CC;}
 .mail-blocks a:active {color: #C8102E;}
 
