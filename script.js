@@ -221,10 +221,10 @@ function expand(number, subsection, section){
   if (open[number-1] == "yes") {
     $("#icon" + number + subsection + section).css("transform", "rotateZ(45deg)");
     if (width < 1025) {
-      $("#section" + number + subsection + section).css("height", "3.7vw");
+      $("#section" + number + subsection + section).css("height", "10.6vw");
     }
     else {
-      $("#section" + number + subsection + section).css("height", "1.1vw");
+      $("#section" + number + subsection + section).css("height", "4.5vw");
     }
     open[number-1] = "no";
   }
