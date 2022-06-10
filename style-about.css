@@ -102,6 +102,11 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 .menu{ display: none;}
 
+/* Submenu */
+.submenu{ position: fixed; left: 0; display: flex; width: 20vw; padding: 5vw 40vw 0vw 40vw; background-color: #000075; margin-top: -4vw; transition: 1s;}
+.submenu h6{ padding: 1.3vw 1.5vw 1.3vw 0.5vw; margin-right: 11vw; color: #EBE8E5; font-size: 1.1vw; transition: all 0.12s;}
+.submenu h6:hover{ font-weight: bold;}
+
 
 /* Who we are */
 .about-intro{ padding-top: 15vw; color: #000075;}
@@ -339,6 +344,7 @@ textarea{
 
     .menu a{ color: #fff; width: 0%; display: block; margin: 5vh 0 0 5vw; font-size: 4vw; white-space: nowrap;}
     .menu--open{ right: -35%;}
+    .submenu{ display: none;}
 
     .hamburger{
       display: block;
