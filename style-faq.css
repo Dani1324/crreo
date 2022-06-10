@@ -414,33 +414,33 @@ textarea{
     }
 
     .sub-links{ display: flex; width: 80vw; margin: 4vw auto 12vw auto;}
-    .sub-links a{ margin: 2.5vw 3.6vw;}
+    .sub-links a{ margin: 2.5vw 2.85vw;}
 
     .sub-links p{
-      font-size: 2.5vw;
+      font-size: 2.8vw;
       padding: 0.45vw;
     }
 
 
     /* Sections */
     .section{
-      margin: 0 0vw 2.4vw 0vw;
+      margin: 0 0vw 3vw 0vw;
       padding: 3.4vw 4vw;
       border-radius: 1.7vw;
-      height: 2.2vw;
+      height: 3.7vw;
     }
 
     .section .question h2{
-      font-size: 2.5vw;
+      font-size: 3.2vw;
       width: 97.8%;
-      margin: -0.2vw 0 4.8vw 0;
+      margin: 0vw 0 4.8vw 0;
       line-height: 1.3;
     }
 
     .section .question img{
       width: 3vw;
       height: 3vw;
-      margin-top: -0.3vw;
+      margin-top: 0.5vw;
       transform: rotateZ(45deg);
       transition: all 0.12s;
     }
@@ -636,34 +636,15 @@ textarea{
 
 
   /* Sections */
-  .section{
-    margin: 0 0vw 3vw 0vw;
-    padding: 3.4vw 4vw;
-    border-radius: 1.7vw;
-    height: 2.2vw;
-  }
-
   .section .question h2{
-    font-size: 2.5vw;
-    width: 97.8%;
-    margin: -0.2vw 0 4.8vw 0;
+    font-size: 3.2vw;
+    width: 92%;
+    margin: -0.2vw 3% 4.8vw 0;
     line-height: 1.3;
   }
 
-  .section .question img{
-    width: 3vw;
-    height: 3vw;
-    margin-top: -0.3vw;
-    transform: rotateZ(45deg);
-    transition: all 0.12s;
-  }
-
-  .section p{
-    font-size: 2.1vw;
-    line-height: 1.8;
-  }
-
   .resizetablet{ transform: translateY(-1.9vw);}
+  .resizephone{ transform: translateY(-1.9vw);}
 
 
   /* Footer */

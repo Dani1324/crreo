@@ -226,7 +226,7 @@ function expand(number, subsection, section){
   else if (open == "no") {
     $("#icon" + number + subsection + section).css("transform", "rotateZ(45deg)");
     if (width < 1025) {
-      $("#section" + number + subsection + section).css("height", "2.2vw");
+      $("#section" + number + subsection + section).css("height", "3.7vw");
     }
     else {
       $("#section" + number + subsection + section).css("height", "1.1vw");
