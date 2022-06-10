@@ -429,15 +429,15 @@ textarea{
       margin: 0 0vw 3vw 0vw;
       border-radius: 1.7vw;
       height: 10.6vw;
+      overflow-x: hidden;
     }
 
     .section .question h2{
-      font-size: 3.2vw;
-      width: 78.5%;
+      font-size: 3.1vw;
+      width: 83.5%;
       margin: 0vw 0 4.8vw 0;
       line-height: 1.3;
       padding: 3.4vw 0vw 0.3vw 4vw;
-      overflow-x: hidden;
     }
 
     .section .question img{
@@ -642,8 +642,8 @@ textarea{
 
   /* Sections */
   .section .question h2{
-    font-size: 3.2vw;
-    width: 78.5%;
+    font-size: 3.1vw;
+    width: 82.5%;
     margin: -0.2vw 0 4.8vw 0;
     line-height: 1.3;
   }
