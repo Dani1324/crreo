@@ -25,7 +25,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Altre impostazioni del sito -->
     <title>CRREO | Our plans</title>
-    <link rel="stylesheet" href="style-plans.css">
+    <link rel="stylesheet" href="style-faq.css">
     <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
 
   </head>
@@ -57,11 +57,12 @@
     <div class="header">
       <a id="ciao" href="#plans_content"><img class="logo" src="resources/logo.webp"></a>
       <div class="links">
-        <a href="index.html"><h4 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Creators</h4></a>
-        <a href="fans.html"><h4 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Fans</h4></a>
-        <a href="#plans_content" id="ciao"><h4 data-aos="fade-down" data-aos-delay="800" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Plans</h4></a>
-        <a href="contact.html"><h4 data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Contact</h4></a>
-        <a href="about.html"><h4 data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">About</h4></a>
+        <a href="index.html" class="touch"><h4 data-aos="fade-down" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Creators</h4></a>
+        <a href="fans.html" class="touch"><h4 data-aos="fade-down" data-aos-delay="300" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Fans</h4></a>
+        <a href="plans.html" class="touch"><h4 data-aos="fade-down" data-aos-delay="600" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Plans</h4></a>
+        <a><h4 data-aos="fade-down" data-aos-delay="900" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation" id="move">Resources</h4></a>
+        <a href="contact.html" class="touch"><h4 data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">Contact</h4></a>
+        <a href="about.html" class="touch"><h4 data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">About</h4></a>
       </div>
       <div class="scalebutton" id="header-button">
         <a href="#popup1" onclick="gtag('event', 'sign_up', {'method': 'Plans CTA'});">
@@ -81,28 +82,399 @@
         <a href="index.html"><h4 class="hover-underline-animation">Creators</h4></a>
         <a href="fans.html"><h4 class="hover-underline-animation">Fans</h4></a>
         <a href="plans.html"><h4 class="hover-underline-animation">Plans</h4></a>
+        <a href="faq.html"><h4 class="hover-underline-animation">FAQ</h4></a>
+        <a href="insight.html"><h4 class="hover-underline-animation">Insight</h4></a>
         <a href="contact.html"><h4 class="hover-underline-animation">Contact</h4></a>
         <a href="about.html"><h4 class="hover-underline-animation">About</h4></a>
       </div>
 
     </div>
 
-    <!-- Content -->
-    <div class="plans_content" id="plans_content">
-      <h1 data-aos="zoom-in">0%</h1>
-      <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-offset="-10">We do not take a cut of the money you collect from program members.</h2>
-      <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000" data-aos-offset="-10">That’s right - what you receive from your <br>members is 100% yours.</h3>
-      <p data-aos="fade-up" data-aos-delay="1400" data-aos-duration="2000" data-aos-offset="-10">Credit card processing fee of 2.9% + $ 0.3 per transaction is charged by our card payments provider for transactions that your fans make with a credit card. But good news - there is no transaction fee if your fans pay from their bank account.</p>
-      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">Flat and predictable monthly <br>subscription fee</h2>
-      <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">We are now building the public version. Let us know if you’re interested to learn more about our growth program features, service tiers and related platform subscription fees.</h3>
-      <center>
-        <a href="#popup1" onclick="gtag('event', 'sign_up', {'method': 'Plans CTA'});">
-          <button href="#" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
-            <h5>Get started</h5>
-          </button>
-        </a>
-      </center>
+    <!-- Submenu  -->
+    <div class="submenu">
+      <a href="#content" id="ciao"><h6>FAQ</h6></a>
+      <a><h6>Insight</h6></a>
     </div>
+
+    <!-- Content  -->
+    <div class="content" id="content">
+      <h1 data-aos="zoom-in">Frequently Asked Questions</h1>
+      <div class="buttons">
+        <button type="button" id="btn-1"><p>From creators</p></button>
+        <button type="button" id="btn-2"><p>From fans</p></button>
+      </div>
+      <div class="sub-links">
+        <a id="sbtn-1"><p>CRREO</p></button></a>
+        <a id="sbtn-2"><p>Membership</p></button></a>
+        <a id="sbtn-3"><p>Growth tools</p></button></a>
+        <a id="sbtn-4"><p>Plans</p></button></a>
+      </div>
+
+      <!-- GROUPS  -->
+      <div class="group1">
+        <!-- start sub 1  -->
+        <div class="sub-group1">
+          <div class="section" id="section111" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="-20">
+            <a onclick="expand(1,1,1)">
+              <div class="question">
+                <h2>What is CRREO?</h2>
+                <img src="resources/X.webp" id="icon111">
+              </div>
+              <p>CRREO is a growth platform for creators. We help content creators grow their income, enlarge audience, boost fan engagement, win brand sponsorships, and transform their passion into a successful media profession or business.</p>
+            </a>
+          </div>
+          <div class="section" id="section211" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" data-aos-offset="-20">
+            <a onclick="expand(2,1,1)">
+              <div class="question">
+                <h2>How does CRREO help creators?</h2>
+                <img src="resources/X.webp" id="icon211">
+              </div>
+              <p>CRREO provides creators a unique membership program for their fans, practical growth tools, actionable growth insights, brand sponsorship opportunities, and mentorship from industry leaders. We help creators, and their fans, build more meaningful engagement focused on mutual learning and growth. With CRREO, creators can grow faster.</p>
+            </a>
+          </div>
+          <div class="section" id="section311" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="-20">
+            <a onclick="expand(3,1,1)">
+              <div class="question">
+                <h2>Is CRREO for all creators?</h2>
+                <img src="resources/X.webp" id="icon311">
+              </div>
+              <p>We work with creators active on all major content sharing platforms, such as YouTube, TikTok, Instagram, Twitch, Spotify, Audible and others. CRREO is built for creators who are focused on learning, building capabilities, growing, and scaling.</p>
+            </a>
+          </div>
+          <div class="section" id="section411" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000" data-aos-offset="-20">
+            <a onclick="expand(4,1,1)">
+              <div class="question">
+                <h2>Why should I work with CRREO?</h2>
+                <img src="resources/X.webp" id="icon411">
+              </div>
+              <p>Growing as an independent creator, without the resources, tools and reach that professional media houses have, is hard. CRREO helps individual creators like you supercharge their growth with an innovative program, tools, and insights.</p>
+            </a>
+          </div>
+        </div>
+        <!-- start sub 2  -->
+        <div class="sub-group2">
+          <div class="section" id="section121">
+            <a onclick="expand(1,2,1)">
+              <div class="question">
+                <h2>How will the membership program help me?</h2>
+                <img src="resources/X.webp" id="icon121">
+              </div>
+              <p>The membership program has four main benefits. First, it helps you generate additional earnings from your fans. Second, it lets you share your success back with your fans/members through growing and more exclusive benefits in the program. Third, it boosts engagement among your superfans who want to see you and the program grow. Fourth, the program also gives back to you; you earn more as your program becomes more successful.</p>
+            </a>
+          </div>
+          <div class="section" id="section221">
+            <a onclick="expand(2,2,1)">
+              <div class="question">
+                <h2 class="resizetablet">How is the membership program different from other platforms, like Patreon? </h2>
+                <img src="resources/X.webp" id="icon221">
+              </div>
+              <p>CRREO membership program is focused on growth and active participation – for both you and your superfans. CRREO promotes engagement, collaboration, and co-creation. As you offer an exclusive program that is more than a passive subscription, you can expect more than tiny donations. CRREO is the only program that allows fans to be part of your success and growth.</p>
+            </a>
+          </div>
+          <div class="section" id="section321">
+            <a onclick="expand(3,2,1)">
+              <div class="question">
+                <h2>How do I setup and run the program?</h2>
+                <img src="resources/X.webp" id="icon321">
+              </div>
+              <p>We’ll provide you with tools to setup the program easily. You’ll start with structuring or uploading member content and benefits. We’ll make it easy for you to transfer your content. Next you launch the program and offer it to your fans. As the program runs, you’ll focus on growing the program by adding content or benefits and engaging with your members.</p>
+            </a>
+          </div>
+          <div class="section" id="section421">
+            <a onclick="expand(4,2,1)">
+              <div class="question">
+                <h2>What content do I need to prepare for the program?</h2>
+                <img src="resources/X.webp" id="icon421">
+              </div>
+              <p>CRREO program is flexible and it’s up to you to design a unique experience for your members. The program can include exclusive content, tools or assets for members, exclusive brand promotions, member surveys/voting on your future content, virtual club room, personal interactions with you, or more.</p>
+            </a>
+          </div>
+          <div class="section" id="section521">
+            <a onclick="expand(5,2,1)">
+              <div class="question">
+                <h2 class="resizetablet">Do I retain the ownership of the content I prepare for the program?</h2>
+                <img src="resources/X.webp" id="icon521">
+              </div>
+              <p>Yes, absolutely. Neither CRREO nor program members have any claim on content you prepare for your program.</p>
+            </a>
+          </div>
+          <div class="section" id="section621">
+            <a onclick="expand(6,2,1)">
+              <div class="question">
+                <h2>How do I make the program exciting for my fans?</h2>
+                <img src="resources/X.webp" id="icon621">
+              </div>
+              <p>Your superfans are joining the program because they already love your content. They want to actively participate, get direct engagement with you, and build a live community around you and your content.</p>
+            </a>
+          </div>
+          <div class="section" id="section721">
+            <a onclick="expand(7,2,1)">
+              <div class="question">
+                <h2>How much time will it take from me? Is it worth it?</h2>
+                <img src="resources/X.webp" id="icon721">
+              </div>
+              <p>The program will not distract you from your focus on content creation. However, the more love you give the program the better and faster growing community you build. Every minute you invest into the program helps accelerate your growth.</p>
+            </a>
+          </div>
+          <div class="section" id="section821">
+            <a onclick="expand(8,2,1)">
+              <div class="question">
+                <h2 class="resizetablet">I already have a Patreon account. Will my fans be ready for another membership program?</h2>
+                <img src="resources/X.webp" id="icon821">
+              </div>
+              <p>Yes. The value your fans get from CRREO is different. CRREO is made for superfans who look for an opportunity to participate and support you in your growth, co-create with you, engage with other members on a shared topic, and join an active community around you and a common topic or mission.</p>
+            </a>
+          </div>
+          <div class="section" id="section921">
+            <a onclick="expand(9,2,1)">
+              <div class="question">
+                <h2>How do I introduce the program to my fans?</h2>
+                <img src="resources/X.webp" id="icon921">
+              </div>
+              <p>CRREO provides tools to help you easily create intro messages and communicate to your fans. You can add the program introduction to your video, audio, photo or text-based streams.</p>
+            </a>
+          </div>
+          <div class="section" id="section1021">
+            <a onclick="expand(10,2,1)">
+              <div class="question">
+                <h2>How do I receive the money from CRREO?</h2>
+                <img src="resources/X.webp" id="icon1021">
+              </div>
+              <p>You can setup a one time or regular transfer to your bank account.</p>
+            </a>
+          </div>
+          <div class="section" id="section1121">
+            <a onclick="expand(11,2,1)">
+              <div class="question">
+                <h2>What cut will CRREO take from my earnings?</h2>
+                <img src="resources/X.webp" id="icon1121">
+              </div>
+              <p>None. That’s right. Unlike other platforms, CRREO does not take a cut from the income you generate from your membership program. Our card payments provider, however, charges 2.9% on credit card payments your fans make. There is no fee charged on payments your fans make directly from their bank account.<br>CRREO charges a small monthly subscription fee for your participation in CRREO growth program. For details see Plans section on our website.</p>
+            </a>
+          </div>
+          <div class="section" id="section1221">
+            <a onclick="expand(12,2,1)">
+              <div class="question">
+                <h2>How are my earnings taxed?</h2>
+                <img src="resources/X.webp" id="icon1221">
+              </div>
+              <p>In most US jurisdictions, earnings from CRREO will be recognized as regular income (or revenue if you’re a business) and be taxable. CRREO will issue you 1099-K each calendar year when you pass a threshold set by the IRS.</p>
+            </a>
+          </div>
+          <div class="section" id="section1321">
+            <a onclick="expand(13,2,1)">
+              <div class="question">
+                <h2>What happens if a member wants to leave the program?</h2>
+                <img src="resources/X.webp" id="icon1321">
+              </div>
+              <p>Members can leave the program at any time. Their access to the program will end by the end of the month they cancel.</p>
+            </a>
+          </div>
+          <div class="section" id="section1421">
+            <a onclick="expand(14,2,1)">
+              <div class="question">
+                <h2 class="resizetablet">What if I have other questions or want to see the membership program in detail?</h2>
+                <img src="resources/X.webp" id="icon1421">
+              </div>
+              <p>Contact us at info@crreo.co and we will walk you through the specifics.</p>
+            </a>
+          </div>
+        </div>
+        <!-- start sub 3  -->
+        <div class="sub-group3">
+          <div class="section" id="section131">
+            <a onclick="expand(1,3,1)">
+              <div class="question">
+                <h2>So how can CRREO help me grow?</h2>
+                <img src="resources/X.webp" id="icon131">
+              </div>
+              <p>Besides the membership program that helps boost your income and fan engagement, CRREO offers a set of creator growth tools. Use our Analytics and Insights tool to get practical recommendations on growth levers. Use Earnings Optimizer to maximize your monetization. Boost your audience with Automated Promotion Advisor. Get personal recommendations and coaching from a network of CRREO experts.</p>
+            </a>
+          </div>
+          <div class="section" id="section231">
+            <a onclick="expand(2,3,1)">
+              <div class="question">
+                <h2 class="resizetablet">What insights will I get from the analytics tool? Is it any good?</h2>
+                <img src="resources/X.webp" id="icon231">
+              </div>
+              <p>As an example, for YouTube creators, the Analytics and Insights tool provides recommendations on video content selection, video and audio quality, thumbnails branding, video titles, playlist composition, video release schedule, subscriber engagement, subscribe link, tags usage, link to other channels, and more.</p>
+            </a>
+          </div>
+          <div class="section" id="section331">
+            <a onclick="expand(3,3,1)">
+              <div class="question">
+                <h2>Will the insights help me earn more?</h2>
+                <img src="resources/X.webp" id="icon331">
+              </div>
+              <p>Yes. CRREO growth tools aim to help you grow your audience and engagement. As a result, your earnings will also grow.</p>
+            </a>
+          </div>
+          <div class="section" id="section431">
+            <a onclick="expand(4,3,1)">
+              <div class="question">
+                <h2>Will I learn new things?</h2>
+                <img src="resources/X.webp" id="icon431">
+              </div>
+              <p>Absolutely. CRREO insights and coaching help you grow and build new skills.</p>
+            </a>
+          </div>
+          <div class="section" id="section531">
+            <a onclick="expand(5,3,1)">
+              <div class="question">
+                <h2>Will I get practical suggestions?</h2>
+                <img src="resources/X.webp" id="icon531">
+              </div>
+              <p>We designed CRREO to provide practical and actionable insights and recommendations that directly translate to tangible results.</p>
+            </a>
+          </div>
+          <div class="section" id="section631">
+            <a onclick="expand(6,3,1)">
+              <div class="question">
+                <h2>Will I get any 1on1 and personalized advice?</h2>
+                <img src="resources/X.webp" id="icon631">
+              </div>
+              <p>Some CRREO plans give you access to personal coaching from other successful creators or industry experts.</p>
+            </a>
+          </div>
+        </div>
+        <!-- start sub 4  -->
+        <div class="sub-group4">
+          <div class="section" id="section141">
+            <a onclick="expand(1,4,1)">
+              <div class="question">
+                <h2>How do I join CRREO?</h2>
+                <img src="resources/X.webp" id="icon141">
+              </div>
+              <p>Fill a simple form at www.crreo.co or email us at support@crreo.co and we’ll get you started.</p>
+            </a>
+          </div>
+          <div class="section" id="section241">
+            <a onclick="expand(2,4,1)">
+              <div class="question">
+                <h2>How much does CRREO cost?</h2>
+                <img src="resources/X.webp" id="icon241">
+              </div>
+              <p>All our plans are based on a flat and predictable subscription fee. There are no hidden fees or surprises. Unlike other platforms, we do not take a cut of the money you collect from program members. For an overview, please see Plans section on our website.</p>
+            </a>
+          </div>
+          <div class="section" id="section341">
+            <a onclick="expand(3,4,1)">
+              <div class="question">
+                <h2>How can I join the pilot?</h2>
+                <img src="resources/X.webp" id="icon341">
+              </div>
+              <p>We are building the pilot features now. Let us know if you’re interested in being part of the initial pilot group.</p>
+            </a>
+          </div>
+          <div class="section" id="section441">
+            <a onclick="expand(4,4,1)">
+              <div class="question">
+                <h2>Can I cancel any time?</h2>
+                <img src="resources/X.webp" id="icon441">
+              </div>
+              <p>Yes, you can cancel any time.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- GROUPS  -->
+      <div class="group2">
+        <!-- start sub 5  -->
+        <div class="sub-group5">
+          <div class="section" id="section152">
+            <a onclick="expand(1,5,2)">
+              <div class="question">
+                <h2>What is CRREO membership?</h2>
+                <img src="resources/X.webp" id="icon152">
+              </div>
+              <p>CRREO membership is the only program for fans like you to be part of creators' success story. With CRREO membership program, you can join forces with your favorite creator, get access to exclusive benefits and rewards, collaborate and help the creator and the community succeed. With CRREO you can be part of a mission.</p>
+            </a>
+          </div>
+          <div class="section" id="section252">
+            <a onclick="expand(2,5,2)">
+              <div class="question">
+                <h2>What will I get from the program?</h2>
+                <img src="resources/X.webp" id="icon252">
+              </div>
+              <p>You will enjoy club-like benefits, such as exclusive content from the creator, digital tools or assets, member-only brand deals, content voting, virtual club room, one-on-one chats with the creator, and more. You’ll be able to interact with a community centered around your favorite creator and topic.</p>
+            </a>
+          </div>
+          <div class="section" id="section352">
+            <a onclick="expand(3,5,2)">
+              <div class="question">
+                <h2>Why should I pay?</h2>
+                <img src="resources/X.webp" id="icon352">
+              </div>
+              <p>Your sponsorship and contributions are used by the creator to fund and grow the program. As the program grows you will see your benefits and rewards grow too.</p>
+            </a>
+          </div>
+          <div class="section" id="section452">
+            <a onclick="expand(4,5,2)">
+              <div class="question">
+                <h2>I am already a patron, how is this different?</h2>
+                <img src="resources/X.webp" id="icon452">
+              </div>
+              <p>The value you get from CRREO is different. CRREO is made for fans who want to participate and support the growth of a favorite creator, co-create together with them, and join an active community around the creator, a topic, or a mission.  CRREO is the only program that allows fans to be part of creators’ success story.</p>
+            </a>
+          </div>
+          <div class="section" id="section552">
+            <a onclick="expand(5,5,2)">
+              <div class="question">
+                <h2>How do I participate and help the creator?</h2>
+                <img src="resources/X.webp" id="icon552">
+              </div>
+              <p>You can make real difference by becoming a true active participant in the program. Help the creator select the right content. Help suggest new topics. Help co-create content. Offer your expertise. Help promote the content or mission in your network. Engage with the community and help other members.</p>
+            </a>
+          </div>
+          <div class="section" id="section652">
+            <a onclick="expand(6,5,2)">
+              <div class="question">
+                <h2>Can I be just a passive member?</h2>
+                <img src="resources/X.webp" id="icon652">
+              </div>
+              <p>While the program is built for active members, yes you can take a break and go with the flow. You can re-engage when you’re ready.</p>
+            </a>
+          </div>
+          <div class="section" id="section752">
+            <a onclick="expand(7,5,2)">
+              <div class="question">
+                <h2>Do my financial contributions go to the creator?</h2>
+                <img src="resources/X.webp" id="icon752">
+              </div>
+              <p>Yes, all money from fans go directly to the creator. Unlike other platforms, CRREO does not take a cut from your payments to the creator.</p>
+            </a>
+          </div>
+          <div class="section" id="section852">
+            <a onclick="expand(8,5,2)">
+              <div class="question">
+                <h2>How can I pay?</h2>
+                <img src="resources/X.webp" id="icon852">
+              </div>
+              <p>You can pay securely from your bank account via ACH which is free of charge. You can also pay with a credit card. However, credit card payments result in a 2.9% fee deducted from your payment (this is charged by our card payments provider).</p>
+            </a>
+          </div>
+          <div class="section" id="section952">
+            <a onclick="expand(9,5,2)">
+              <div class="question">
+                <h2>What if I no longer want to be part of a creator’s program?</h2>
+                <img src="resources/X.webp" id="icon952">
+              </div>
+              <p>You can cancel your membership any time.</p>
+            </a>
+          </div>
+          <div class="section" id="section1052">
+            <a onclick="expand(10,5,2)">
+              <div class="question">
+                <h2>Can I open my own program?</h2>
+                <img src="resources/X.webp" id="icon1052">
+              </div>
+              <p>Yes. If you are a content creator with your own audience and want to grow, let us know and we will get you launched.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Footer  -->
     <div class="footer">

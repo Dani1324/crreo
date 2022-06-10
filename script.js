@@ -122,3 +122,115 @@ $("a#ciao").on('click', function(event) {
     });
   }
 });
+
+
+// Submenu
+$(".group2").css("display", "none");
+$(".sub-group2").css("display", "none");
+$(".sub-group3").css("display", "none");
+$(".sub-group4").css("display", "none");
+
+$("#move").hover( function(){
+  $(".submenu").css("margin-top", "0vw");
+}, function(){
+  $(".touch").hover( function(){
+    $(".submenu").css("margin-top", "-4vw");
+  })
+  $(".content").hover( function(){
+    $(".submenu").css("margin-top", "-4vw");
+  })
+});
+
+
+// FAQ buttons
+$("#btn-1").click( function(){
+  $("#btn-1").css("background-color", "#000075");
+  $("#btn-1").css("color", "#EBE8E5");
+  $("#btn-2").css("background-color", "#EBE8E5");
+  $("#btn-2").css("color", "#000075");
+  $("#sbtn-1").css("display", "block");
+  $("#sbtn-2").css("display", "block");
+  $("#sbtn-3").css("display", "block");
+  $("#sbtn-4").css("display", "block");
+  $(".group2").css("display", "none");
+  $(".group1").css("display", "block");
+})
+
+$("#btn-2").click( function(){
+  $("#btn-2").css("background-color", "#000075");
+  $("#btn-2").css("color", "#EBE8E5");
+  $("#btn-1").css("background-color", "#EBE8E5");
+  $("#btn-1").css("color", "#000075");
+  $("#sbtn-1").css("display", "none");
+  $("#sbtn-2").css("display", "none");
+  $("#sbtn-3").css("display", "none");
+  $("#sbtn-4").css("display", "none");
+  $(".group1").css("display", "none");
+  $(".group2").css("display", "block");
+})
+
+$("#sbtn-1").click( function(){
+  $("#sbtn-1").css("border-bottom", "0.95px solid #000075");
+  $("#sbtn-2").css("border-bottom", "0px");
+  $("#sbtn-3").css("border-bottom", "0px");
+  $("#sbtn-4").css("border-bottom", "0px");
+  $(".sub-group1").css("display", "block");
+  $(".sub-group2").css("display", "none");
+  $(".sub-group3").css("display", "none");
+  $(".sub-group4").css("display", "none");
+})
+
+$("#sbtn-2").click( function(){
+  $("#sbtn-1").css("border-bottom", "0px");
+  $("#sbtn-2").css("border-bottom", "0.95px solid #000075");
+  $("#sbtn-3").css("border-bottom", "0px");
+  $("#sbtn-4").css("border-bottom", "0px");
+  $(".sub-group1").css("display", "none");
+  $(".sub-group2").css("display", "block");
+  $(".sub-group3").css("display", "none");
+  $(".sub-group4").css("display", "none");
+})
+
+$("#sbtn-3").click( function(){
+  $("#sbtn-1").css("border-bottom", "0px");
+  $("#sbtn-2").css("border-bottom", "0px");
+  $("#sbtn-3").css("border-bottom", "0.95px solid #000075");
+  $("#sbtn-4").css("border-bottom", "0px");
+  $(".sub-group1").css("display", "none");
+  $(".sub-group2").css("display", "none");
+  $(".sub-group3").css("display", "block");
+  $(".sub-group4").css("display", "none");
+})
+
+$("#sbtn-4").click( function(){
+  $("#sbtn-2").css("border-bottom", "0px");
+  $("#sbtn-3").css("border-bottom", "0px");
+  $("#sbtn-1").css("border-bottom", "0px");
+  $("#sbtn-4").css("border-bottom", "0.95px solid #000075");
+  $(".sub-group1").css("display", "none");
+  $(".sub-group2").css("display", "none");
+  $(".sub-group3").css("display", "none");
+  $(".sub-group4").css("display", "block");
+})
+
+
+// Questions
+var open ="no";
+
+function expand(number, subsection, section){
+  if (open == "yes") {
+    $("#icon" + number + subsection + section).css("transform", "rotateZ(90deg)");
+    $("#section" + number + subsection + section).css("height", "auto");
+    open = "no";
+  }
+  else if (open == "no") {
+    $("#icon" + number + subsection + section).css("transform", "rotateZ(45deg)");
+    if (width < 1025) {
+      $("#section" + number + subsection + section).css("height", "2.2vw");
+    }
+    else {
+      $("#section" + number + subsection + section).css("height", "1.1vw");
+    }
+    open = "yes";
+  }
+}
