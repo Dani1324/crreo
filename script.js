@@ -239,11 +239,22 @@ var expanded = "no";
 
 function expand(){
   if (expanded == "no") {
-    $(".options").css("height", "27.2vw");
+    if (width < 768) {
+      $(".options").css("height", "36.2vw");
+    }
+    else {
+      $(".options").css("height", "27.2vw");
+    }
+
     expanded = "yes";
   }
   else {
-    $(".options").css("height", "11.2vw");
+    if (width < 768) {
+      $(".options").css("height", "15.2vw");
+    }
+    else {
+      $(".options").css("height", "11.2vw");
+    }
     expanded = "no";
   }
 }
