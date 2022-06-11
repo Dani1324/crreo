@@ -4,6 +4,7 @@ AOS.init({
   duration: 1100,
 });
 
+
 // Mobile optimization
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -257,8 +258,19 @@ function expand2(){
   }
 }
 
-function resetarray(){
-  for (var i = 0; i < open.length; i++) {
+function resetarray(subsection){
+  for (var i = 0; i < 15; i++) {
+
+    $("#icon" + i + subsection + 1).css("transform", "rotateZ(45deg)");
+    $("#icon" + i + subsection + 2).css("transform", "rotateZ(45deg)");
+    if (width < 1025) {
+      $("#section" + i + subsection + 1).css("height", "10.6vw");
+      $("#section" + i + subsection + 2).css("height", "10.6vw");
+    }
+    else {
+      $("#section" + i + subsection + 1).css("height", "4.5vw");
+      $("#section" + i + subsection + 2).css("height", "4.5vw");
+    }
     open[i]="no";
   }
 }
