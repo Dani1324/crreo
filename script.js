@@ -213,7 +213,6 @@ $("#sbtn-4").click( function(){
   $(".sub-group4").css("display", "block");
 })
 
-
 // Questions
 var open = ["no","no","no","no","no","no","no","no","no","no","no","no","no","no"];
 
@@ -256,4 +255,8 @@ function expand2(){
     }
     expanded = "no";
   }
+}
+
+function resetarray(){
+  var open = ["no","no","no","no","no","no","no","no","no","no","no","no","no","no"];
 }
