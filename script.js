@@ -237,7 +237,7 @@ function expand(number, subsection, section){
 
 var expanded = "no";
 
-function expand(){
+function expand2(){
   if (expanded == "no") {
     if (width < 768) {
       $(".options").css("height", "36.2vw");
@@ -245,7 +245,6 @@ function expand(){
     else {
       $(".options").css("height", "27.2vw");
     }
-
     expanded = "yes";
   }
   else {

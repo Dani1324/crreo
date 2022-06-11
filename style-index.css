@@ -596,7 +596,7 @@ textarea{
     .options .main-option h5{ font-size: 4vw; margin-right: 2vw;}
 
     .options a{ font-size: 3.3vw; margin: 2vw 0 0 6.5vw;}
-    .options a h6{ color: #000075;}
+    .options a h6{ color: #000075; font-weight: 200;}
 
     .hamburger{
       display: block;
@@ -1324,7 +1324,7 @@ textarea{
   .options .main-option h5{ font-size: 5.8vw; margin-right: 2vw;}
 
   .options a{ margin: 2vw 0 0 6.5vw;}
-  .options a h6{ color: #000075; font-size: 4.5vw;}
+  .options a h6{ color: #000075; font-size: 4.5vw; font-weight: 200;}
 
 
   /* Footer */
