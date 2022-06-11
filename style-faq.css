@@ -164,6 +164,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   border-radius: 0.8vw;
   overflow-y: hidden;
   height: 4.5vw;
+  overflow: hidden !important;
 }
 
 .question{ display: flex;}
@@ -171,9 +172,9 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 .section .question h2{
   font-family: 'Nunito';
   font-size: 1.2vw;
-  width: 97.8%;
+  width: 90.8%;
   margin-bottom: 2vw;
-  padding: 1.7vw 2vw 0 2vw;
+  padding: 1.7vw 0vw 0 2vw;
 }
 
 .section .question img{
