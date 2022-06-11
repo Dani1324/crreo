@@ -258,5 +258,7 @@ function expand2(){
 }
 
 function resetarray(){
-  open = ["no","no","no","no","no","no","no","no","no","no","no","no","no","no"];
+  for (var i = 0; i < open.length; i++) {
+    open[i]="no";
+  }
 }
