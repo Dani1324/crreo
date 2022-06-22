@@ -649,7 +649,7 @@ textarea{
   }
 
   .options{ height: 15.2vw; overflow: hidden; transition: 0.5s;}
-  .options .main-option{ display: flex; margin: 10vw 0 5vw 4.95vw;}
+  .options .main-option{ display: flex; margin: 9vw 0 5vw 4.95vw;}
   .options .main-option h5{ font-size: 5.8vw; margin-right: 2vw;}
 
   .options a{ margin: 2vw 0 0 6.5vw;}
