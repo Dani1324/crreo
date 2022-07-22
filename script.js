@@ -239,7 +239,7 @@ var expanded = "no";
 
 function expand2(){
   if (expanded == "no") {
-    if (width < 768) {
+    if (width < 800) {
       $(".options").css("height", "36.2vw");
     }
     else {
@@ -248,7 +248,7 @@ function expand2(){
     expanded = "yes";
   }
   else {
-    if (width < 768) {
+    if (width < 800) {
       $(".options").css("height", "15.2vw");
     }
     else {
