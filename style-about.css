@@ -168,7 +168,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
 
 
 /* Core principles */
-.principles{ width: 51vw; margin: 0 24.5vw; color: #000075;}
+.principles{ width: 43vw; margin: 0 28.5vw; color: #000075;}
 .principles .block{ display: flex; margin-bottom: 4vw;}
 
 .principles h1{
@@ -462,7 +462,7 @@ textarea{
     .principles h3{
       font-size: 4.2vw;
       margin-right: 7vw;
-      transform: translateY(4vw);
+      transform: translateY(2vw);
     }
 
     .principles h2{
