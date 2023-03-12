@@ -942,11 +942,11 @@ footer p {
 
   /* Swiper2 */
   .swiper1, .swiper2, .swiper3, .swiper4 {
-    width: 88vw;
+    width: 94vw;
     height: 70vw;
-    margin: 0 6vw 0vw 6vw;
+    margin: 0 0vw 0vw 6vw;
   }
-  
+
 
   /* Subscription */
   .subscription {

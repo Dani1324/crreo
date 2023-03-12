@@ -922,6 +922,7 @@ footer p {
 
   .value__carousel .carousel-inner {
     height: 48vw;
+    padding-left: 6vw;
   }
 
   .value__carousel .carousel-inner .card {
@@ -942,15 +943,10 @@ footer p {
 
   /* Swiper2 */
   .swiper1, .swiper2, .swiper3, .swiper4 {
-    width: 88vw;
+    width: 100vw;
     height: 70vw;
-    margin: 0 6vw 0vw 6vw;
+    margin: 0vw;
   }
-
-  #c1, #c2, #c3, #c4 {
-    overflow: visible;
-  }
-
 
   /* Subscription */
   .subscription {
