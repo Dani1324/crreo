@@ -927,9 +927,6 @@ footer p {
 
   .value__carousel .carousel-inner .card {
     width: 80vw;
-  }
-
-  .value__carousel .carousel-inner .card:first-child{
     padding-left: 6vw;
   }
 

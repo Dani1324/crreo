@@ -57,7 +57,7 @@ if (width < 1025) {
 
   var swiper1 = new Swiper(".value__carousel", {
     slidesPerView: "auto",
-    spaceBetween: (width/20),
+    spaceBetween: (0),
   });
 }
 else{
