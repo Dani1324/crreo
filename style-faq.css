@@ -145,7 +145,7 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   margin-top: -0.7vw;
 }
 
-.sub-links{ display: flex; width: 40vw; margin: 0 auto 3vw auto;}
+.sub-links{ display: flex; width: 50vw; margin: 0 auto 3vw auto;}
 .sub-links a{ margin: 2.5vw 1.8vw;}
 
 .sub-links p{
@@ -424,11 +424,11 @@ textarea{
       margin-top: -1.6vw;
     }
 
-    .sub-links{ display: flex; width: 80vw; margin: 4vw auto 12vw auto;}
+    .sub-links{ display: flex; width: 95vw; margin: 4vw auto 12vw auto;}
     .sub-links a{ margin: 2.5vw 2.85vw;}
 
     .sub-links p{
-      font-size: 2.8vw;
+      font-size: 2.2vw;
       padding: 0.45vw;
     }
 
@@ -644,7 +644,7 @@ textarea{
   .sub-links a{ margin: 2.5vw 2.88vw;}
 
   .sub-links p{
-    font-size: 2.8vw;
+    font-size: 2.2vw;
     padding: 0.45vw;
   }
 

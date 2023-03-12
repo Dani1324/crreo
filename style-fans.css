@@ -136,10 +136,11 @@ button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.
   color: #000074;
   font-family: 'Montserrat';
   font-size: 1.62vw;
-  font-weight: 200;
+  font-weight: 220;
+  line-height: 2.1vw;
   padding-top: 2.94vw;
   margin-bottom: 9vh;
-  width: 100%;
+  width: 95%;
   display: flex;
 }
 
@@ -533,6 +534,7 @@ textarea{
     #subtitle{
       color: #000074;
       font-size: 3.4vw;
+      line-height: 4vw;
       padding-top: 5vw;
       margin-bottom: 8vh;
       text-shadow: rgba(255, 255, 255, 0.1) 0px 3px 15px;
@@ -845,8 +847,9 @@ textarea{
   #subtitle{
     color: #000075;
     font-size: 3.8vw;
+    line-height: 4vw;
     padding-top: 5vw;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
     text-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
   }
 

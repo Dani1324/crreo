@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
   <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P09G1L4LWW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P09G1L4LWW');
-    </script>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0W3CYC1ZZ');
+  gtag('config', 'AW-11071657082');
+</script>
+
+<!-- Hotjar Tracking Code for https://crreo.co -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3322378,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
@@ -28,31 +43,18 @@
     <link rel="stylesheet" href="style-faq.css">
     <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
 
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '301695');
+</script>
+<!-- End MailerLite Universal -->
   </head>
+
   <body>
-
-    <!-- Popup -->
-    <div id="popup1" class="overlay">
-      <div class="popup">
-        <h2>To get started, let us know a bit about you</h2>
-        <h3>We’ll get you launched as soon as we can.</h3>
-        <a class="close" onclick="javascript:history.back()">&times;</a>
-        <form action="https://formsubmit.co/05a475cbab3bf6f7401df5a441aff4de" method="POST">
-           <input type="text" name="name" class="text-box" placeholder="Your name" required>
-           <input type="email" name="email" class="text-box" placeholder="Your email" required>
-           <textarea name="comment" id="comment" placeholder="Link to your current channel or web" rows="8"></textarea>
-           <input name="_formsubmit_id" type="text" style="display:none">
-           <input type="hidden" name="_subject" value="New client!">
-           <input type="hidden" name="_next" value="index.html">
-           <input type="hidden" name="_captcha" value="false">
-           <input type="hidden" name="_template" value="table">
-           <input type="hidden" name="_next" value="https://crreo.github.io/web/faq.html">
-           <h3 style="color: #7F7FB9;">We’ll get back to you shortly !</h3>
-           <button class="send-btn" type="submit"><p>Send</p></button>
-        </form>
-      </div>
-    </div>
-
     <!-- Header -->
     <div class="header">
       <a id="ciao" href="#content"><img class="logo" src="resources/logo.webp"></a>
@@ -65,11 +67,11 @@
         <a href="about.html" class="touch"><h4 data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1200" data-aos-offset="-50" class="hover-underline-animation">About</h4></a>
       </div>
       <div class="scalebutton" id="header-button">
-        <a href="#popup1" onclick="gtag('event', 'sign_up', {'method': 'Plans CTA'});">
-          <button data-aos="fade-left" data-aos-duration="2000" data-aos-offset="-15" data-aos-delay="700" >
+        <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'P90v59', true); gtag('event', 'sign_up', {'method': 'FAQ CTA'});">
+          <button data-aos="fade-left" data-aos-duration="2000" data-aos-offset="-15" data-aos-delay="700">
             <h5><span>Get started</span></h5>
-          </button>
-        </a>
+          </button> 
+        </a>        
       </div>
 
       <div class="hamburger">
@@ -111,7 +113,7 @@
       </div>
       <div class="sub-links">
         <a id="sbtn-1" onclick="resetarray(1)"><p>CRREO</p></button></a>
-        <a id="sbtn-2" onclick="resetarray(2)"><p>Membership</p></button></a>
+        <a id="sbtn-2" onclick="resetarray(2)"><p>Membership program</p></button></a>
         <a id="sbtn-3" onclick="resetarray(3)"><p>Growth tools</p></button></a>
         <a id="sbtn-4" onclick="resetarray(4)"><p>Plans</p></button></a>
       </div>
@@ -485,12 +487,13 @@
     <!-- Footer  -->
     <div class="footer">
       <img src="resources/logo.webp">
-      <p>ⓒ 2022 CRREO</p>
+      <p>ⓒ 2023 CRREO</p>
       <p><a href="privacy.html">Privacy </a>|<a href="cookies.html"> Cookies</a></p>
     </div>
 
     <!-- Link to js file -->
     <script src="script.js"></script>
+
 
 </body>
 </html>
