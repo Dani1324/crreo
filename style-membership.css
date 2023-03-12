@@ -861,6 +861,7 @@ footer p {
     margin: 8vw auto 22vw auto;
     padding: 3vw 6vw;
     border-radius: 10vw;
+    border: 0.2vw solid #C8102E;
   }
 
   .cta h5 {
