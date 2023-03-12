@@ -918,7 +918,7 @@ footer p {
   .value__carousel {
     margin-top: 7vw;
     height: 65vw;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .value__carousel .carousel-inner {
