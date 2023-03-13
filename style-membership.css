@@ -269,7 +269,7 @@ button {
   padding-left: 0vw;
   height: 27vw;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .value__carousel::-webkit-scrollbar {
@@ -289,6 +289,14 @@ button {
   position: absolute;
   top: 0;
   height: 26vw;
+}
+
+.value__carousel .carousel-inner .card:last-child {
+  padding-right: 11vw;
+}
+
+.value__carousel .carousel-inner .card:first-child {
+  padding-left: 11vw;
 }
 
 #c1, #c2, #c3, #c4 {
@@ -448,11 +456,11 @@ button {
 
 /* Swiper2 */
 .swiper1, .swiper2, .swiper3, .swiper4{
-  width: 78vw;
+  width: 100vw;
   height: 25vw;
   cursor: pointer;
-  margin: 0 11vw 5vw 11vw;
-  overflow: visible;
+  margin: 0 0vw 5vw 0vw;
+  overflow-x: hidden;
 }
 
 
@@ -925,9 +933,13 @@ footer p {
     height: 48vw;
   }
 
+  .value__carousel .carousel-inner .card:first-child {
+    padding-left: 0vw;
+  }
+
   .value__carousel .carousel-inner .card {
     width: 80vw;
-    padding-left: 6vw;
+    padding-left: 6vw !important;
   }
 
   .value__carousel .carousel-inner .card:last-child {
