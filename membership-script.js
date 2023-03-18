@@ -14,69 +14,6 @@ $("a.smooth").on('click', function(event) {
   }
 });
 
-// Carousel loop animation
-var carousel = document.querySelector('.carousel-inner');
-
-setInterval(function() {
-  carousel.classList.add('animate');
-}, 0);
-
-
-// Value animation
-document.getElementById("value-btn-1").classList.add('selected-value');
-document.getElementById("c1").classList.add('selected-carousel');
-
-function value1(n) {
-  // Button
-  document.getElementById("value-btn-1").classList.remove('selected-value');
-  document.getElementById("value-btn-2").classList.remove('selected-value');
-  document.getElementById("value-btn-3").classList.remove('selected-value');
-  document.getElementById("value-btn-4").classList.remove('selected-value');
-  document.getElementById(`value-btn-${n}`).classList.add('selected-value');
-
-  // Carousel
-  document.getElementById("c1").classList.remove('selected-carousel');
-  document.getElementById("c2").classList.remove('selected-carousel');
-  document.getElementById("c3").classList.remove('selected-carousel');
-  document.getElementById("c4").classList.remove('selected-carousel');
-  document.getElementById(`c${n}`).classList.add('selected-carousel');
-};
-
-
-// Swiper settings
-if (width < 1025) {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.4,
-    centeredSlides: true,
-    spaceBetween: (width/8.5),
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  var swiper1 = new Swiper(".value__carousel", {
-    slidesPerView: "auto",
-    spaceBetween: (0),
-  });
-}
-else{
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "1.67",
-    centeredSlides: true,
-    spaceBetween: 200,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  var swiper1 = new Swiper(".value__carousel", {
-    slidesPerView: "auto",
-    spaceBetween: 35,
-  });
-}
-
 
 // Mobile menu
 document.addEventListener("DOMContentLoaded", function() {
@@ -127,7 +64,6 @@ function lazyLoad() {
 
   const observer = new IntersectionObserver(onIntersection, options);
 
-  // Separare le immagini presenti nella schermata dall'utente dalle altre
   const visibleImages = [];
   const hiddenImages = [];
   images.forEach(image => {
@@ -139,7 +75,6 @@ function lazyLoad() {
     }
   });
 
-  // Caricare prima le immagini presenti nella schermata e poi le altre
   visibleImages.forEach(image => {
     image.src = image.dataset.src;
     loadedCount++;
@@ -151,3 +86,71 @@ function lazyLoad() {
 }
 
 window.addEventListener('DOMContentLoaded', lazyLoad);
+
+
+// Fee calculator
+var feeMenu = document.querySelector("#options");
+var option1 = document.querySelector("#opt-1");
+var option2 = document.querySelector("#opt-2");
+var option3 = document.querySelector("#opt-3");
+var fee = document.querySelector("#fee");
+
+option1.classList.add('selected-option');
+
+feeMenu.addEventListener('click', function(){
+  feeMenu.classList.toggle("fee-menu-selected");
+});
+
+option1.addEventListener('click', function(){
+  fee.innerText = '8%';
+  option1.classList.add('selected-option');
+  option2.classList.remove('selected-option');
+  option3.classList.remove('selected-option');
+});
+
+option2.addEventListener('click', function(){
+  fee.innerText = '12%';
+  option1.classList.remove('selected-option');
+  option2.classList.add('selected-option');
+  option3.classList.remove('selected-option');
+});
+
+option3.addEventListener('click', function(){
+  fee.innerText = '20%';
+  option1.classList.remove('selected-option');
+  option2.classList.remove('selected-option');
+  option3.classList.add('selected-option');
+});
+
+function calculations() {
+  var fans = document.getElementById('input-1').value;
+  var cost = document.getElementById('input-2').value;
+  var fansInput = document.getElementById('input-1');
+  var costInput = document.getElementById('input-2');
+  var optText = document.getElementById("fee").textContent;
+  var optNumber = optText.match(/\d+/);
+
+
+  if (fansInput.checkValidity() && costInput.checkValidity()) {
+
+    if (fans <= 50){
+      feesCrreo = 0;
+      revenueCrreo = (fans*cost).toFixed(2);
+    } 
+    else {
+      feesCrreo = ((fans - 50) * 0.2).toFixed(2);
+      revenueCrreo = ((fans * cost) - feesCrreo).toFixed(2);
+    }
+
+    feesCompetitor = (fans * cost * optNumber / 100).toFixed(2);
+    revenueCompetitor = (fans * cost * (100 - optNumber) / 100).toFixed(2);
+    savings = (revenueCrreo - revenueCompetitor).toFixed(2);
+
+    document.getElementById("fees-crreo").innerText = '$' + feesCrreo;
+    document.getElementById("revenue-crreo").innerText = '$' + revenueCrreo;
+    document.getElementById("fees-competitor").innerText = '$' + feesCompetitor;
+    document.getElementById("revenue-competitor").innerText = '$' + revenueCompetitor;
+    document.getElementById("savings").innerText = '$' + savings;
+
+  }
+}

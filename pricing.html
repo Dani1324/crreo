@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0W3CYC1ZZ');
+      gtag('config', 'AW-11071657082');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://crreo.co -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3322378,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Gsap + Split type + sliderjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Fonts (Montserrat + Nunito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Altre impostazioni del sito -->
+    <title>CRREO | Membership program</title>
+    <link rel="stylesheet" href="style-pricing.css">
+    <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
+
+    <!-- MailerLite Universal -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f] = w[f] || function () {
+        (w[f].q = w[f].q || [])
+        .push(arguments);
+      }, l = d.createElement(e), l.async = 1, l.src = u,
+        n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '301695');
+    </script>
+    <!-- End MailerLite Universal -->
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+      <!-- Desktop -->
+      <a href="#hero" class="smooth">
+        <img class="logo" data-src="resources/logo.webp" alt="img">
+      </a>
+      <div class="links">
+        <a href="index.html">
+          <h4 class="hover-underline-animation">Creators</h4>
+        </a>
+        <a href="fans.html">
+          <h4 class="hover-underline-animation">Fans</h4>
+        </a>
+        <a href="membership.html">
+          <h4 class="hover-underline-animation">Membership program</h4>
+        </a>
+        <a href="#hero" class="smooth">
+          <h4 class="hover-underline-animation" id="selected-page">Pricing</h4>
+        </a>
+        <a href="faq.html">
+          <h4 class="hover-underline-animation">Faq</h4>
+        </a>
+        <a href="insights.html">
+          <h4 class="hover-underline-animation">Insights</h4>
+        </a>
+        <a href="contact.html">
+          <h4 class="hover-underline-animation">Contact</h4>
+        </a>
+        <a href="about.html">
+          <h4 class="hover-underline-animation">About</h4>
+        </a>
+      </div>
+      <button class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+        <h5>Get started</h5>
+        <img data-src="resources/arrow.webp" alt="img">
+      </button>
+      <!-- Mobile menu icon -->
+      <div class="hamburger"></div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="menu">
+      <div class="menu-links">
+        <a href="index.html" class="hover-underline-animation">Creators</a>
+        <a href="fans.html" class="hover-underline-animation">Fans</a>
+        <a href="membership.html" class="hover-underline-animation">Membership Program</a>
+        <a href="#hero" class="hover-underline-animation selected smooth">Pricing</a>
+        <a href="faq.html" class="hover-underline-animation">Faq</a>
+        <a href="insights.html" class="hover-underline-animation">Insights</a>
+        <a href="contact.html" class="hover-underline-animation">Contact</a>
+        <a href="about.html" class="hover-underline-animation">About</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero" id="hero">
+      <h1><span>0%</span> cut <br>on payouts</h1>
+      <h2>We do not take a cut on your earnings from fan contributions. <br>CRREO is a no-commission, no-waste, and no-headaches platform.</h2>
+    </div>
+
+    <!-- Call to action -->
+    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+      <h5>Launch your program</h5>
+    </a>
+
+    <!-- Plans -->
+    <div class="subtitle">
+      <h2>Flat and predictable monthly <br>subscription fees</h2>
+      <h3>We do not take a cut on your earnings from fan contributions.<br>CRREO is a no-commission, no-waste, and no-headaches platform.</h3>
+    </div>
+    <div class="plans">
+      <div class="card">
+        <h3>Until you reach 50 members</h3>
+        <h2>Free</h2>
+      </div>
+      <img src="resources/right.svg" alt="img">
+      <img src="resources/right.svg" alt="img">
+      <div class="card">
+        <h3>Once you have 50 members</h3>
+        <h2>$0.20<br><span>per member per month</span></h2>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+      <h5>Launch your program</h5>
+    </a>
+
+    <!-- Calculations -->
+    <div class="subtitle">
+      <h2>Calculate your cost and savings</h2>
+    </div>
+    <div class="calculations">
+      <div class="fee-menu" id="options">
+        <div class="fee-menu__content">
+          <h5 id="fee">8%</h5>
+          <img src="resources/right.svg" alt="img">
+        </div>
+        <div>
+          <p id="opt-1">8%</p>
+          <p id="opt-2">12%</p>
+          <p id="opt-3">20%</p>
+        </div>
+      </div>
+      <form class="block">
+        <h4>Estimated number of members in your program</h4>
+        <input type="number" id="input-1" placeholder="200" min="0" required step="1">
+        <h4>Enter your monthly cost</h4>
+        <input type="number" id="input-2" placeholder="9.99" min="0" required step="0.01">
+        <button type="button" onclick="calculations()">Calculate</button>
+      </form>
+      <div class="block second">
+        <img src="resources/logo.webp" alt="img">
+        <div class="line">
+          <p>Monthly fees</p>
+          <p id="fees-crreo">-</p>
+        </div>
+        <div class="line">
+          <p>Estimated monthly revenue</p>
+          <p id="revenue-crreo">-</p>
+        </div>
+        <h5>Other platforms</h5>
+        <div class="line">
+          <p>Monthly fees</p>
+          <p id="fees-competitor">-</p>
+        </div>
+        <div class="line">
+          <p>Estimated monthly revenue</p>
+          <p id="revenue-competitor">-</p>
+        </div>
+        <div class="line result">
+          <p>Your monthly savings</p>
+          <p id="savings">-</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+      <h5>Launch your program</h5>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+      <img data-src="resources/logo.webp" alt="img">
+      <p>© 2023 CRREO</p>
+      <p><a href="https://crreo.co/privacy.html"> Privacy policy </a> | <a href="https://crreo.co/cookies.html"> Cookies policy </a></p>
+    </footer>
+
+    <!-- Link to js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="membership-script.js"></script>
+
+</body>
+</html>

@@ -165,39 +165,6 @@ button {
   }
 }
 
-.hero-btn {
-  width: max-content;
-  display: flex;
-  margin: 3.5vw auto 0vw auto;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.hero-btn a {
-  display: flex;
-}
-
-.hero-btn h5 {
-  padding-top: 0.25vw;
-  font-size: 1.7vw;
-  color: #C8102E;
-  margin-right: 0.5vw;
-}
-
-.hero-btn img {
-  width: 2.2vw;
-  transform: rotate(135deg);
-}
-
-.hero-btn:hover {
-  transform: translateY(0.5vw);
-}
-
-.hero-btn:active {
-  transform: scale(0.9) translateY(0.5vw);
-}
-
 
 /* Value */
 .value {
@@ -785,25 +752,6 @@ footer p {
     100% {
       transform: translateX(-1086.4vw);
     }
-  }
-
-  .hero-btn {
-    margin: 8vh auto 5vh auto;
-    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
-  .hero-btn h5 {
-    padding-top: 1vw;
-    font-size: 6vw;
-    margin-right: 2vw;
-  }
-
-  .hero-btn img {
-    width: 8vw;
-  }
-
-  .hero-btn:active {
-    transform: scale(0.9) translateY(0vw);
   }
 
 
