@@ -211,5 +211,74 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="membership-script.js"></script>
 
+    <script>
+      // Fee calculator
+      var feeMenu = document.querySelector("#options");
+      var option1 = document.querySelector("#opt-1");
+      var option2 = document.querySelector("#opt-2");
+      var option3 = document.querySelector("#opt-3");
+      var fee = document.querySelector("#fee");
+
+      option1.classList.add('selected-option');
+
+      feeMenu.addEventListener('click', function () {
+        feeMenu.classList.toggle("fee-menu-selected");
+      });
+
+      option1.addEventListener('click', function () {
+        fee.innerText = '8%';
+        option1.classList.add('selected-option');
+        option2.classList.remove('selected-option');
+        option3.classList.remove('selected-option');
+      });
+
+      option2.addEventListener('click', function () {
+        fee.innerText = '12%';
+        option1.classList.remove('selected-option');
+        option2.classList.add('selected-option');
+        option3.classList.remove('selected-option');
+      });
+
+      option3.addEventListener('click', function () {
+        fee.innerText = '20%';
+        option1.classList.remove('selected-option');
+        option2.classList.remove('selected-option');
+        option3.classList.add('selected-option');
+      });
+
+      function calculations() {
+        var fans = document.getElementById('input-1').value;
+        var cost = document.getElementById('input-2').value;
+        var fansInput = document.getElementById('input-1');
+        var costInput = document.getElementById('input-2');
+        var optText = document.getElementById("fee").textContent;
+        var optNumber = optText.match(/\d+/);
+
+
+        if (fansInput.checkValidity() && costInput.checkValidity()) {
+
+          if (fans <= 50) {
+            feesCrreo = 0;
+            revenueCrreo = (fans * cost).toFixed(2);
+          }
+          else {
+            feesCrreo = ((fans - 50) * 0.2).toFixed(2);
+            revenueCrreo = ((fans * cost) - feesCrreo).toFixed(2);
+          }
+
+          feesCompetitor = (fans * cost * optNumber / 100).toFixed(2);
+          revenueCompetitor = (fans * cost * (100 - optNumber) / 100).toFixed(2);
+          savings = (revenueCrreo - revenueCompetitor).toFixed(2);
+
+          document.getElementById("fees-crreo").innerText = '$' + feesCrreo;
+          document.getElementById("revenue-crreo").innerText = '$' + revenueCrreo;
+          document.getElementById("fees-competitor").innerText = '$' + feesCompetitor;
+          document.getElementById("revenue-competitor").innerText = '$' + revenueCompetitor;
+          document.getElementById("savings").innerText = '$' + savings;
+
+        }
+      }
+    </script>
+
 </body>
 </html>
