@@ -776,15 +776,20 @@ footer p {
 
   /* Fee menu */
   .fee-menu {
-    top: 43vw;
+    top: 42.8vw;
     left: 57.5vw;
     padding: 2.7vw 5vw 2.7vw 4.4vw;
     border-radius: 4.3vw;
     height: 4.5vw;
+    transition: all 0.2s ease-in-out;
   }
 
   .fee-menu-selected {
     height: 30.5vw;
+  }
+    
+  .fee-menu-selected img {
+    transform: rotate(270deg) !important;
   }
 
   .fee-menu__content {
@@ -807,11 +812,6 @@ footer p {
   .fee-menu .selected-option {
     border: 0.2vw solid #C8102E;
   }
-
-
-
-
-
 
 
   /* Footer */
