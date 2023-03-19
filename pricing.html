@@ -258,14 +258,14 @@
 
         if (fans < 50) {
           feesCrreo = 0;
-          revenueCrreo = (fans * cost) * 0.971 - 0.3;
+          revenueCrreo = (fans * cost);
         }
         else {
           feesCrreo = (fans * 0.2).toFixed(2);
-          revenueCrreo = ((fans * cost) * 0.971 - 0.3 - feesCrreo);
+          revenueCrreo = ((fans * cost) - feesCrreo);
         }
 
-        var revenues = (fans * cost) * 0.971 - 0.3;
+        var revenues = (fans * cost);
 
         feesCompetitor = (revenues * optNumber / 100).toFixed(2);
         revenueCompetitor = ( revenues * (100-optNumber) / 100);
