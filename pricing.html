@@ -164,10 +164,9 @@
       </div>
       <form class="block">
         <h4>Estimated number of members in your program</h4>
-        <input type="number" id="input-1" placeholder="200" min="0" required step="1">
-        <h4>Enter your monthly cost</h4>
-        <input type="number" id="input-2" placeholder="9.99" min="0" required step="0.01">
-        <button type="button" onclick="calculations()">Calculate</button>
+        <input type="number" id="input-1" placeholder="500" min="0" required step="1" onchange="calculations()">
+        <h4>Expected per member monthly contribution</h4>
+        <input type="number" id="input-2" placeholder="10" min="0" required step="0.01" onchange="calculations()">
       </form>
       <div class="block second">
         <img src="resources/logo.webp" alt="img">
@@ -176,7 +175,7 @@
           <p id="fees-crreo">-</p>
         </div>
         <div class="line">
-          <p>Estimated monthly revenue</p>
+          <p>You receive monthly</p>
           <p id="revenue-crreo">-</p>
         </div>
         <h5>Other platforms</h5>
@@ -185,7 +184,7 @@
           <p id="fees-competitor">-</p>
         </div>
         <div class="line">
-          <p>Estimated monthly revenue</p>
+          <p>You receive monthly</p>
           <p id="revenue-competitor">-</p>
         </div>
         <div class="line result">
@@ -230,6 +229,7 @@
         option1.classList.add('selected-option');
         option2.classList.remove('selected-option');
         option3.classList.remove('selected-option');
+        calculations();
       });
 
       option2.addEventListener('click', function () {
@@ -237,6 +237,7 @@
         option1.classList.remove('selected-option');
         option2.classList.add('selected-option');
         option3.classList.remove('selected-option');
+        calculations();
       });
 
       option3.addEventListener('click', function () {
@@ -244,6 +245,7 @@
         option1.classList.remove('selected-option');
         option2.classList.remove('selected-option');
         option3.classList.add('selected-option');
+        calculations();
       });
 
       function calculations() {
@@ -254,30 +256,35 @@
         var optText = document.getElementById("fee").textContent;
         var optNumber = optText.match(/\d+/);
 
+        if (fans === "") {
+          fans = 500;
+        }
 
-        if (fansInput.checkValidity() && costInput.checkValidity()) {
+        if (cost === "") {
+          cost = 10;
+        }
 
-          if (fans <= 50) {
-            feesCrreo = 0;
-            revenueCrreo = (fans * cost).toFixed(2);
-          }
-          else {
-            feesCrreo = ((fans - 50) * 0.2).toFixed(2);
-            revenueCrreo = ((fans * cost) - feesCrreo).toFixed(2);
-          }
+        if (fans <= 50) {
+          feesCrreo = 0;
+          revenueCrreo = (fans * cost).toFixed(2);
+        }
+        else {
+          feesCrreo = ((fans - 50) * 0.2).toFixed(2);
+          revenueCrreo = ((fans * cost) - feesCrreo).toFixed(2);
+        }
 
-          feesCompetitor = (fans * cost * optNumber / 100).toFixed(2);
-          revenueCompetitor = (fans * cost * (100 - optNumber) / 100).toFixed(2);
-          savings = (revenueCrreo - revenueCompetitor).toFixed(2);
+        feesCompetitor = (fans * cost * optNumber / 100).toFixed(2);
+        revenueCompetitor = (fans * cost * (100 - optNumber) / 100).toFixed(2);
+        savings = (revenueCrreo - revenueCompetitor).toFixed(2);
 
-          document.getElementById("fees-crreo").innerText = '$' + feesCrreo;
-          document.getElementById("revenue-crreo").innerText = '$' + revenueCrreo;
-          document.getElementById("fees-competitor").innerText = '$' + feesCompetitor;
-          document.getElementById("revenue-competitor").innerText = '$' + revenueCompetitor;
-          document.getElementById("savings").innerText = '$' + savings;
+        document.getElementById("fees-crreo").innerText = '$' + feesCrreo;
+        document.getElementById("revenue-crreo").innerText = '$' + revenueCrreo;
+        document.getElementById("fees-competitor").innerText = '$' + feesCompetitor;
+        document.getElementById("revenue-competitor").innerText = '$' + revenueCompetitor;
+        document.getElementById("savings").innerText = '$' + savings;
 
         }
-      }
+
     </script>
 
 </body>

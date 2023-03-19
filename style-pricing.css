@@ -263,11 +263,13 @@ button {
  margin: 0 11vw;
  display: flex;
  position: relative;
+ align-items: center;
 }
 
 .calculations .block {
   width: 50%;
   padding: 0.5vw 0;
+  height: max-content;
 }
 
 .calculations .block h4 {
@@ -303,28 +305,8 @@ button {
   background-position: 2vw center;
 }
 
-.calculations .block:first-of-type {
-  border-right: 0.1vw solid rgba( 0, 0, 116, 0.1);
-}
-
-.calculations .block button {
-  width: 95%;
-  border: 0.1vw solid #C8102E;
-  border-radius: 1vw;
-  background-color: transparent;
-  font-size: 2vw;
-  color: #C8102E;
-  padding: 1.5vw 0 1.4vw 0;
-  transition: all 0.07s ease-in-out;
-}
-
-.calculations .block button:hover {
-  background-color: #C8102E;
-  color: #F6F6FB;
-}
-
-.calculations .block button:active {
-  transform: scale(0.98);
+.calculations .second {
+  border-left: 0.1vw solid rgba(0, 0, 116, 0.1);
 }
 
 .calculations .block img {
@@ -717,14 +699,6 @@ footer p {
 
   .calculations .block:first-of-type {
     border-right: none;
-  }
-
-  .calculations .block button {
-    width: 100%;
-    border: 0.2vw solid #C8102E;
-    border-radius: 2vw;
-    font-size: 5vw;
-    padding: 3.2vw 0 2.9vw 0;
   }
 
   .calculations .second{
