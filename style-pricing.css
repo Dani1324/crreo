@@ -649,7 +649,7 @@ footer p {
   }
 
   .plans .card h3 {
-    padding: 3vw 0;
+    padding: 3.2vw 0 3vw;
     border-radius: 10vw;
     font-size: 5vw;
   }
@@ -752,7 +752,7 @@ footer p {
 
   /* Fee menu */
   .fee-menu {
-    top: 133.2vw;
+    top: 133.5vw;
     left: 57.5vw;
     padding: 2vw 4vw 1.8vw 3.5vw;
     border-radius: 4vw;
