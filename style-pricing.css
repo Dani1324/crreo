@@ -359,7 +359,7 @@ button {
   top: 9.25vw;
   left: 57.5vw;
   background-color: #F9F9FC;
-  border: 0.05vw solid rgba(0, 0, 116, 0.2);
+  border: 0.05vw solid rgba(0, 0, 116, 0.1);
   padding: 0.8vw 1.4vw 0.8vw 1.2vw;
   border-radius: 1.5vw;
   overflow: hidden;
@@ -758,7 +758,7 @@ footer p {
     border-radius: 4vw;
     height: 4.5vw;
     transition: all 0.2s ease-in-out;
-    border: 0.2vw solid rgba( 0, 0, 116, 0.2);
+    border: 0.2vw solid rgba( 0, 0, 116, 0.14);
   }
 
   .fee-menu-selected {
