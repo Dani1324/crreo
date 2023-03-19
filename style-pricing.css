@@ -332,11 +332,11 @@ button {
 }
 
 .line p{
-  width: 60%;
+  width: 70%;
 }
 
 .line p:last-of-type{
-  width: 40%;
+  width: 30%;
   text-align: right;
 }
 
@@ -356,7 +356,7 @@ button {
 /* Fee menu */
 .fee-menu{
   position: absolute;
-  top: 12.4vw;
+  top: 9.25vw;
   left: 57.5vw;
   background-color: #F9F9FC;
   border: 0.05vw solid rgba(0, 0, 116, 0.2);
@@ -752,7 +752,7 @@ footer p {
 
   /* Fee menu */
   .fee-menu {
-    top: 133.5vw;
+    top: 108.5vw;
     left: 57.5vw;
     padding: 2vw 4vw 1.8vw 3.5vw;
     border-radius: 4vw;

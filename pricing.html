@@ -166,30 +166,22 @@
         <h4>Estimated number of members in your program</h4>
         <input type="number" id="input-1" placeholder="500" min="0" required step="1" onchange="calculations()">
         <h4>Expected per member monthly contribution</h4>
-        <input type="number" id="input-2" placeholder="10" min="0" required step="0.01" onchange="calculations()">
+        <input type="number" id="input-2" placeholder="$10" min="0" required step="0.01" onchange="calculations()">
       </form>
       <div class="block second">
         <img src="resources/logo.webp" alt="img">
         <div class="line">
-          <p>Monthly fees</p>
-          <p id="fees-crreo">-</p>
-        </div>
-        <div class="line">
-          <p>You receive monthly</p>
-          <p id="revenue-crreo">-</p>
+          <p>Your monthly subscription</p>
+          <p id="fees-crreo">$90.00</p>
         </div>
         <h5>Other platforms</h5>
         <div class="line">
-          <p>Monthly fees</p>
-          <p id="fees-competitor">-</p>
-        </div>
-        <div class="line">
-          <p>You receive monthly</p>
-          <p id="revenue-competitor">-</p>
+          <p>Monthly commission on payouts</p>
+          <p id="fees-competitor">$400.00</p>
         </div>
         <div class="line result">
           <p>Your monthly savings</p>
-          <p id="savings">-</p>
+          <p id="savings">$310.00</p>
         </div>
       </div>
     </div>
@@ -278,9 +270,7 @@
         savings = (revenueCrreo - revenueCompetitor).toFixed(2);
 
         document.getElementById("fees-crreo").innerText = '$' + feesCrreo;
-        document.getElementById("revenue-crreo").innerText = '$' + revenueCrreo;
         document.getElementById("fees-competitor").innerText = '$' + feesCompetitor;
-        document.getElementById("revenue-competitor").innerText = '$' + revenueCompetitor;
         document.getElementById("savings").innerText = '$' + savings;
 
         }
