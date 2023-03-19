@@ -412,22 +412,6 @@ button {
   opacity: 1;
 }
 
-/* Disclaimer */
-.disclaimer {
-  font-size: 1vw;
-  font-weight: 100;
-  text-align: center;
-  width: 64vw;
-  margin: 7vw 18vw 7vw 18vw;
-  line-height: 1.5;
-  opacity: 0.5;
-}
-
-.disclaimer a{
-  text-decoration: underline;
-  color: #C8102E;
-}
-
 
 /* Footer */
 footer {
@@ -804,15 +788,6 @@ footer p {
 
   .fee-menu .selected-option {
     border: 0.2vw solid #C8102E;
-  }
-
-
-  /* Disclaimer */
-  .disclaimer {
-    font-size: 3.9vw;
-    width: 88vw;
-    margin: 20vw 6vw 14vw 6vw;
-    line-height: 1.5;
   }
 
 
