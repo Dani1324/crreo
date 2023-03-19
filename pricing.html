@@ -247,8 +247,7 @@
         var costInput = document.getElementById('input-2');
         var optText = document.getElementById("fee").textContent;
         var optNumber = optText.match(/\d+/);
-        var revenues = (fans * cost) * 0.971 - 0.3;
-
+        
         if (fans === "") {
           fans = 500;
         }
@@ -259,13 +258,15 @@
 
         if (fans <= 50) {
           feesCrreo = 0;
-          revenueCrreo = (fans * cost);
+          revenueCrreo = (fans * cost) * 0.971 - 0.3;
         }
         else {
           feesCrreo = (fans * 0.2).toFixed(2);
-          revenueCrreo = (revenues - feesCrreo);
+          revenueCrreo = ((fans * cost) * 0.971 - 0.3 - feesCrreo);
         }
-        
+
+        var revenues = (fans * cost) * 0.971 - 0.3;
+
         feesCompetitor = (revenues * optNumber / 100).toFixed(2);
         revenueCompetitor = ( revenues * (100-optNumber) / 100);
 
