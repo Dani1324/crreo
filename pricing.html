@@ -265,10 +265,8 @@
           revenueCrreo = ((fans * cost) - feesCrreo);
         }
 
-        var revenues = (fans * cost);
-
-        feesCompetitor = (revenues * optNumber / 100).toFixed(2);
-        revenueCompetitor = ( revenues * (100-optNumber) / 100);
+        feesCompetitor = (fans * cost * optNumber / 100).toFixed(2);
+        revenueCompetitor = (fans * cost * (100-optNumber) / 100);
 
         savings = (revenueCrreo - revenueCompetitor).toFixed(2);
 
