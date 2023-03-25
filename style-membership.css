@@ -1163,6 +1163,7 @@ footer p {
   }
 
   .options .card-popup {
+    background-color: #F6F6FB;
     width: 80vw;
     margin: 0;
     border-radius: 3vw;
@@ -1197,16 +1198,19 @@ footer p {
   #opt-p1{
     position: absolute;
     top: -210vw;
+    z-index: -1;
   }
 
   #opt-p2 {
     position: absolute;
     top: -119vw;
+    z-index: -1;
   }
 
   #opt-p3 {
     position: absolute;
     top: -76vw;
+    z-index: -1;
   }
 
 
