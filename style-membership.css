@@ -115,7 +115,7 @@ button {
 
 /* Hero */
 .hero h1 {
-  font-size: 5.2vw;
+  font-size: 4.7vw;
   font-weight: 500;
   padding-top: 7.7vw;
   text-align: center;
@@ -166,59 +166,279 @@ button {
 }
 
 
+/* Options */
+.options {
+  width: 78vw;
+  margin: 0 11vw 1vw 11vw;
+  display: flex;
+}
+
+.options .card {
+  width: 25.5vw;
+  margin-right: 1vw;
+  border-radius: 1.5vw;
+  border: 0.1vw solid rgba(0, 0, 116, 0.2);
+  padding: 2.5vw 2.5vw 2vw 2.5vw;
+}
+
+.option-selected{
+  color: #F6F6FB;
+  background-color: #000074;
+  transition: all 0.7s ease;
+}
+
+.options .card:last-of-type{
+  margin-right: 0vw;
+}
+
+.options .card h3 {
+  font-size: 1.25vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 1vw;
+}
+
+.options .card h2 {
+  font-size: 1.45vw;
+  margin-bottom: 2vw;
+  height: 2.9vw;
+  line-height: 1.4;
+}
+
+.options .card h4 {
+  font-size: 3.12vw;
+  font-weight: 600;
+  margin-bottom: 0.4vw;
+}
+
+.options .card h5 {
+  font-size: 0.9vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.options .card h5 span {
+  padding-left: 1.5vw;
+}
+
+.options .card-popup {
+  width: 25.5vw;
+  margin: 0vw 1vw 0vw 0;
+  border-radius: 1.5vw;
+  background-color: #F6F6FB;
+  padding: 1.7vw 1.7vw;
+  height: min-content;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.option-popup-selected {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0.5vw) !important;
+}
+
+.options .card-popup:last-of-type {
+  margin-right: 0vw;
+}
+
+.options .card-popup p{
+  font-size: 1.1vw;
+  line-height: 1.4;
+  text-align: center;
+  border-bottom: 0.1vw solid rgba(0, 0, 116, 0.1);
+  padding-bottom: 1.5vw;
+  user-select: none;
+}
+
+.options .card-popup a {
+  font-size: 1.1vw;
+  display: block;
+  text-align: center;
+  color: #C8102E;
+  margin-top: 1.5vw;
+  user-select: none;
+}
+
+.cards {
+  margin-bottom: 6vw;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Calculations */
+.calculations {
+  width: 78vw;
+  margin: 0 11vw 8vw 11vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#calculations h2{
+  font-size: 2.6vw;
+}
+
+.calculations .block {
+  width: 50%;
+  padding: 0.5vw 0;
+  height: max-content;
+  border-right: 0.1vw solid rgba(0, 0, 116, 0.1);
+}
+
+.calculations .block h4 {
+  font-size: 1.7vw;
+  font-weight: 300;
+  margin-bottom: 0.7vw;
+}
+
+.calculations .block input {
+  width: 73%;
+  margin: 1vw 0 2.5vw 0;
+  padding: 1vw 5% 1vw 16%;
+  border: 0.1vw solid rgba(0, 0, 116, 0.2);
+  border-radius: 5vw;
+  font-family: 'Nunito';
+  font-size: 2vw;
+  font-weight: 300;
+  color: #000074;
+  background: url('resources/coin.svg');
+  background-repeat: no-repeat;
+  background-size: 1.7vw 1.7vw;
+  background-position: 2.05vw center;
+}
+
+.calculations .block input::placeholder {
+  color: rgba(0, 0, 116, 0.5)
+}
+
+.calculations .block input:first-of-type {
+  background: url('resources/people.svg');
+  background-repeat: no-repeat;
+  background-size: 1.8vw 1.8vw;
+  background-position: 2vw center;
+}
+
+.calculations .block input:last-of-type {
+  margin-bottom: 0;
+}
+
+.calculations .second {
+  padding-top: 1.8vw;
+  border: 0vw solid rgba(0, 0, 116, 0.1);
+}
+
+.calculations .block img {
+  height: 1.6vw;
+  margin: 0 0 2vw 5%;
+  user-select: none;
+}
+
+.calculations .block h5 {
+  font-size: 2vw;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0vw 0 2vw 5%;
+}
+
+.line {
+  margin-left: 5%;
+  width: 95%;
+  display: flex;
+  font-size: 1.65vw;
+  font-weight: 200;
+  opacity: 0.7;
+  margin-bottom: 2vw;
+}
+
+.line p {
+  width: 70%;
+}
+
+.line p:last-of-type {
+  width: 30%;
+  text-align: right;
+}
+
+.result {
+  border-top: 0.1vw solid rgba(0, 0, 116, 0.5);
+  margin-top: 3vw;
+  padding-top: 2.8vw;
+  opacity: 1;
+}
+
+.result p {
+  font-size: 2.1vw;
+  font-weight: 500;
+}
+
+
+/* Commission */
+.commission {
+  width: 78vw;
+  margin: 0 11vw;
+  display: flex;
+}
+
+.commission .block {
+  width: 45vw;
+  padding: 2vw;
+  border-radius: 1vw;
+  display: flex;
+  background-color: #F6F6FB;
+}
+
+.commission .block p {
+  text-align: center;
+  width: 100%;
+  line-height: 1.3;
+  font-size: 1.6vw;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.commission .block p span {
+  color: #C8102E;
+  font-weight: 500;
+}
+
+
 /* Value */
 .value {
   margin-bottom: 8vw;
 }
 
-.value h3 {
-  text-transform: uppercase;
-  opacity: 50%;
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 300;
-  margin-top: 12vw;
-}
-
 .value__content {
   display: flex;
   width: 78vw;
-  margin: 6vw 11vw;
-}
-
-.value__content h2 {
-  width: 39vw;
-  margin-right: 3vw;
-  font-size: 3.6vw;
-  font-weight: 500;
-  line-height: 1.25;
-}
-
-.value__content span {
-  color: #C8102E;
-  text-stroke: 0.1vw #C8102E;
-  -webkit-text-stroke: 0.1vw #C8102E;
+  margin: 4vw 11vw 5vw 11vw;
+  transform: translateY(-1vw);
 }
 
 .value__links {
-  width: 36vw;
+  width: max-content;
+  margin: 0 auto;
+  white-space: nowrap;
 }
 
 .value__links button {
   cursor: pointer;
-  margin: 0.6vw 0;
+  margin: 0.6vw 0.3vw;
   background-color: #F6F6FB;
   text-align: left;
   border: none;
   padding: 0;
-  width: 100%;
+  width: min-content;
   border-radius: 10vw;
 }
 
 .value__links button p {
   font-size: 1.6vw;
   font-weight: 100;
-  padding: 1.3vw 2vw 1.2vw 2vw;
+  padding: 1vw 2.8vw 0.9vw 2.8vw;
 }
 
 .selected-value {
@@ -348,9 +568,9 @@ button {
 
 .subtitle h2 {
   font-size: 3.65vw;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.3;
 }
 
 .subtitle h2 span {
@@ -360,11 +580,15 @@ button {
 }
 
 .subtitle h3 {
-  opacity: 50%;
+  opacity: 70%;
   text-align: center;
   font-size: 1.8vw;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 1.5vw;
+}
+
+.subtitle h3 span{
+  color: #C8102E;
 }
 
 
@@ -430,85 +654,8 @@ button {
   overflow-x: hidden;
 }
 
-
-/* Subscription */
-.subscription {
-  width: 78vw;
-  margin: 5vw 11vw 8vw 11vw;
-  display: flex;
-}
-
-.subscription img {
-  width: 48%;
-  border: 0.1vw solid #000074;
-  border-radius: 1.3vw;
-}
-
-#s-1 img {
-  margin-right: 2%;
-}
-
-#s-2 img {
-  margin-left: 2%;
-}
-
-.subscription__texts {
-  width: 44%;
-  margin: 0 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.subscription__innerTexts {
-  height: max-content;
-}
-
-.subscription__texts h3 {
-  font-size: 2vw;
-  line-height: 1.2;
-  margin-bottom: 1vw;
-}
-
-.subscription__texts p {
-  font-size: 1.6vw;
-  font-weight: 100;
-  line-height: 1.4;
-  margin-bottom: 1vw;
-  opacity: 0.8;
-}
-
 #mobile {
   display: none;
-}
-
-
-/* Value */
-.value__texts {
-  width: 36vw;
-}
-
-.value__texts h4 {
-  font-size: 1.85vw;
-}
-
-.value__texts p {
-  font-size: 1.6vw;
-  font-weight: 100;
-  opacity: 0.8;
-  margin: 1vw 0 4vw 0;
-  line-height: 1.3;
-}
-
-.value__texts span {
-  font-family: 'Nunito';
-  font-size: 1.6vw;
-  font-weight: 500;
-  line-height: 1.3;
-  color: #C8102E;
-  text-stroke: 0vw;
-  -webkit-text-stroke: 0vw;
 }
 
 
@@ -552,6 +699,31 @@ button {
 }
 
 
+/* Who we are */
+.who{
+  width: 78vw;
+  margin: 0 11vw;
+  background-color: #000074;
+  color: #F6F6FB;
+  text-align: center;
+  padding: 4.4vw 0 3.8vw 0;
+  margin-bottom: 11vw;
+  border-radius: 1vw;
+}
+
+.who h2{
+  font-size: 3.65vw;
+  font-weight: 600;
+  margin-bottom: 2.3vw;
+}
+
+.who p{
+  font-size: 1.85vw;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+
 /* Curiosity */
 .curiosity {
   width: 78vw;
@@ -561,7 +733,7 @@ button {
 
 .curiosity h2 {
   font-size: 3.65vw;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 3vw;
 }
 
@@ -715,7 +887,7 @@ footer p {
 
   /* Hero */
   .hero h1 {
-    font-size: 11.7vw;
+    font-size: 10.5vw;
     font-weight: 600;
     padding-top: 17vh;
   }
@@ -763,7 +935,7 @@ footer p {
 
   .subtitle h2 {
     font-size: 9vw;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     line-height: 1.2;
   }
@@ -831,27 +1003,237 @@ footer p {
   }
 
 
-  /* Value */
-  .value h3 {
-    font-size: 4vw;
-    margin-top: 24vw;
+  /* Calculations */
+  .calculations {
+    width: 88vw;
+    margin: 0vw 6vw;
+    display: block;
   }
 
+  #calculations h2 {
+    font-size: 6.5vw;
+    line-height: 1.5;
+  }
+
+  .calculations .block {
+    width: 100%;
+    padding: 2vw 0;
+    border: none;
+  }
+
+  .calculations .block h4 {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+    line-height: 1.3;
+  }
+
+  .calculations .block input {
+    width: 78%;
+    margin: 2vw 0 8vw 0;
+    padding: 3.2vw 5% 2.9vw 17%;
+    border: 0.2vw solid rgba(0, 0, 116, 0.2);
+    border-radius: 10vw;
+    font-size: 5vw;
+    background-size: 5vw 5vw;
+    background-position: 5vw center;
+  }
+
+  .calculations .block input:first-of-type {
+    background-size: 5vw 5vw;
+    background-position: 5vw center;
+  }
+
+  .calculations .second {
+    background-color: rgba(0, 0, 116, 0.02);
+    border: 0.2vw solid rgba(0, 0, 116, 0.2);
+    margin: 6vw 0 20vw 0;
+    padding: 6%;
+    width: 88%;
+    border-radius: 3vw;
+  }
+
+  .calculations .block img {
+    height: 4.5vw;
+    margin: 0vw 0 6vw 0%;
+  }
+
+  .calculations .block h5 {
+    font-size: 5vw;
+    margin: 0vw 0 6vw 0%;
+  }
+
+  .line {
+    margin-left: 0%;
+    width: 100%;
+    font-size: 4.2vw;
+    line-height: 1.3;
+    margin-bottom: 4vw;
+  }
+
+  .line p {
+    width: 66%;
+  }
+
+  .line p:last-of-type {
+    width: 34%;
+  }
+
+  .result {
+    border-top: 0.2vw solid rgba(0, 0, 116, 0.5);
+    margin-top: 6vw;
+    padding-top: 6vw;
+    margin-bottom: 0;
+  }
+
+  .result p {
+    font-size: 4.7vw;
+    white-space: nowrap;
+  }
+
+
+  /* Commission */
+  .commission {
+    width: 88vw;
+    margin: 0 6vw 16vw 6vw;
+    display: block;
+  }
+
+  .commission .block {
+    width: 80vw;
+    padding: 6vw 4vw;
+    border-radius: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .commission .block p {
+    line-height: 1.3;
+    font-size: 5vw;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  .commission .block p span {
+    color: #C8102E;
+    font-weight: 500;
+  }
+
+  .commission .block br{
+    display: none;
+  }
+
+
+  /* Options */
+  .options {
+    width: 88vw;
+    margin: 0 6vw 25vw 6vw;
+    display: block;
+  }
+
+  .options .card {
+    width: 74vw;
+    margin-right: 0vw;
+    margin-bottom: 4vw;
+    border-radius: 3vw;
+    border: 0.2vw solid rgba(0, 0, 116, 0.2);
+    padding: 7vw 7vw 5vw 7vw;
+  }
+
+  .options .card h3 {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  .options .card h2 {
+    font-size: 5.5vw;
+    margin-bottom: 5vw;
+    height: min-content;
+  }
+
+  .options .card h4 {
+    font-size: 12vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .options .card h5 {
+    font-size: 3.2vw;
+  }
+
+  .options .card h5 span {
+    padding-left: 9vw;
+  }
+
+  .options .card-popup {
+    width: 80vw;
+    margin: 0;
+    border-radius: 3vw;
+    padding: 6vw 4vw 5vw 4vw;
+  }
+
+  .option-popup-selected {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0vw) !important;
+  }
+
+  .options .card-popup p {
+    font-size: 4.5vw;
+    line-height: 1.4;
+    border-bottom: 0.2vw solid rgba(0, 0, 116, 0.14);
+    padding-bottom: 4vw;
+  }
+
+  .options .card-popup a {
+    font-size: 4.5vw;
+    margin-top: 4vw;
+  }
+
+  .cards {
+    margin-bottom: 0vw;
+    position: relative;
+    top: 0vw;
+    z-index: -1;
+  }
+
+  #opt-p1{
+    position: absolute;
+    top: -210vw;
+  }
+
+  #opt-p2 {
+    position: absolute;
+    top: -119vw;
+  }
+
+  #opt-p3 {
+    position: absolute;
+    top: -76vw;
+  }
+
+
+  /* Commission */
+  .commission {
+    width: 88vw;
+    margin: 0 6vw 14vw 6vw;
+    display: block;
+  }
+
+  .commission .block {
+    width: 76vw;
+    padding: 6vw;
+    border-radius: 3vw;
+  }
+
+  .commission .block p {
+    font-size: 5vw;
+    opacity: 0.8;
+  }
+
+
+  /* Value */
   .value__content {
     display: block;
     width: 88vw;
     margin: 4vw 6vw 12vw 6vw;
-  }
-
-  .value__content h2 {
-    width: 88vw;
-    margin-right: 0vw;
-    font-size: 9vw;
-  }
-
-  .value__content span {
-    text-stroke: 0.3vw #C8102E;
-    -webkit-text-stroke: 0.3vw #C8102E;
   }
 
   .value__links {
@@ -862,13 +1244,14 @@ footer p {
   .value__links button {
     display: block;
     margin: 3vw 0;
+    width: 100%;
   }
 
   .value__links button p {
     font-size: 4.6vw;
     font-weight: 100;
     border-bottom: 0.12vw solid #FEFEFF;
-    padding: 3vw 5.6vw 2.8vw 5.6vw;
+    padding: 3vw 5.6vw 2.8vw 7vw;
   }
 
   .value__carousel {
@@ -913,77 +1296,8 @@ footer p {
     margin: 0vw;
   }
 
-  /* Subscription */
-  .subscription {
-    width: 88vw;
-    margin: 10vw 6vw 16vw 6vw;
-    display: block;
-  }
-
-  .subscription img {
-    width: 100%;
-    border: 0.2vw solid #000074;
-    border-radius: 2.6vw;
-  }
-
-  #s-1 img {
-    margin-right: 0%;
-  }
-
-  #s-2 img {
-    margin-left: 0%;
-  }
-
-  .subscription__texts {
-    width: 100%;
-    margin: 0%;
-    text-align: center;
-  }
-
-  .subscription__texts h3 {
-    width: 90%;
-    margin: 0% 5%;
-    font-size: 5.3vw;
-    line-height: 1.3;
-    margin-bottom: 4vw;
-    margin-top: 4vw;
-  }
-
-  .subscription__texts p {
-    font-size: 4.5vw;
-    line-height: 1.3;
-    margin-bottom: 1vw;
-  }
-
-  #s-2 .subscription__texts{
-    display: none;
-  }
-
   #mobile{
     display: block !important;
-  }
-
-  /* Value section 2 */
-  .value__texts {
-    margin-top: 8vw;
-    padding-bottom: 4vw;
-    width: 88vw;
-  }
-
-  .value__texts h4 {
-    font-size: 6vw;
-  }
-
-  .value__texts p {
-    font-size: 5vw;
-    font-weight: 100;
-    margin: 4vw 0 10vw 0;
-    line-height: 1.3;
-  }
-
-  .value__texts span {
-    font-size: 5vw;
-    font-weight: 200;
   }
 
 
@@ -1004,7 +1318,7 @@ footer p {
 
   .other .block .card {
     margin-bottom: 6.5vw;
-    border-radius: 4vw;
+    border-radius: 3vw;
     padding: 6vw;
   }
 
@@ -1023,6 +1337,26 @@ footer p {
     font-weight: 100;
     opacity: 0.8;
     line-height: 1.4;
+  }
+
+
+  /* Who we are */
+  .who {
+    width: 76vw;
+    margin: 0 6vw;
+    padding: 12vw 6vw 10.5vw 6vw;
+    margin-bottom: 22vw;
+    border-radius: 3vw;
+  }
+
+  .who h2 {
+    font-size: 9vw;
+    margin-bottom: 8vw;
+  }
+
+  .who p {
+    font-size: 5.4vw;
+    font-weight: 200;
   }
 
 
