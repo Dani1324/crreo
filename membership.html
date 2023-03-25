@@ -507,67 +507,85 @@
         option1.style.marginBottom = "82vw";
         option2.style.marginBottom = "4vw";
         option3.style.marginBottom = "4vw";
-      }
-      else{
-        optionP1.classList.remove('option-popup-selected');
-        optionP2.classList.add('option-popup-selected');
-        optionP3.classList.remove('option-popup-selected');
-        option2.classList.add('option-selected');
-      }
 
-      option1.addEventListener("mouseover", function () {
-        option1.classList.add('option-selected');
-        option2.classList.remove('option-selected');
-        option3.classList.remove('option-selected');
-        optionP1.classList.add('option-popup-selected');
-        optionP2.classList.remove('option-popup-selected');
-        optionP3.classList.remove('option-popup-selected');
-
-        if (width < 1025) {
+        option1.addEventListener("click", function () {
+          option1.classList.add('option-selected');
+          option2.classList.remove('option-selected');
+          option3.classList.remove('option-selected');
+          optionP1.classList.add('option-popup-selected');
+          optionP2.classList.remove('option-popup-selected');
+          optionP3.classList.remove('option-popup-selected');
           optionP1.style.transitionDelay = "0.3s";
           optionP2.style.transitionDelay = "0s";
           optionP3.style.transitionDelay = "0s";
           option1.style.marginBottom = "82vw";
           option2.style.marginBottom = "4vw";
           option3.style.marginBottom = "4vw";
-        }
-      });
+        });
 
-      option2.addEventListener("mouseover", function () {
-        option1.classList.remove('option-selected');
-        option2.classList.add('option-selected');
-        option3.classList.remove('option-selected');
-        optionP1.classList.remove('option-popup-selected');
-        optionP2.classList.add('option-popup-selected');
-        optionP3.classList.remove('option-popup-selected');
-
-        if (width < 1025) {
+        option2.addEventListener("click", function () {
+          option1.classList.remove('option-selected');
+          option2.classList.add('option-selected');
+          option3.classList.remove('option-selected');
+          optionP1.classList.remove('option-popup-selected');
+          optionP2.classList.add('option-popup-selected');
+          optionP3.classList.remove('option-popup-selected');
           optionP1.style.transitionDelay = "0s";
           optionP2.style.transitionDelay = "0.3s";
           optionP3.style.transitionDelay = "0s";
           option1.style.marginBottom = "4vw";
           option2.style.marginBottom = "50vw";
           option3.style.marginBottom = "4vw";
-        }
-      });
+        });
 
-      option3.addEventListener("mouseover", function () {
-        option1.classList.remove('option-selected');
-        option2.classList.remove('option-selected');
-        option3.classList.add('option-selected');
-        optionP1.classList.remove('option-popup-selected');
-        optionP2.classList.remove('option-popup-selected');
-        optionP3.classList.add('option-popup-selected');
-
-        if (width < 1025) {
+        option3.addEventListener("click", function () {
+          option1.classList.remove('option-selected');
+          option2.classList.remove('option-selected');
+          option3.classList.add('option-selected');
+          optionP1.classList.remove('option-popup-selected');
+          optionP2.classList.remove('option-popup-selected');
+          optionP3.classList.add('option-popup-selected');
           optionP1.style.transitionDelay = "0s";
           optionP2.style.transitionDelay = "0s";
           optionP3.style.transitionDelay = "0.3s";
           option1.style.marginBottom = "4vw";
           option2.style.marginBottom = "4vw";
           option3.style.marginBottom = "80vw";
-        }
-      });
+        });
+      }
+      else{
+        optionP1.classList.remove('option-popup-selected');
+        optionP2.classList.add('option-popup-selected');
+        optionP3.classList.remove('option-popup-selected');
+        option2.classList.add('option-selected');
+
+        option1.addEventListener("mouseover", function () {
+          option1.classList.add('option-selected');
+          option2.classList.remove('option-selected');
+          option3.classList.remove('option-selected');
+          optionP1.classList.add('option-popup-selected');
+          optionP2.classList.remove('option-popup-selected');
+          optionP3.classList.remove('option-popup-selected');
+        });
+
+        option2.addEventListener("mouseover", function () {
+          option1.classList.remove('option-selected');
+          option2.classList.add('option-selected');
+          option3.classList.remove('option-selected');
+          optionP1.classList.remove('option-popup-selected');
+          optionP2.classList.add('option-popup-selected');
+          optionP3.classList.remove('option-popup-selected');
+        });
+
+        option3.addEventListener("mouseover", function () {
+          option1.classList.remove('option-selected');
+          option2.classList.remove('option-selected');
+          option3.classList.add('option-selected');
+          optionP1.classList.remove('option-popup-selected');
+          optionP2.classList.remove('option-popup-selected');
+          optionP3.classList.add('option-popup-selected');
+        });
+      }
 
 
       // Calculator calculations
