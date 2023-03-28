@@ -173,6 +173,8 @@ button {
   display: flex;
 }
 
+#desktop{ display: flex;}
+
 .options .card {
   width: 25.5vw;
   margin-right: 1vw;
@@ -275,6 +277,7 @@ button {
 }
 
 #calculations h2{
+  margin-top: 5vw;
   font-size: 2.6vw;
 }
 
@@ -1136,6 +1139,10 @@ footer p {
     display: block;
   }
 
+  #desktop {
+    display: none;
+  }
+
   .options .card {
     width: 74vw;
     margin-right: 0vw;
@@ -1170,19 +1177,16 @@ footer p {
   }
 
   .options .card-popup {
-    display: none;
     background-color: #F6F6FB;
     width: 80vw;
     margin-bottom: 4vw;
     border-radius: 3vw;
     padding: 6vw 4vw 5vw 4vw;
+    transition: all 0.1s ease-in-out;
   }
 
   .option-popup-selected {
     display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: translateY(0vw) !important;
   }
 
   .options .card-popup p {

@@ -147,7 +147,7 @@
     <div class="subtitle">
       <h2>Generate <span>funding</span> from your most loyal fans</h2>
     </div>
-    <div class="options">
+    <div class="options" id="mobile">
       <div class="card" id="opt-1">
         <h3>Option 1</h3>
         <h2>Offer your fans to buy one-time membership license</h2>
@@ -177,6 +177,45 @@
         <h5>(One time payment)<span>(Monthly)</span></h5>
       </div>
       <div class="card-popup" id="opt-p3">
+        <p>You can combine the options and require members to own a license and pay a regular monthly contribution. You can
+          also set up different benefits for each of the options.</p>
+        <a href="">See the example</a>
+      </div>
+    </div>
+
+    <!-- Options desktop-->
+    <div class="options" id="desktop">
+      <div class="card" id="optd-1">
+        <h3>Option 1</h3>
+        <h2>Offer your fans to buy one-time membership license</h2>
+        <h4>$xxx</h4>
+        <h5>(One time payment)</h5>
+      </div>
+      <div class="card" id="optd-2">
+        <h3>Option 2</h3>
+        <h2>Setup traditional monthly subscription plan for fans</h2>
+        <h4>$xx</h4>
+        <h5>(Monthly)</h5>
+      </div>
+      <div class="card" id="optd-3">
+        <h3>Option 3</h3>
+        <h2>Combine both models</h2>
+        <h4>$xxx + $xx</h4>
+        <h5>(One time payment)<span>(Monthly)</span></h5>
+      </div>
+    </div>
+    <div class="options cards"  id="desktop">
+      <div class="card-popup" id="optd-p1">
+        <p>A personal membership license acts as a lifetime ticket to your program. It has a tangible value for the fan
+          since they can later re-sell or transfer the license when leaving your program (restrictions apply). You choose
+          how many licenses and at what price you offer to your fans.</p>
+        <a href="">See the example</a>
+      </div>
+      <div class="card-popup" id="optd-p2">
+        <p>You can offer a classic monthly subscription. You can also set up tiers with different levels of benefits.</p>
+        <a href="">See the example</a>
+      </div>
+      <div class="card-popup" id="optd-p3">
         <p>You can combine the options and require members to own a license and pay a regular monthly contribution. You can
           also set up different benefits for each of the options.</p>
         <a href="">See the example</a>
@@ -386,6 +425,33 @@
       </div>
     </div>
 
+    <div class="other">
+      <div class="block">
+        <div class="card">
+          <img src="resources/other-icon-1.svg" alt="img">
+          <h2>Keep all your copyrights</h2>
+          <p>Retain ownership of all your content and partnerships</p>
+        </div>
+        <div class="card">
+          <img src="resources/other-icon-3.svg" alt="img">
+          <h2>Integrate with other<br>platforms</h2>
+          <p>Integrate with your Discors server, YouTube Channel, Instagram, TikTok, or Twitch accounts</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card">
+          <img src="resources/other-icon-2.svg" alt="img">
+          <h2>Supercharge your career with our creator growth tools</h2>
+          <p>Analytics and insights for personalized growth recommendations. Personal coaching and mentorship.</p>
+        </div>
+        <div class="card">
+          <img src="resources/other-icon-4.svg" alt="img">
+          <h2>Your fans remain your fans</h2>
+          <p>CRREO will even try to bring you some new ones</p>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Call to action -->
     <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
@@ -489,28 +555,28 @@
 
 
       // Options animation
-      var option1 = document.querySelector('#opt-1');
-      var option2 = document.querySelector('#opt-2');
-      var option3 = document.querySelector('#opt-3');
-      var optionP1 = document.querySelector('#opt-p1');
-      var optionP2 = document.querySelector('#opt-p2');
-      var optionP3 = document.querySelector('#opt-p3');
-
-      optionP1.classList.add('option-popup-selected');
-      option1.classList.add('option-selected');
 
       if (width < 1025) {
-        optionP1.style.transitionDelay = "0.3s";
+        var option1 = document.querySelector('#opt-1');
+        var option2 = document.querySelector('#opt-2');
+        var option3 = document.querySelector('#opt-3');
+        var optionP1 = document.querySelector('#opt-p1');
+        var optionP2 = document.querySelector('#opt-p2');
+        var optionP3 = document.querySelector('#opt-p3');
+
+        optionP1.classList.add('option-popup-selected');
+        optionP2.style.display = "none";
+        optionP3.style.display = "none";
+        option1.classList.add('option-selected');
 
         option1.addEventListener("click", function () {
           option1.classList.toggle("option-selected");
           optionP1.classList.toggle("option-popup-selected");
           if (optionP1.classList.contains('option-popup-selected')) {
-            optionP1.style.transitionDelay = "0.3s";
           }
           else{
-            optionP1.style.transitionDelay = "0s";
             option1.style.marginBottom = "4vw";
+            optionP1.style.display = "none";
           };
         });
 
@@ -518,11 +584,10 @@
           option2.classList.toggle("option-selected");
           optionP2.classList.toggle("option-popup-selected");
           if (optionP2.classList.contains('option-popup-selected')) {
-            optionP2.style.transitionDelay = "0.3s";
           }
           else {
-            optionP2.style.transitionDelay = "0s";
             option2.style.marginBottom = "4vw";
+            optionP2.style.display = "none";
           };
         });
 
@@ -530,15 +595,24 @@
           option3.classList.toggle("option-selected");
           optionP3.classList.toggle("option-popup-selected");
           if (optionP3.classList.contains('option-popup-selected')) {
-            optionP3.style.transitionDelay = "0.3s";
           }
           else {
-            optionP3.style.transitionDelay = "0s";
             option3.style.marginBottom = "4vw";
+            optionP3.style.display = "none";
           };
         });
       }
       else{
+
+        var option1 = document.querySelector('#optd-1');
+        var option2 = document.querySelector('#optd-2');
+        var option3 = document.querySelector('#optd-3');
+        var optionP1 = document.querySelector('#optd-p1');
+        var optionP2 = document.querySelector('#optd-p2');
+        var optionP3 = document.querySelector('#optd-p3');
+
+        option1.classList.add('option-selected');
+        optionP1.classList.add('option-popup-selected');
 
         option1.addEventListener("mouseover", function () {
           option1.classList.add('option-selected');
@@ -609,7 +683,6 @@
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         return parts.join('.');
       }
-
     </script>
 
 </body>
