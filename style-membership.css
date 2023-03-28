@@ -388,10 +388,7 @@ button {
   border-radius: 1vw;
   display: flex;
   background-color: #F6F6FB;
-}
-
-#second-block{
-  border: 0.1vw solid rgba(0, 0, 116, 0.1)
+  border: 0.1vw solid rgba(0, 0, 116, 0.1);
 }
 
 .commission .block p {
@@ -1110,10 +1107,7 @@ footer p {
     padding: 6vw 4vw;
     border-radius: 4vw;
     margin-bottom: 4vw;
-  }
-
-  #second-block {
-    border: 0.2vw solid rgba(0, 0, 116, 0.1)
+    border: 0.2vw solid rgba(0, 0, 116, 0.1);
   }
 
   .commission .block p {
