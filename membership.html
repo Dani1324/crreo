@@ -202,15 +202,15 @@
         <h5>Estimated funding provided by your members</h5>
         <div class="line">
           <p>Initial (one time)</p>
-          <p id="initialFunding">$59700.00</p>
+          <p id="initialFunding">$59,700.00</p>
         </div>
         <div class="line">
           <p>Regular (monthly)</p>
-          <p id="monthlyFunding">$3000.00</p>
+          <p id="monthlyFunding">$3,000.00</p>
         </div>
         <div class="line result">
           <p>Your first year payout</p>
-          <p id="annualPayout">$95700.00</p>
+          <p id="annualPayout">$95,700.00</p>
         </div>
       </div>
     </div>
@@ -603,9 +603,23 @@
         var regularFunding = (fans * monthlyCost);
         var firstYearPayout = (initialFunding + (regularFunding * 12)).toFixed(2);
 
-        document.getElementById("initialFunding").innerText = '$' + initialFunding.toFixed(2).toLocaleString('en-US', { useGrouping: false });
-        document.getElementById("monthlyFunding").innerText = '$' + regularFunding.toFixed(2).toLocaleString('en-US', { useGrouping: false });
+        initialFunding = initialFunding.toFixed(2);
+        regularFunding = regularFunding.toFixed(2);
+
+        initialFunding = formatNumberWithCommas(parseFloat(initialFunding));
+        regularFunding = formatNumberWithCommas(parseFloat(regularFunding));
+        firstYearPayout = formatNumberWithCommas(parseFloat(firstYearPayout));
+
+        document.getElementById("initialFunding").innerText = '$' + initialFunding;
+        document.getElementById("monthlyFunding").innerText = '$' + regularFunding;
         document.getElementById("annualPayout").innerText = '$' + firstYearPayout;
+      }
+      
+      // Separate thousands in numbers with ","
+      function formatNumberWithCommas(number) {
+        var parts = number.toString().split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return parts.join('.');
       }
 
     </script>
