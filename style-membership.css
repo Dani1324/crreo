@@ -179,11 +179,12 @@ button {
   border-radius: 1.5vw;
   border: 0.1vw solid rgba(0, 0, 116, 0.2);
   padding: 2.5vw 2.5vw 2vw 2.5vw;
+  background-color: #fff;
 }
 
 .option-selected{
   color: #F6F6FB;
-  background-color: #000074;
+  background-color: #000074 !important;
   transition: all 0.7s ease;
 }
 
@@ -261,11 +262,6 @@ button {
   color: #C8102E;
   margin-top: 1.5vw;
   user-select: none;
-}
-
-.cards {
-  margin-bottom: 6vw;
-  transition: all 0.3s ease-in-out;
 }
 
 
@@ -1174,14 +1170,16 @@ footer p {
   }
 
   .options .card-popup {
+    display: none;
     background-color: #F6F6FB;
     width: 80vw;
-    margin: 0;
+    margin-bottom: 4vw;
     border-radius: 3vw;
     padding: 6vw 4vw 5vw 4vw;
   }
 
   .option-popup-selected {
+    display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0vw) !important;
@@ -1198,32 +1196,6 @@ footer p {
     font-size: 4.5vw;
     margin-top: 4vw;
   }
-
-  .cards {
-    margin-bottom: 0vw;
-    position: relative;
-    top: 0vw;
-    z-index: -1;
-  }
-
-  #opt-p1{
-    position: absolute;
-    top: -210vw;
-    z-index: -1;
-  }
-
-  #opt-p2 {
-    position: absolute;
-    top: -119vw;
-    z-index: -1;
-  }
-
-  #opt-p3 {
-    position: absolute;
-    top: -76vw;
-    z-index: -1;
-  }
-
 
   /* Commission */
   .commission {

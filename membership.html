@@ -154,27 +154,27 @@
         <h4>$xxx</h4>
         <h5>(One time payment)</h5>
       </div>
+      <div class="card-popup" id="opt-p1">
+        <p>A personal membership license acts as a lifetime ticket to your program. It has a tangible value for the fan since
+          they can later re-sell or transfer the license when leaving your program (restrictions apply). You choose how many
+          licenses and at what price you offer to your fans.</p>
+        <a href="">See the example</a>
+      </div>
       <div class="card" id="opt-2">
         <h3>Option 2</h3>
         <h2>Setup traditional monthly subscription plan for fans</h2>
         <h4>$xx</h4>
         <h5>(Monthly)</h5>
       </div>
+      <div class="card-popup" id="opt-p2">
+        <p>You can offer a classic monthly subscription. You can also set up tiers with different levels of benefits.</p>
+        <a href="">See the example</a>
+      </div>
       <div class="card" id="opt-3">
         <h3>Option 3</h3>
         <h2>Combine both models</h2>
         <h4>$xxx + $xx</h4>
         <h5>(One time payment)<span>(Monthly)</span></h5>
-      </div>
-    </div>
-    <div class="options cards">
-      <div class="card-popup" id="opt-p1">
-        <p>A personal membership license acts as a lifetime ticket to your program. It has a tangible value for the fan since they can later re-sell or transfer the license when leaving your program (restrictions apply). You choose how many licenses and at what price you offer to your fans.</p>
-        <a href="">See the example</a>
-      </div>
-      <div class="card-popup" id="opt-p2">
-        <p>You can offer a classic monthly subscription. You can also set up tiers with different levels of benefits.</p>
-        <a href="">See the example</a>
       </div>
       <div class="card-popup" id="opt-p3">
         <p>You can combine the options and require members to own a license and pay a regular monthly contribution. You can
@@ -501,53 +501,41 @@
 
       if (width < 1025) {
         optionP1.style.transitionDelay = "0.3s";
-        option1.style.marginBottom = "82vw";
-        option2.style.marginBottom = "4vw";
-        option3.style.marginBottom = "4vw";
 
         option1.addEventListener("click", function () {
-          option1.classList.add('option-selected');
-          option2.classList.remove('option-selected');
-          option3.classList.remove('option-selected');
-          optionP1.classList.add('option-popup-selected');
-          optionP2.classList.remove('option-popup-selected');
-          optionP3.classList.remove('option-popup-selected');
-          optionP1.style.transitionDelay = "0.3s";
-          optionP2.style.transitionDelay = "0s";
-          optionP3.style.transitionDelay = "0s";
-          option1.style.marginBottom = "82vw";
-          option2.style.marginBottom = "4vw";
-          option3.style.marginBottom = "4vw";
+          option1.classList.toggle("option-selected");
+          optionP1.classList.toggle("option-popup-selected");
+          if (optionP1.classList.contains('option-popup-selected')) {
+            optionP1.style.transitionDelay = "0.3s";
+          }
+          else{
+            optionP1.style.transitionDelay = "0s";
+            option1.style.marginBottom = "4vw";
+          };
         });
 
         option2.addEventListener("click", function () {
-          option1.classList.remove('option-selected');
-          option2.classList.add('option-selected');
-          option3.classList.remove('option-selected');
-          optionP1.classList.remove('option-popup-selected');
-          optionP2.classList.add('option-popup-selected');
-          optionP3.classList.remove('option-popup-selected');
-          optionP1.style.transitionDelay = "0s";
-          optionP3.style.transitionDelay = "0s";
-          optionP2.style.transitionDelay = "0.3s";
-          option1.style.marginBottom = "4vw";
-          option2.style.marginBottom = "50vw";
-          option3.style.marginBottom = "4vw";
+          option2.classList.toggle("option-selected");
+          optionP2.classList.toggle("option-popup-selected");
+          if (optionP2.classList.contains('option-popup-selected')) {
+            optionP2.style.transitionDelay = "0.3s";
+          }
+          else {
+            optionP2.style.transitionDelay = "0s";
+            option2.style.marginBottom = "4vw";
+          };
         });
 
         option3.addEventListener("click", function () {
-          option1.classList.remove('option-selected');
-          option2.classList.remove('option-selected');
-          option3.classList.add('option-selected');
-          optionP1.classList.remove('option-popup-selected');
-          optionP2.classList.remove('option-popup-selected');
-          optionP3.classList.add('option-popup-selected');
-          optionP1.style.transitionDelay = "0s";
-          optionP2.style.transitionDelay = "0s";
-          optionP3.style.transitionDelay = "0.3s";
-          option1.style.marginBottom = "4vw";
-          option2.style.marginBottom = "4vw";
-          option3.style.marginBottom = "80vw";
+          option3.classList.toggle("option-selected");
+          optionP3.classList.toggle("option-popup-selected");
+          if (optionP3.classList.contains('option-popup-selected')) {
+            optionP3.style.transitionDelay = "0.3s";
+          }
+          else {
+            optionP3.style.transitionDelay = "0s";
+            option3.style.marginBottom = "4vw";
+          };
         });
       }
       else{
