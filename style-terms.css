@@ -172,6 +172,10 @@ h1 {
   font-weight: 500;
 }
 
+.content strong {
+  font-weight: 500;
+}
+
 
 /* Footer */
 footer {
