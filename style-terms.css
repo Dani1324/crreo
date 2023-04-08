@@ -189,6 +189,10 @@ h1 {
   margin-bottom: 0.5vw;
 }
 
+.content .numbered-list{
+  list-style: auto;
+}
+
 
 /* Footer */
 footer {
@@ -354,6 +358,10 @@ footer p {
 
   .content ol {
     padding-left: 6%;
+  }
+
+  .content ol li {
+    margin-bottom: 3.5vw;
   }
 
 
