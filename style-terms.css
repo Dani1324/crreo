@@ -176,6 +176,19 @@ h1 {
   font-weight: 500;
 }
 
+.content i{
+  font-style: italic;
+}
+
+.content ol{
+  list-style: lower-alpha;
+  padding-left: 3%;
+}
+
+.content ol li {
+  margin-bottom: 0.5vw;
+}
+
 
 /* Footer */
 footer {
@@ -337,6 +350,10 @@ footer p {
   .content table td {
     border: 0.2vw solid rgba(0, 0, 116, 0.2);
     padding: 2vw 3vw;
+  }
+
+  .content ol {
+    padding-left: 6%;
   }
 
 
