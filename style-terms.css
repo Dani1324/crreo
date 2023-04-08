@@ -193,6 +193,10 @@ h1 {
   list-style: auto;
 }
 
+.content .pointed-list {
+  list-style: disc;
+}
+
 
 /* Footer */
 footer {
