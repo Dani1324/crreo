@@ -24,8 +24,8 @@ button {
 
 /* Header */
 .header {
-  width: 78vw;
-  padding: 0.3vw 11vw;
+  width: 72vw;
+  padding: 0.3vw 17vw 0.3vw 11vw;
   display: flex;
   background-color: rgba(247, 247, 251, 0.86);
   position: fixed;
@@ -57,31 +57,6 @@ button {
 #selected-page {
   color: rgb(200, 16, 46);
   font-weight: 400;
-}
-
-.header button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  cursor: pointer;
-  display: flex;
-  margin-top: 1vw;
-  transform: translateY(-0.05vw);
-  transition: all 0.1s;
-}
-
-.header button h5 {
-  color: #C8102E;
-  font-size: 1.1vw;
-  font-weight: 400;
-}
-
-.header button img {
-  height: 1.4vw;
-  margin-left: 0.4vw;
-}
-
-.header button:active {
-  transform: scale(0.99) translateY(-0.03vw);
 }
 
 .menu, .hamburger {
@@ -801,7 +776,7 @@ footer p {
     height: 4.5vw;
   }
 
-  .header .links, .header button, .hamburger{
+  .header .links, .hamburger{
     display: none;
   }
 
@@ -1377,7 +1352,8 @@ footer p {
 
   /* Footer */
   footer {
-    margin-bottom: 10vw;
+    margin: auto 6vw 10vw 6vw;
+    width: 88vw;
   }
 
   footer img {
@@ -1390,6 +1366,6 @@ footer p {
     font-size: 4vw;
     margin-bottom: 2vw;
     opacity: 0.75;
+    line-height: 2;
   }
-
 }
