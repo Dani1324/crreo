@@ -750,7 +750,21 @@ footer {
 footer img {
   display: flex;
   width: 7.5vw;
-  margin: 3vw auto;
+  margin: 3vw auto 2vw auto;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 1.4vw;
+  opacity: 0.7;
+}
+
+footer h4 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.2vw;
+  opacity: 0.6;
+  margin: 1vw auto 2vw auto;
 }
 
 footer p {
@@ -1350,10 +1364,11 @@ footer p {
     line-height: 1.5;
   }
 
+
   /* Footer */
   footer {
-    margin: auto 6vw 10vw 6vw;
-    width: 88vw;
+    margin: auto 0vw 10vw 0vw;
+    width: 100vw;
   }
 
   footer img {
@@ -1362,9 +1377,24 @@ footer p {
     margin: 6vw auto;
   }
 
+  footer h3 {
+    font-size: 5vw;
+    opacity: 0.7;
+    line-height: 2;
+    margin-bottom: -1vw;
+  }
+
+  footer h4 {
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 4vw;
+    opacity: 0.5;
+    line-height: 2;
+  }
+
   footer p {
     font-size: 4vw;
-    margin-bottom: 2vw;
+    margin-bottom: 0vw;
     opacity: 0.75;
     line-height: 2;
   }
