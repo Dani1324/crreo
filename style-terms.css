@@ -48,9 +48,9 @@ button {
 }
 
 .header .links h4 {
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 200;
-  padding-top: 1.3vw;
+  padding-top: 1.15vw;
   margin: 0 1.4vw;
 }
 
@@ -290,7 +290,7 @@ footer p {
     display: block;
     width: max-content;
     margin: 5vh auto;
-    font-size: 5.5vw;
+    font-size: 6vw;
     font-weight: 300;
     opacity: 0;
   }
