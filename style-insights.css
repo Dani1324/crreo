@@ -172,19 +172,39 @@ ul.dib-cat-menu li a{ opacity: 1 !important;}
 
 
 /* Footer */
-.footer{ width: 100vw; margin: 10vw 0 3vw 0;}
-.footer img{ width: 7vw; margin: 1.5vw 46.5vw; opacity: 100%;}
+footer {
+  margin-bottom: 3vw;
+  margin-top: 10vw;
+  color: #000074;
+  font-family: 'Nunito';
+}
 
-.footer p{
-  font-family: 'Montserrat';
-  font-weight: 100;
-  font-size: 1.16vw;
-  width: 100%;
-  line-height: 1.25;
-  padding-top: 0.3vw;
+footer img {
+  display: flex;
+  width: 7.5vw;
+  margin: 3vw auto 2vw auto;
+}
+
+footer h3 {
   text-align: center;
-  letter-spacing: 0.05vw;
-  color: #000075;
+  font-size: 1.4vw;
+  opacity: 0.7;
+}
+
+footer h4 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.2vw;
+  opacity: 0.6;
+  margin: 1vw auto 2vw auto;
+}
+
+footer p {
+  font-size: 1.1vw;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 0.8vw;
+  opacity: 0.8;
 }
 
 
