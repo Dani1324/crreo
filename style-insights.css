@@ -1,7 +1,7 @@
 /* ! General style of the website */
 html{ overflow-x:hidden; min-height: 100vh;}
 body{
-  font-family: 'Montserrat';
+  font-family: 'Nunito';
   font-size: 1.32vw;
   background-color: #FEFEFF;
   color: #000075;
