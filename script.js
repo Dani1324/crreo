@@ -6,9 +6,6 @@ AOS.init({
 
 
 // Mobile optimization
-const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
-var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
-
 if (width < 1025) {
   if (iOS) {
     $(document).ready(function() {
@@ -92,55 +89,6 @@ window.onload = function() {
   }
   document.body.appendChild(css);
 };
-
-
-// Menu
-$( document ).ready(function() {
-  $( ".hamburger" ).on('click', function() {
-      $(".menu").toggleClass("menu--open");
-    });
-});
-
-// Add smooth scrolling to all links
-$("a#ciao").on('click', function(event) {
-
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-      // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  }
-});
-
-
-// Submenu
-$(".group2").css("display", "none");
-$(".sub-group2").css("display", "none");
-$(".sub-group3").css("display", "none");
-$(".sub-group4").css("display", "none");
-
-$("#move").hover( function(){
-  $(".submenu").css("margin-top", "0vw");
-}, function(){
-  $(".touch").hover( function(){
-    $(".submenu").css("margin-top", "-4vw");
-  })
-  $(".content").hover( function(){
-    $(".submenu").css("margin-top", "-4vw");
-  })
-});
 
 
 // FAQ buttons
