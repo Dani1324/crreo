@@ -1,7 +1,7 @@
 /* ! General style of the website */
 html{ overflow-x:hidden;}
 body{
-  font-family: 'Montserrat';
+  font-family: 'Nunito';
   font-size: 1.32vw;
   background-color: #FEFEFF;
   right: 0;
@@ -13,41 +13,73 @@ body{
 a{ text-decoration:none; color: #000074; cursor: pointer;}
 
 /* Header */
-.header{
-  width: 80vw;
-  padding: 1vw 10vw 0.8vw 10vw;
-  border-bottom: 1.5px solid rgba(235, 232, 229, 1);
+.header {
+  width: 72vw;
+  padding: 0.3vw 17vw 0.3vw 11vw;
+  display: flex;
+  background-color: rgba(247, 247, 251, 0.86);
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  background-color: #fff;
-  z-index: 49;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-.logo{
-  position: static;
-  padding: 0.66vw 0;
-  height: 1.69vw;
-  width: auto;
-  transition: opacity 1s;
-  z-index: 999;
+.header .logo {
+  padding: 0.2vw;
+  margin: 0.9vw 2.8vw 0.7vw 0;
+  height: 1.2vw;
 }
 
-.links{
+.header .links {
   display: flex;
   margin: 0 auto;
 }
 
-.links h4{
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 1vw;
+.header .links h4 {
+  font-size: 1.1vw;
   color: #000074;
-  letter-spacing: 0.11vw;
-  padding-top: 0.95vw;
-  margin: 0 3vw 0.44vw 0;
+  font-weight: 200;
+  padding-top: 1.15vw;
+  margin: 0 1.4vw;
 }
+
+#selected-page {
+  color: rgb(200, 16, 46);
+  font-weight: 400;
+}
+
+.menu,
+.hamburger {
+  display: none;
+}
+
+
+/* Underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.07vw;
+  bottom: -0.3vw;
+  left: 0;
+  background-color: #C8102E;
+  transform-origin: bottom right;
+  transition: transform 0.35s;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 /* Button */
 button{
@@ -71,8 +103,6 @@ button:active{ box-shadow: rgba(100, 100, 111, 0.25) 0px 2px 6px 0px;}
 button img{ position: static; width: 1.41vw; padding: 0.49vw 0.35vw 0 0.49vw;}
 button h5{ font-family: 'Montserrat'; color: #fff; font-size: 1.06vw; margin: 0.56vw 0 0 0.21vw; white-space: nowrap; text-align: center; width: 100%;}
 .btn-1{ width: 9.2vw;}
-
-.hamburger{ display: none;}
 
 
 /* Underline animation */
@@ -456,57 +486,103 @@ textarea{
 @media (max-width: 1025px) {
 
     /* Header */
-    .header{ padding: 1.5vh 10vw;}
-    .links, #header-button{ display: none;}
-
-    .menu{
-      background-color: #fff;
+    .header {
+      width: 88vw;
+      padding: 3.4vw 6vw 3.5vw 6vw;
+    }
+  
+    .header .logo {
+      padding: 0;
+      margin: 1.2vw 0 0 0;
+      height: 4.5vw;
+    }
+  
+    .header .links,
+    .hamburger {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      position: relative;
+      width: 6.2vw;
+      height: 4.7vw;
+      background-image: url('resources/menu.svg');
+      background-size: contain;
       position: absolute;
+      right: 6vw;
+      margin: 0.8vw 0;
+    }
+  
+    .hamburger--open {
+      background-image: url('resources/close.svg');
+      width: 4.7vw;
+      margin: 0.8vw 0.75vw;
+      transition: all 0s;
+    }
+  
+  
+    /* Menù settings */
+    .menu {
+      display: block;
+      position: fixed;
+      overflow: hidden;
       top: 0;
-      right: -100%;
-      width: 90vw;
-      height: 60vh;
-      padding: 20vh 5vw;
-      z-index: 700;
-      display: block;
-      transition: all 1s cubic-bezier(.215,.61,.355,1);
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0.5;
+      z-index: 99;
+      transform: translateY(-100vh);
+      background-color: rgba(247, 247, 251, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: all 0.3s ease-out;
     }
-
-    .menu a{ color: #fff; width: 0%; display: block; margin: 5vh 0 0 5vw; font-size: 4vw; white-space: nowrap;}
-    .menu--open{ right: -35%;}
-    .menu h4, .menu h5{ color: #000075;}
-    .submenu{ display: none;}
-
-    .options{ height: 11.2vw; overflow-y: hidden; transition: 0.5s;}
-    .options .main-option{ display: flex; margin: 7vw 0 5vw 4.95vw;}
-    .options .main-option h5{ font-size: 4vw; margin-right: 2vw;}
-
-    .options a{ font-size: 3.3vw; margin: 2vw 0 0 6.5vw;}
-    .options a h6{ color: #000075; font-weight: 200;}
-
-    .hamburger{
-      display: block;
-      margin-top: 1.45vw;
-      width: 5vw;
-      height: 4vw;
-      margin-left: calc(72vw - 3.1vw - 11.24vw);
-      z-index: 999;
+  
+    .menu--header {
+      background-color: rgba(247, 247, 251, 0);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      transition: all 0.3s ease-out;
     }
-
-    .hamburger span{
-      background: #000075;
-      height: 0.44vw;
-      width: 100%;
-      display: block;
-      margin-bottom: 1.23vw;
-      border-radius: 2vw;
+  
+    .body--fixed {
+      overflow: hidden;
     }
-
-    .logo{
-      padding: 1.3vw 0;
-      height: 4vw;
-      transition: opacity 1s;
-      z-index: 999;
+  
+    .menu--open {
+      display: block;
+      opacity: 1;
+      transform: translateY(0vh);
+      transition: all 0.3s ease-out;
+    }
+  
+    .menu-links {
+      width: 88vw;
+      margin: 15vh 6vw 0 6vw;
+    }
+  
+    .menu-links a {
+      display: block;
+      width: max-content;
+      margin: 5vh auto;
+      font-size: 6vw;
+      font-weight: 300;
+      opacity: 0;
+    }
+  
+    .menu .selected {
+      color: #C8102E;
+      font-style: oblique;
+      font-weight: 600;
+    }
+  
+  
+    /* Underline animation */
+    .hover-underline-animation:after {
+      height: 0.2vw;
+      bottom: -0.7vw;
     }
 
 
@@ -803,47 +879,104 @@ textarea{
 @media (max-width: 768px) {
 
   /* Header */
-  .links, #header-button{ display: none;}
+  .header {
+    width: 88vw;
+    padding: 3.4vw 6vw 3.5vw 6vw;
+  }
 
-  .menu{
-    background-color: #fff;
+  .header .logo {
+    padding: 0;
+    margin: 1.2vw 0 0 0;
+    height: 4.5vw;
+  }
+
+  .header .links,
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 6.2vw;
+    height: 4.7vw;
+    background-image: url('resources/menu.svg');
+    background-size: contain;
     position: absolute;
+    right: 6vw;
+    margin: 0.8vw 0;
+  }
+
+  .hamburger--open {
+    background-image: url('resources/close.svg');
+    width: 4.7vw;
+    margin: 0.8vw 0.75vw;
+    transition: all 0s;
+  }
+
+
+  /* Menù settings */
+  .menu {
+    display: block;
+    position: fixed;
+    overflow: hidden;
     top: 0;
-    right: -100%;
-    width: 90vw;
-    height: 60vh;
-    padding: 20vh 5vw;
-    z-index: 700;
-    display: block;
-    transition: all 1s cubic-bezier(.215,.61,.355,1);
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 99;
+    transform: translateY(-100vh);
+    background-color: rgba(247, 247, 251, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease-out;
   }
 
-  .menu a{ color: #fff; width: 0%; display: block; margin: 5vh 0 0 5vw; font-size: 5.8vw; white-space: nowrap;}
-  .menu--open{ right: -35%;}
-
-  .hamburger{
-    display: block;
-    margin-top: 1.85vw;
-    width: 5vw;
-    height: 4vw;
-    margin-left: calc(72vw - 3.1vw - 11.24vw);
-    z-index: 999;
+  .menu--header {
+    background-color: rgba(247, 247, 251, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: all 0.3s ease-out;
   }
 
-  .hamburger span{
-    background: #000075;
-    height: 0.64vw;
-    width: 100%;
-    display: block;
-    margin-bottom: 1.23vw;
-    border-radius: 2vw;
+  .body--fixed {
+    overflow: hidden;
   }
 
-  .logo{
-    padding: 2vw 0;
-    height: 4vw;
-    transition: opacity 1s;
-    z-index: 999;
+  .menu--open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0vh);
+    transition: all 0.3s ease-out;
+  }
+
+  .menu-links {
+    width: 88vw;
+    margin: 15vh 6vw 0 6vw;
+  }
+
+  .menu-links a {
+    color: #000074;
+    display: block;
+    width: max-content;
+    margin: 5vh auto;
+    font-size: 6vw;
+    font-weight: 300;
+    opacity: 0;
+  }
+
+  .menu .selected {
+    color: #C8102E;
+    font-style: oblique;
+    font-weight: 600;
+  }
+
+
+  /* Underline animation */
+  .hover-underline-animation:after {
+    height: 0.2vw;
+    bottom: -0.7vw;
   }
 
 
