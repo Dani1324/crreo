@@ -1,7 +1,7 @@
 /* ! General style of the website */
-html{ overflow-x:hidden; min-height: 100vh;}
+html{ overflow-x:hidden;}
 body{
-  font-family: 'Montserrat';
+  font-family: 'Nunito';
   font-size: 1.32vw;
   background-color: #FEFEFF;
   color: #000075;
@@ -9,7 +9,6 @@ body{
   top: 0;
   padding: 0;
   overflow: hidden;
-  min-height: 100vh;
 }
 
 a{ text-decoration: none; color: #000074; cursor: pointer;}
@@ -751,7 +750,7 @@ textarea{
   .scalebutton{ transition: all 0.20s; width: 22vw;}
   .scalebutton:active{ transform: scale(0.95);}
   .btn-1{ width: 22vw;}
-  
+
 
   /* Content */
   .content{ padding: 40vw 10vw 0 10vw;}
