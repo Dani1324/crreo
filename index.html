@@ -266,17 +266,19 @@
     }, 0);
 
     // Smooth scrolling to all .smooth links
-    $("a.smooth").on('click', function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function () {
-          window.location.hash = hash;
+    document.querySelectorAll("a.smooth").forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            document.documentElement.scrollTo({
+              top: document.querySelector(hash).offsetTop,
+              behavior: 'smooth'
+            });
+            window.location.hash = hash;
+          }
         });
-      }
-    });
+      });
 
     // Mobile menu
     document.addEventListener("DOMContentLoaded", function () {
