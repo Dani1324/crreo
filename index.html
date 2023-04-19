@@ -253,17 +253,56 @@
     <p>All rights reserved. Patent pending. © 2023 CRREO</p>
   </footer>
 
-  <!-- Link to js file -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="membership-script.js"></script>
-    
+  <!-- Script -->
   <script>
-    // Carousel loop animation
-      var carousel = document.querySelector('.carousel-inner');
+    
+    const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+    var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-      setInterval(function () {
-        carousel.classList.add('animate');
-      }, 0);
+    // Carousel loop animation
+    var carousel = document.querySelector('.carousel-inner');
+
+    setInterval(function () {
+      carousel.classList.add('animate');
+    }, 0);
+
+    // Smooth scrolling to all .smooth links
+    $("a.smooth").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    // Mobile menu
+    document.addEventListener("DOMContentLoaded", function () {
+      var hamburger = document.querySelector(".hamburger");
+      var menu = document.querySelector(".menu");
+      var header = document.querySelector('.header');
+      var body = document.querySelector('body');
+
+      hamburger.addEventListener("click", function () {
+
+        hamburger.classList.toggle("hamburger--open");
+        menu.classList.toggle("menu--open");
+        header.classList.toggle("menu--header");
+        body.classList.toggle("body--fixed");
+
+        gsap.set(".menu-links a", { opacity: 0, });
+        gsap.to(".menu-links a", {
+          delay: 0.2,
+          duration: 0.5,
+          opacity: 1,
+        });
+
+      });
+    });
+    
   </script>
 
 </body>
