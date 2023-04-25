@@ -1,227 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
 
-      gtag('config', 'G-G0W3CYC1ZZ');
-      gtag('config', 'AW-11071657082');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-G0W3CYC1ZZ');
+    gtag('config', 'AW-11071657082');
+  </script>
 
-    <!-- Hotjar Tracking Code for https://crreo.co -->
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:3322378,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+  <!-- Hotjar Tracking Code for https://crreo.co -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3322378, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Fonts (Montserrat + Nunito) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Nunito:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- AOS animations library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Gsap + Split type + sliderjs-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- Altre impostazioni del sito -->
-    <title>CRREO | Help your favorite creator grow</title>
-    <link rel="stylesheet" href="style-fans.css">
-    <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Gsap + Split type + sliderjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <!-- Fonts (Montserrat + Nunito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Altre impostazioni del sito -->
+  <title>CRREO | Fans</title>
+  <link rel="stylesheet" href="style-fans.css">
+  <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
 
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  <!-- MailerLite Universal -->
+  <script>
+    (function (w, d, e, u, f, l, n) {
+      w[f] = w[f] || function () {
+        (w[f].q = w[f].q || [])
+          .push(arguments);
+      }, l = d.createElement(e), l.async = 1, l.src = u,
+      n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+    })
+      (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
     ml('account', '301695');
-</script>
-<!-- End MailerLite Universal -->
-  </head>
+  </script>
+  <!-- End MailerLite Universal -->
 
-  <body>
-    <!-- Header -->
-    <div class="header">
-      <!-- Desktop -->
-      <a href="#hero" class="smooth">
-        <img class="logo" data-src="resources/logo.webp" alt="img">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <!-- Desktop -->
+    <a href="#hero" class="smooth">
+      <img class="logo" src="resources/logo.webp" alt="img">
+    </a>
+    <div class="links">
+      <a href="index.html">
+        <h4 class="hover-underline-animation">Creators</h4>
       </a>
-      <div class="links">
-        <a href="index.html">
-          <h4 class="hover-underline-animation">Creators</h4>
-        </a>
-        <a href="#">
-          <h4 class="hover-underline-animation">Grow followers</h4>
-        </a>
-        <a href="monetize.html">
-          <h4 class="hover-underline-animation">Monetize followers</h4>
-        </a>
-        <a href="#hero" class="smooth">
-          <h4 class="hover-underline-animation" id="selected-page">Fans</h4>
-        </a>
-        <a href="pricing.html">
-          <h4 class="hover-underline-animation">Pricing</h4>
-        </a>
-        <a href="insights.html">
-          <h4 class="hover-underline-animation">Insights</h4>
-        </a>
-      </div>
-      <!-- Mobile menu icon -->
-      <div class="hamburger"></div>
+      <a href="#">
+        <h4 class="hover-underline-animation">Grow followers</h4>
+      </a>
+      <a href="monetize.html">
+        <h4 class="hover-underline-animation">Monetize followers</h4>
+      </a>
+      <a href="#hero" class="smooth">
+        <h4 class="hover-underline-animation" id="selected-page">Fans</h4>
+      </a>
+      <a href="pricing.html">
+        <h4 class="hover-underline-animation">Pricing</h4>
+      </a>
+      <a href="insights.html">
+        <h4 class="hover-underline-animation">Insights</h4>
+      </a>
     </div>
+    <!-- Mobile menu icon -->
+    <div class="hamburger"></div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="menu">
+    <div class="menu-links">
+      <a href="index.html" class="hover-underline-animation">Creators</a>
+      <a href="#" class="hover-underline-animation">Grow followers</a>
+      <a href="monetize.html" class="hover-underline-animation">Monetize followers</a>
+      <a href="#hero" class="hover-underline-animation selected smooth">Fans</a>
+      <a href="pricing.html" class="hover-underline-animation">Pricing</a>
+      <a href="insights.html" class="hover-underline-animation">Insights</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero" id="hero">
+    <div class="hero-texts">
+      <h1>Join your creator’s <span>inner circle</span></h1>
+      <h2>Get VIP access to your creator. Unlock member-only perks. Join a private community with other enthusiasts.</h2>
+      <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+        <h5>Get started</h5>
+      </a>
+    </div>
+    <img src="resources/hero-img-fans.webp" alt="">
+  </div>
+
+  <!-- Description -->
+  <div class="description">
+    <img data-src="resources/logo.webp" alt="Crreo logo">
+    <h3>The only platform for fans to join the exclusive<br>
+    inner circle of their favorite content creator</h3>
+    <p>Enjoy VIP treatment. Connect and collaborate in a private community. Get access to exclusive content, behind-the-scenes,
+    and member-only perks. Enjoy special offers, discounts, merch and events.</p>
+    <!-- Cards -->
+    <div class="cards">
+      <div class="block">
+        <div class="card">
+          <img src="resources/cards-icon-1.webp" alt="img">
+          <h2>Partner with your favorite content creators</h2>
+          <p>Help accelerate creators’ growth. Be part of their growth story and see your benefits grow too.</p>
+        </div>
+        <div class="card">
+          <img src="resources/cards-icon-2.webp" alt="img">
+          <h2>Connect with fellow fans</h2>
+          <p>Join a community of like-minded individuals who share your passion for your favorite creator and the topic.</p>
+          <p>Discuss, collaborate, and connect with people who understand your enthusiasm.</p>
+        </div>
+        <div class="card">
+          <img src="resources/cards-icon-3.webp" alt="img">
+          <h2>Fuel your favorite creator’s passion</h2>
+          <p>Your active participation and sponsorship on CRREO help your favorite creator continue doing what they love -
+            creating content that you can’t get enough of.</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="card">
+          <img src="resources/cards-icon-4.webp" alt="img">
+          <h2>Unlock creator-curated perks</h2>
+          <p>Enjoy an exclusive members-only program with benefits handpicked by your creator.</p>
+          <p>Get access to private content, digital tools and assets, brand deals, content voting, a virtual club room, one-on-one
+          chats with the creator, and more!</p>
+        </div>
+        <div class="card">
+          <img src="resources/cards-icon-5.webp" alt="img">
+          <h2>Make a difference with your membership</h2>
+          <p>By joining your favorite creator’s membership program, you’re contributing to something important.</p>
+          <p>Work together to achieve a shared objective and create positive change.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Call to action -->
+    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+      <h5>Get started</h5>
+    </a>
+  </div>
+
+  <!-- How it works --> 
+  <div class="subtitle">
+    <h2>HOW IT WORKS</h2>
+  </div>
+  <div class="how">
+    <div>
+      <div class="how-number">
+        <h5>1</h5>
+      </div>
+      <div class="how-texts">
+        <h3>Find your creator’s program.</h3>
+        <p>Browse creators who are active on our platform. Don’t see your favorite creator?</p>
+        <p>Let them know about CRREO! Check out what your creators offer, their program benefits, and what they ask of their fans.</p>
+      </div>
+    </div>
+    <div>
+      <div class="how-number">
+        <h5>2</h5>
+      </div>
+      <div class="how-texts">
+        <h3>Join the community.</h3>
+        <p>Join a creator program to become an active participant and help the creator grow. As creators use your support to grow,
+        you will receive more benefits and exclusive content!</p>
+      </div>
+    </div>
+    <div>
+      <div class="how-number">
+        <h5>3</h5>
+      </div>
+      <div class="how-texts">
+        <h3>Enjoy content and perks made just for members.</h3>
+        <p>See how your contributions build value for the creator, you, and the community as a whole. Interact with content made
+        just for you by your favorite digital creators.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <img src="resources/logo.webp" alt="img">
+    <h3><a href="about.html"> About </a>&nbsp;&nbsp;&nbsp;<a href="contact.html"> Contact </a>&nbsp;&nbsp;&nbsp;<a
+        href="faq.html"> FAQ </a></h3>
+    <h4><a href="privacy.html"> Privacy policy </a>&nbsp;|&nbsp;<a href="cookies.html"> Cookies policy
+      </a>&nbsp;|&nbsp;<a href="terms.html"> Terms of service </a></h4>
+    <p>All rights reserved. Patent pending. © 2023 CRREO</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
     
-    <!-- Mobile menu -->
-    <div class="menu">
-      <div class="menu-links">
-        <a href="index.html" class="hover-underline-animation">Creators</a>
-        <a href="#" class="hover-underline-animation">Grow followers</a>
-        <a href="monetize.html" class="hover-underline-animation">Monetize followers</a>
-        <a href="#content" class="hover-underline-animation selected smooth">Fans</a>
-        <a href="pricing.html" class="hover-underline-animation">Pricing</a>
-        <a href="insights.html" class="hover-underline-animation">Insights</a>
-      </div>
-    </div>
+    const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+    var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-    <div class="content">
-      <!-- Hero -->
-      <div class="hero" id="hero">
-        <div class="hero__texts">
-          <h2>Join your creator’s </h2>
-          <h2><span>inner circle</span></h2>
-          <div id=subtitle>
-            Get VIP access to your creator. Unlock member-only perks. Join a private community with other enthusiasts.
-          </div>
-          <div class="scalebutton">
-            <div class="big-button">
-              <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true); gtag('event', 'sign_up', {'method': 'Fans CTA'});">
-            		<h3>Join now</h3>
-        	  </a>              
-            </div>
-          </div>
-        </div>
-        <div class="hero__photos">
-          <div class="video1">
-            <video autoplay loop muted poster="resources/poster1.webp">
-              <source id="url-video1" id="indexAppleVideo1" src="resources/video1.mp4">
-            </video>
-          </div>
-          <div class="video2">
-            <video autoplay loop muted poster="resources/poster2.webp">
-              <source id="url-video2" id="indexAppleVideo2" src="resources/video2.mp4">
-            </video>
-          </div>
-        </div>
-        <div class="video">
-          <video autoplay loop muted poster="resources/poster2.webp">
-            <source id="url-video2" id="indexAppleVideo2" src="resources/video2.mp4">
-          </video>
-        </div>
-      </div>
+    // Smooth scrolling to all .smooth links
+    document.querySelectorAll("a.smooth").forEach(function (element) {
+        element.addEventListener('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            document.documentElement.scrollTo({
+              top: document.querySelector(hash).offsetTop,
+              behavior: 'smooth'
+            });
+            window.location.hash = hash;
+          }
+        });
+      });
 
-      <!-- Advantages -->
-      <div class="advantages">
-        <h1>The only platform for fans to join the exclusive<br>inner circle of their favorite content creator</h1>
-        <h2>Enjoy VIP treatment. Connect and collaborate in a private community. Get access to exclusive content, behind-the-scenes, and member-only perks. Enjoy special offers, discounts, merch and events.</h2>
-        <div class="text-block" data-aos="fade-left" data-aos-offset="-10" data-aos-duration="1000">
-          <h3>Partner with your favorite content creators</h3>
-          <p>Partner with the creators you love to help them succeed and grow<br> on CRREO.By contributing to their work, you'll gain access to <br>exclusive content, learn new things, and watch your benefits expand.</p>
-        </div>
-        <div class="text-block-right" data-aos="fade-right" data-aos-offset="-10" data-aos-delay="200" data-aos-duration="1000">
-          <h3>Unlock creator-curated perks</h3>
-          <p>Enjoy an exclusive members-only program with benefits handpicked by your creator. Get access to private content, digital tools and assets, brand deals, content voting, a virtual club room, one-on-one chats with the creator, and more!</p>
-        </div>
-        <div class="text-block" data-aos="fade-left" data-aos-offset="-10" data-aos-delay="400" data-aos-duration="1000">
-          <h3>Connect with fellow fans</h3>
-          <p>Join a community of like-minded individuals who share your <br>passion for your favorite creator and the topic. Discuss, collaborate,<br> and connect with people who understand your enthusiasm.</p>
-        </div>
-        <div class="text-block-right" data-aos="fade-right" data-aos-offset="-10" data-aos-delay="600" data-aos-duration="1000">
-          <h3>Make a difference with your membership</h3>
-          <p>By joining your favorite creator's membership program, you're contributing to something important. Work together to achieve a shared objective and create positive change.</p>
-        </div>
-        <div class="text-block" data-aos="fade-left" data-aos-offset="-10" data-aos-delay="400" data-aos-duration="1000">
-          <h3>Fuel your favorite creator's passion</h3>
-          <p>Your active participation and sponsorship on CRREO help your<br> favorite creator continue doing what they love - creating <br>content that you can't get enough of.</p>
-        </div>
-        <div class="scalebutton">
-          <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true); gtag('event', 'sign_up', {'method': 'Fans CTA'});">
-            <button class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-25" data-aos-delay="0">
-              <h5>Join now</h5>
-          </button> 
-          </a>   
-        </div>
-      </div>
+    // Mobile menu
+    document.addEventListener("DOMContentLoaded", function () {
+      var hamburger = document.querySelector(".hamburger");
+      var menu = document.querySelector(".menu");
+      var header = document.querySelector('.header');
+      var body = document.querySelector('body');
 
-      <!-- Info (description + start) -->
-      <div class="info">
-        <img id="white-logo" src="resources/white-logo.webp">
-        <div class="start">
-          <h2>How to get started</h2>
-          <div class="start-block">
-            <img src="resources/white-number-1.webp" id="number-1">
-            <div class="start-text">
-              <h3>Find your creator's program.</h3>
-              <p>Browse creators who are active on our platform. Don’t see your favorite creator? Let them know about CRREO! Check out what your creators offer, their program benefits, and what they ask of their fans. </p>
-            </div>
-          </div>
-          <div class="start-block">
-            <img src="resources/white-number-2.webp" id="number-2">
-            <div class="start-text">
-              <h3>Join the community.</h3>
-              <p>Join a creator program to become an active participant and help the creator grow. As creators use your support to grow, you will receive more benefits and exclusive content!</p>
-            </div>
-          </div>
-          <div class="start-block">
-            <img src="resources/white-number-3.webp" id="number-3">
-            <div class="start-text">
-              <h3>Enjoy content and perks made just for members. </h3>
-              <p>See how your contributions build value for the creator, you, and the community as a whole. Interact with content made just for you by your favorite digital creators. </p>
-            </div>
-          </div>
-          <div class="scalebutton">
-            <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true); gtag('event', 'sign_up', {'method': 'Fans CTA'});">
-              <button class="btn-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="-35" data-aos-delay="0">
-                <h5>Join now</h5>
-              </button> 
-            </a>               
-          </div>
-        </div>
-      </div>
-    </div>
+      hamburger.addEventListener("click", function () {
 
+        hamburger.classList.toggle("hamburger--open");
+        menu.classList.toggle("menu--open");
+        header.classList.toggle("menu--header");
+        body.classList.toggle("body--fixed");
 
-    <!-- Footer -->
-    <footer>
-      <img src="resources/logo.webp" alt="img">
-      <h3><a href="about.html"> About </a>&nbsp;&nbsp;&nbsp;<a href="contact.html"> Contact </a>&nbsp;&nbsp;&nbsp;<a
-          href="faq.html"> FAQ </a></h3>
-      <h4><a href="privacy.html"> Privacy policy </a>&nbsp;|&nbsp;<a href="cookies.html"> Cookies policy </a>&nbsp;|&nbsp;<a
-          href="terms.html"> Terms of service </a></h4>
-      <p>All rights reserved. Patent pending.</p>
-      <p>© 2023 CRREO</p>
-    </footer>
+        gsap.set(".menu-links a", { opacity: 0, });
+        gsap.to(".menu-links a", {
+          delay: 0.2,
+          duration: 0.5,
+          opacity: 1,
+        });
 
-    <!-- Collegamento al file javascript -->
-    <script src="membership-script.js"></script>
-    <script src="script.js"></script>
+      });
+    });
+
+    // Lazy loading
+    function lazyLoad() {
+      const images = document.querySelectorAll('img[data-src]');
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      const imageCount = images.length;
+      let loadedCount = 0;
+
+      function onIntersection(entries) {
+        entries.forEach(entry => {
+          if (entry.intersectionRatio > 0 && loadedCount < imageCount) {
+            const image = entry.target;
+            image.src = image.dataset.src;
+            observer.unobserve(image);
+            loadedCount++;
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(onIntersection, options);
+
+      const visibleImages = [];
+      const hiddenImages = [];
+      images.forEach(image => {
+        const rect = image.getBoundingClientRect();
+        if ((rect.top >= 0 && rect.top <= window.innerHeight) || (rect.bottom >= 0 && rect.bottom <= window.innerHeight)) {
+          visibleImages.push(image);
+        } else {
+          hiddenImages.push(image);
+        }
+      });
+
+      visibleImages.forEach(image => {
+        image.src = image.dataset.src;
+        loadedCount++;
+      });
+
+      hiddenImages.forEach(image => {
+        observer.observe(image);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', lazyLoad);
+  
+  </script>
 
 </body>
 </html>
