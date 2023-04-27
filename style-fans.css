@@ -580,7 +580,7 @@ footer p {
   }
 
   #desktop {
-    display: none;
+    display: none !important;
   }
 
   #mobile {
