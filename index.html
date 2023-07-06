@@ -151,13 +151,7 @@
   </div>
 
   <div class="value">
-    <video id="myVideo4" src="resources/ScriptWriter480.mp4" class="value-video" autoplay loop muted playsinline></video>
-
-  <script>
-    var vid4 = document.getElementById("myVideo4");
-    vid4.playbackRate = 2;
-  </script>   
-   
+    <video id="myVideo4" src="resources/ScriptWriter480.mp4" class="value-video" style="border-color: #702C7E;" autoplay loop muted playsinline></video>
     <div class="value-texts">
       <div class="icon" style="background-image: url('resources/value-icon-1.webp');"></div>
       <h3>Make irresistible content</h3>
@@ -167,13 +161,7 @@
   </div>
 
   <div class="value">
-    <video id="myVideo2" src="resources/BrandBuilder480.mp4" class="value-video" autoplay loop muted playsinline></video>
-
-  <script>
-    var vid2 = document.getElementById("myVideo2");
-    vid4.playbackRate = 1.3;
-  </script>   
-
+    <video id="myVideo2" src="resources/BrandBuilder480.mp4" class="value-video" style="border-color: #C53A37;" autoplay loop muted playsinline></video>
     <div class="value-texts">
       <div class="icon" style="background-image: url('resources/value-icon-2.webp');"></div>
       <h3>Stand out from the crowd</h3>
@@ -268,6 +256,13 @@
     
     const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
     var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    var vid4 = document.getElementById("myVideo4");
+    var vid2 = document.getElementById("myVideo2");
+    
+    // Video settings
+    vid4.playbackRate = 2;
+    vid4.playbackRate = 1.3; 
 
     // Carousel loop animation
     var carousel = document.querySelector('.carousel-inner');
