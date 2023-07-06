@@ -273,8 +273,8 @@ button {
   height: 40vw;
   margin: 0 auto;
   object-fit: cover;
-  border: 2px solid #000075;
-  border-radius: 10px;
+  border: 0.1vw solid #000075;
+  border-radius: 1.5vw;
   
 }
 
