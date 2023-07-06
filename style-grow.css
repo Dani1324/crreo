@@ -205,6 +205,8 @@ button {
   font-weight: 600;
   text-align: center;
   line-height: 1.3;
+  margin-left: 10vw;
+  margin-right:10vW;
 }
 
 .subtitle h2 span {
@@ -230,20 +232,20 @@ button {
 .description{
   width: 78vw;
   background-color: rgba(0, 0, 116, 0.03);
-  padding: 5vw 11vw 0.1vw 11vw;
+  padding: 5vw 11vw 2vw 11vw;
   margin-bottom: 11vw;
 }
 
 .description img {
   width: 9.5vw;
-  margin: 2vw 34.25vw 3.5vw 34.25vw;
+  margin: 0vw 34.25vw 3.5vw 34.25vw;
 }
 
 .description h3{
   font-size: 2.6vw;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2.5vw;
+  margin-bottom: 1.5vw;
 }
 .description p {
   text-align: center;
@@ -259,57 +261,47 @@ button {
 }
 
 
-/* Value */
-.value {
+/* tool */
+.tool {
   width: 78vw;
   display: flex;
-  margin: 0 11vw 3vw 11vw;
+  margin: 0 11vw 0vw 11vw;
 }
 
-.value .value-image {
-  width: 28.2vw;
-  height: 15.8625vw;
-  margin: 0 9% 0 5%;
-}
-
-.value .value-video {
-  width: 28.2vw;
-  height: 15.8625vw;
-  margin: 0 9% 0 5%;
+.tool .tool-image {
+  width: 71.11vw;
+  height: 40vw;
+  margin: 0 auto;
+  object-fit: cover;
   border: 2px solid #000075;
   border-radius: 10px;
+  
 }
 
-.value .value-texts {
-  width: 50%;
+.tool .tool-texts {
+  width: 100%;
 }
 
-.value .value-texts .icon{
-  width: 3.2vw;
-  height: 3.2vw;
-  border-radius: 0.6vw;
-  background-color: rgba(0, 0, 116, 0.03);
-  background-size: 2vw 2vw;
-  background-position: 0.6vw 0.6vw;
-  background-repeat: no-repeat;
-}
 
-.value .value-texts h3 {
+.tool .tool-texts h3 {
   font-size: 1.8vw;
   font-weight: 600;
-  margin: 2vw 0 1.5vw 0;
+  margin: 2vw 0 2vw 0;
 }
 
-.value .value-texts p {
-  font-size: 1.3vw;
+.tool .tool-texts p {
+  text-align: center;
+  font-size: 1.6vw;
   font-weight: 300;
   opacity: 0.8;
-  line-height: 1.6;
-  padding-bottom: 3vw;
-  border-bottom: 0.1vw solid rgba(0, 0, 116, 0.2);
+  line-height: 1.5;
+  padding-top: 3vw;
+  padding-bottom: 0vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
-.value .value-texts .no-border {
+.tool .tool-texts .no-border {
   border: 0;
 }
 
@@ -627,43 +619,39 @@ footer p {
   }
 
 
-  /* Value */
-  .value {
+  /* tool */
+  .tool {
     width: 88vw;
     display: block;
     margin: 0 6vw 3vw 6vw;
   }
 
-  .value .value-image {
-    width: 88vw;
+  .tool .tool-image {
+    width: 90vw;
     height: 51.4vw;
-    margin: 0;
-  }
-
-  .value .value-video {
-    width: 88vw;
-    height: 51.4vw;
-    margin: 0;
+    margin: 0 auto;
+    object-fit: cover;
     border: 2px solid #000075;
     border-radius: 10px;
+    playbackRate="3.0";
   }
 
-  .value .value-texts {
+  .tool .tool-texts {
     width: 100%;
   }
 
-  .value .value-texts .icon {
+  .tool .tool-texts .icon {
     display: none;
   }
 
-  .value .value-texts h3 {
+  .tool .tool-texts h3 {
     font-size: 6vw;
     font-weight: 600;
     margin: 7vw 0 3vw 0;
     line-height: 1.3;
   }
 
-  .value .value-texts p {
+  .tool .tool-texts p {
     font-size: 4.7vw;
     font-weight: 200;
     margin-top: 4vw;

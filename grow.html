@@ -3,15 +3,22 @@
 
 <head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-G0W3CYC1ZZ');
-    gtag('config', 'AW-11071657082');
-  </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0W3CYC1ZZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0W3CYC1ZZ', {
+    'linker': {
+      'domains': ['crreo.co', 'crreo.ai']
+    }
+  });
+  
+  gtag('config', 'AW-11071657082');
+</script>
+
 
   <!-- Hotjar Tracking Code for https://crreo.co -->
   <script>
@@ -37,8 +44,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Altre impostazioni del sito -->
-  <title>CRREO | Fans</title>
-  <link rel="stylesheet" href="style-fans.css">
+  <title>Grow followers</title>
+  <link rel="stylesheet" href="style-grow.css">
   <link rel="shortcut icon" type="image/webp" href="resources/favicon.webp">
 
   <!-- MailerLite Universal -->
@@ -66,17 +73,17 @@
       <img class="logo" src="resources/logo.webp" alt="img">
     </a>
     <div class="links">
-      <a href="index.html">
+      <a href="index.html" class="smooth">
         <h4 class="hover-underline-animation">Creators</h4>
       </a>
-      <a href="grow.html">
-        <h4 class="hover-underline-animation">Grow followers</h4>
+      <a href="#hero">
+        <h4 class="hover-underline-animation" id="selected-page">Grow followers</h4>
       </a>
       <a href="monetize.html">
         <h4 class="hover-underline-animation">Monetize followers</h4>
       </a>
-      <a href="#hero" class="smooth">
-        <h4 class="hover-underline-animation" id="selected-page">Fans</h4>
+      <a href="fans.html">
+        <h4 class="hover-underline-animation">Fans</h4>
       </a>
       <a href="pricing.html">
         <h4 class="hover-underline-animation">Pricing</h4>
@@ -93,9 +100,9 @@
   <div class="menu">
     <div class="menu-links">
       <a href="index.html" class="hover-underline-animation">Creators</a>
-      <a href="grow.html" class="hover-underline-animation">Grow followers</a>
+      <a href="#" class="hover-underline-animation selected smooth">Grow followers</a>
       <a href="monetize.html" class="hover-underline-animation">Monetize followers</a>
-      <a href="#hero" class="hover-underline-animation selected smooth">Fans</a>
+      <a href="fans.html" class="hover-underline-animation">Fans</a>
       <a href="pricing.html" class="hover-underline-animation">Pricing</a>
       <a href="insights.html" class="hover-underline-animation">Insights</a>
     </div>
@@ -103,123 +110,161 @@
 
   <!-- Hero -->
   <div class="hero" id="hero">
-    <div class="hero-texts">
-      <h1>Join the <span>inner circle</span> of your favorite creator</h1>
-      <h2>Explore a world of exclusive perks beyond a traditional fan club.</h2>
-      <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true)">
-        <h5>Get started</h5>
-      </a>
-    </div>
-    <img src="resources/hero-img-fans.webp" alt="">
+    <h1>Grow your subscribers by <span>10x</span></h1>
+    <h2>Produce more exciting content. Boost your channel performance. <br>Publish more often <br id="mobile">with less work.</h2>
+   
+  <!-- Call to action -->
+  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+    <h5>Get started</h5>
+  </a>
   </div>
 
   <!-- Description -->
   <div class="description">
-    <img data-src="resources/logo.webp" alt="Crreo logo">
-    <h3>Discover the ultimate fan experience</h3>
-    <p>Connect with your Idol. Enjoy private content. Unlock merchandise surprises. Join a thriving fan community!</p>
-    <!-- Cards -->
-    <div class="cards">
-      <div class="block" id="desktop">
-        <div class="card">
-          <img src="resources/cards-icon-1.webp" alt="img">
-          <h2>Grow with your creator</h2>
-          <p>You are not just a fan. You are a partner. You don't just watch content. You collaborate with the creator.</p>
-          <p>By contributing to their work, you'll fuel their passion, and watch your benefits expand.</p>
-        </div>
-        <div class="card">
-          <img src="resources/cards-icon-2.webp" alt="img">
-          <h2>Find your people</h2>
-          <p>Connect with a thriving community of like-minded fans and take your fandom to the next level!</p> 
-          <p>Meet with people who share your passion for your favorite creator and topic. </p>
-        </div>
-      </div>
-      <div class="block" id="desktop">
-        <div class="card">
-          <img src="resources/cards-icon-4.webp" alt="img">
-          <h2>Enjoy exclusive member perks</h2>
-          <p>Whether it’s private content, creator handpicked merchandise, sponsor deals, meet-and-greets, backstage passes, or private parties and clubs, you'll build this together with your favorite creator!</p>
-        </div>
-        <div class="card">
-          <img src="resources/cards-icon-5.webp" alt="img">
-          <h2>Make a difference</h2>
-          <p>Contribute to something important. Be part of the driving force</p>
-          <p>Work with your favorite creator and fellow fans to achieve a shared objective and create positive change.</p>
-        </div>
-      </div>
-      <div class="block" id="mobile">
-        <div class="card">
-         <img src="resources/cards-icon-1.webp" alt="img">
-          <h2>Grow with your creator</h2>
-          <p>You are not just a fan. You are a partner. You don't just watch content. You collaborate with the creator.</p>
-          <p>By contributing to their work, you'll fuel their passion, and watch your benefits expand.</p>
-        </div>
-        <div class="card">
-          <img src="resources/cards-icon-4.webp" alt="img">
-          <h2>Enjoy exclusive member perks</h2>
-          <p>Whether it’s private content, creator handpicked merchandise, sponsor deals, meet-and-greets, backstage passes, or private parties and clubs, you'll build this together with your favorite creator!</p>
-        </div>
-        <div class="card">
-          <img src="resources/cards-icon-2.webp" alt="img">
-          <h2>Find your people</h2>
-          <p>Connect with a thriving community of like-minded fans and take your fandom to the next level!</p> 
-          <p>Meet with people who share your passion for your favorite creator and topic. </p>
-        </div>
-        <div class="card">
-          <img src="resources/cards-icon-5.webp" alt="img">
-          <h2>Make a difference</h2>
-          <p>Contribute to something important. Be part of the driving force</p>
-          <p>Work with your favorite creator and fellow fans to achieve a shared objective and create positive change.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Call to action -->
-    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true)">
-      <h5>Get started</h5>
-    </a>
+    <img data-src="resources/logo.webp" alt="CRREO logo">
+    <h3>A platform that is 100% focused on helping you grow. </h3>
+    <p>Supercharge your creativity with AI-powered growth tools.<br><br> </p>
   </div>
 
-  <!-- How it works --> 
+
+ <!-- Tool 4 -->
   <div class="subtitle">
-    <h2>HOW IT WORKS</h2>
+    <h3><span style="color:#EC5F2A;">SCRIPT WRITER</span></h3>
+    <h2>Produce engaging scripts in no time.</h2>
   </div>
-  <div class="how">
-    <div>
-      <div class="how-number">
-        <h5>1</h5>
-      </div>
-      <div class="how-texts">
-        <h3>Find your creator’s program.</h3>
-        <p>Browse creators who are active on our platform. Don’t see your favorite creator?</p>
-        <p>Let them know about CRREO! Check out what your creators offer, their program benefits, and what they ask of their fans.</p>
-      </div>
-    </div>
-    <div>
-      <div class="how-number">
-        <h5>2</h5>
-      </div>
-      <div class="how-texts">
-        <h3>Join the community.</h3>
-        <p>Join a creator program to become an active participant and help the creator grow. As creators use your support to grow,
-        you will receive more benefits and exclusive content!</p>
-      </div>
-    </div>
-    <div>
-      <div class="how-number">
-        <h5>3</h5>
-      </div>
-      <div class="how-texts">
-        <h3>Enjoy content and perks made just for members.</h3>
-        <p>See how your contributions build value for the creator, you, and the community as a whole. Interact with content made
-        just for you by your favorite digital creators.</p>
-      </div>
+  
+  <div class="tool">
+    <video id="myVideo4" src="resources/ScriptWriter480.mp4" class="tool-image" autoplay loop muted playsinline></video>
+  </div>
+
+  <script>
+    var vid4 = document.getElementById("myVideo4");
+    vid4.playbackRate = 1.5;
+  </script>
+  
+  <div class="tool">  
+    <div class="tool-texts">
+      <p>Tap AI-powered language model that learns from your prior work, personal style, and target audience. Easily generate a script for your next hit.</p>
     </div>
   </div>
 
-  <!-- Call to action -->
-  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'GXLqah', true)">
-    <h5>Get started</h5>
+<!-- Call to action -->
+    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+<!-- <a class="cta ml-onclick-form" href="https://www.crreo.ai"> -->
+    <h5>Try Script Writer</h5>
   </a>
+
+
+ 
+ <!-- Tool 3 -->
+  <div class="subtitle">
+    <h3><span style="color:#C53A37;">TOPIC SELECTOR</span></h3>
+    <h2>Pick the right topics. Maximize views and engagement.</h2>
+  </div>
+  
+  <div class="tool">
+    <video id="myVideo3" src="resources/TopicSelector480.mp4" class="tool-image" autoplay loop muted playsinline></video>
+  </div>
+
+  <script>
+    var vid3 = document.getElementById("myVideo3");
+    vid3.playbackRate = 1.5;
+  </script>
+  
+  <div class="tool">  
+    <div class="tool-texts">
+      <p>Get instant suggestions for topics relevant to your channel and audience. Prioritize based on expected viewership and trending window of opportunity.</p>
+    </div>
+  </div>
+
+<!-- Call to action -->
+  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+    <h5>Try Topic Selector</h5>
+  </a>
+
+
+ <!-- Tool 5 -->
+  <div class="subtitle">
+    <h3><span style="color:#8DBB38;">TITLE & THUMBNAIL GENERATOR</span></h3>
+    <h2>Design video titles and thumbnails that convert to views.</h2>
+  </div>
+  
+  <div class="tool">
+    <video id="myVideo5" src="resources/TitleGenerator480.mp4" class="tool-image" autoplay loop muted playsinline></video>
+  </div>
+
+  <script>
+    var vid5 = document.getElementById("myVideo5");
+    vid5.playbackRate = 1.5;
+  </script>
+  
+  <div class="tool">  
+    <div class="tool-texts">
+      <p>Be loved by viewers and the algorithm alike. Maximize conversions. Build compelling titles and thumbnails based on proven metrics.</p>
+    </div>
+  </div>
+
+<!-- Call to action -->
+  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+    <h5>Try Generator</h5>
+  </a>
+
+
+ <!-- Tool1 -->
+  <div class="subtitle">
+    <h3><span style="color:#1C4882;">NICHE TUNER</span></h3>
+    <h2>Select your perfect niche. Understand your viewers.</h2>
+  </div>
+  
+  <div class="tool">
+    <video id="myVideo1" src="resources/NicheTuner480.mp4" class="tool-image" autoplay loop muted playsinline></video>
+  </div>
+
+  <script>
+    var vid1 = document.getElementById("myVideo1");
+    vid1.playbackRate = 1.2;
+  </script>
+
+  
+  <div class="tool">  
+    <div class="tool-texts">
+      <p>Total reachable audience. Top competing creators. Expected performance metrics. Most-watched and currently-trending topics.</p>
+    </div>
+  </div>
+
+<!-- Call to action -->
+  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+    <h5>Try Niche Tuner</h5>
+  </a>
+
+
+ <!-- Tool 2 -->
+  <div class="subtitle">
+    <h3><span style="color:#702C7E;">BRAND BUILDER</span></h3>
+    <h2>Build a consistent personal brand. Stand out from the competition.</h2>
+  </div>
+  
+ <div class="tool">
+    <video id="myVideo2" src="resources/BrandBuilder480.mp4" class="tool-image" autoplay loop muted playsinline></video>
+  </div>
+
+  <script>
+    var vid2 = document.getElementById("myVideo2");
+    vid2.playbackRate = 1;
+  </script>
+  
+  <div class="tool">  
+    <div class="tool-texts">
+      <p>See where you can improve your brand. Design brand assets. Generate recognizable and highly converting thumbnails, intros & outros, social media posts, and more.</p>
+    </div>
+  </div>
+
+<!-- Call to action -->
+  <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'QmqZj5', true)">
+    <h5>Try Brand Builder</h5>
+  </a>
+
+
 
   <!-- Footer -->
   <footer>
@@ -324,7 +369,6 @@
     window.addEventListener('DOMContentLoaded', lazyLoad);
   
   </script>
-
 
 <script>
 function showThanksPopup() {

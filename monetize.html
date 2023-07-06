@@ -69,7 +69,7 @@
         <a href="index.html">
           <h4 class="hover-underline-animation">Creators</h4>
         </a>
-        <a href="#">
+        <a href="grow.html">
           <h4 class="hover-underline-animation">Grow followers</h4>
         </a>
         <a href="#hero" class="smooth">
@@ -93,7 +93,7 @@
     <div class="menu">
       <div class="menu-links">
         <a href="index.html" class="hover-underline-animation">Creators</a>
-        <a href="#" class="hover-underline-animation">Grow followers</a>
+        <a href="grow.html" class="hover-underline-animation">Grow followers</a>
         <a href="#hero" class="hover-underline-animation selected smooth">Monetize followers</a>
         <a href="fans.html" class="hover-underline-animation">Fans</a> 
         <a href="pricing.html" class="hover-underline-animation">Pricing</a>
@@ -699,6 +699,83 @@ function showImagePopup(imagePath, maxWidth, maxHeight) {
 }
 </script>
 
+<script>
+function showThanksPopup() {
+  var modal = document.createElement('div');
+  modal.style.position = 'fixed';
+  modal.style.top = '0';
+  modal.style.left = '0';
+  modal.style.width = '100%';
+  modal.style.height = '100%';
+  modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
+  modal.style.zIndex = '9999';
+  modal.style.opacity = 0;
+  modal.style.transition = 'opacity 500ms';
+
+  var content = document.createElement('div');
+  content.style.position = 'absolute';
+  content.style.top = '50%';
+  content.style.left = '50%';
+  content.style.minWidth = '400px';
+  content.style.transform = 'translate(-50%, -50%)';
+  content.style.textAlign = 'center';
+  content.style.color = '#000075';
+  content.style.backgroundColor = '#FFFFFF'; /* white background */
+  content.style.padding = '40px';
+  content.style.borderRadius = '10px';
+
+  var heading = document.createElement('h3');
+  heading.innerHTML = 'Thank you!';
+  heading.style.marginTop = '0';
+  heading.style.fontSize = '30px';
+  content.appendChild(heading);
+
+  var message = document.createElement('p');
+  message.innerHTML = 'We have successfully received your information.';
+  message.style.margin = '40px 0';
+  content.appendChild(message);
+
+  var divider = document.createElement('hr');
+  divider.style.borderTop = '1px solid #000075';
+  divider.style.margin = '40px 0';
+  content.appendChild(divider);
+
+  var linkContainer = document.createElement('div');
+  linkContainer.innerHTML = 'You can also visit our';
+
+  var link = document.createElement('a');
+  link.href = 'https://www.crreo.co/insights.html';
+  link.innerHTML = 'Insights blog';
+  link.style.color = '#000075';
+  link.style.textDecoration = 'underline';
+  link.style.marginLeft = '5px';
+  linkContainer.appendChild(link);
+
+  content.appendChild(linkContainer);
+
+  modal.appendChild(content);
+  document.body.appendChild(modal);
+
+  setTimeout(function() {
+    modal.style.opacity = 1;
+  }, 10);
+
+  gtag('event', 'conversion', {'send_to': 'AW-11071657082/HPckCOucw5wYEPqosJ8p'});
+  
+  modal.onclick = function() {
+    modal.style.opacity = 0;
+    setTimeout(function() {
+      modal.parentNode.removeChild(modal);
+    }, 500);
+  }
+}
+
+// Check for URL parameter and open modal if present
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('modal')) {
+  showThanksPopup();
+}
+</script>
 
 	
 </body>
