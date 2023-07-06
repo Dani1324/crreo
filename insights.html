@@ -73,7 +73,7 @@
         <a href="pricing.html">
           <h4 class="hover-underline-animation">Pricing</h4>
         </a>
-        <a href="#" class="smooth">
+        <a href="#content" class="smooth">
           <h4 class="hover-underline-animation" id="selected-page">Insights</h4>
         </a>
       </div>
@@ -131,5 +131,24 @@
     </script>
     <!-- End MailerLite Universal -->
 
+    <script>
+      const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+      var iOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+      // Smooth scrolling to all .smooth links
+      document.querySelectorAll("a.smooth").forEach(function (element) {
+          element.addEventListener('click', function (event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              document.documentElement.scrollTo({
+                top: document.querySelector(hash).offsetTop,
+                behavior: 'smooth'
+              });
+              window.location.hash = hash;
+            }
+          });
+        });
+    </script>
 </body>
 </html>
