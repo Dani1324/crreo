@@ -96,7 +96,7 @@ button {
   display: flex;
   width: 23vw;
   padding: 0;
-  margin: 11.2vw auto 0 auto;
+  margin: 11.2vw auto 1vw auto;
   border-radius: 3vw;
   font-size: 1.35vw;
   font-weight: 300;
@@ -448,11 +448,123 @@ button {
   cursor: pointer;
 }
 
-.fee-menu .selected-option{
+.fee-menu .selected-option {
   font-weight: 500;
   border: 0.1vw solid #C8102E;
   color: #C8102E;
   opacity: 1;
+}
+
+
+/* Table */
+.table {
+  width: 78vw;
+  margin: 3vw 11vw 7vw 11vw;
+  background-color: rgba( 0, 0, 116, 0.03);
+  padding-bottom: 1.5vw;
+  border-radius: 1.2vw;
+}
+
+.table h2 {
+  font-size: 1.87vw;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3.2vw 0 2.5vw 0;
+  opacity: 0.7;
+}
+
+.table__plans {
+  display: flex;
+  width: calc(100% - 2vw);
+  margin: 0 1vw;
+}
+
+.plan {
+  position: relative;
+  width: 18vw;
+  margin: 0 0.5vw;
+  border: 0.1vw solid rgba( 0, 0, 116, 0.1);
+  border-radius: 0.7vw;
+  padding-bottom: 7vw;
+}
+
+.plan h4 {
+  text-align: center;
+  font-size: 1.15vw;
+  font-weight: 300;
+  margin: 3vw 0 2vw 0;
+}
+
+.plan h3 {
+  text-align: center;
+  width: 84%;
+  margin: 0 8% 2vw 8%;
+  padding-bottom: 2.5vw;
+  border-bottom: 0.1vw solid rgba( 0, 0, 116, 0.1);
+  font-size: 3.3vw;
+}
+
+.plan h3 span {
+  font-size: 2.35vw;
+}
+
+.plan .plan__feature {
+  display: flex;
+  width: 82%;
+  margin: 0 9% 1vw 9%;
+}
+
+.plan .plan__feature img {
+  user-select: none;
+  width: 1.5vw;
+  height: 1.5vw;
+  padding-right: 0.8vw;
+}
+
+.plan .plan__feature p {
+  user-select: none;
+  font-size: 0.95vw;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.plan-btn{
+  position: absolute;
+  bottom: 1.8vw;
+  width: 80%;
+  margin: 0 10%;
+  height: 3.2vw;
+  font-size: 1.1vw;
+  color: white;
+  border: none;
+  border-radius: 1.1vw;
+  background-color: #C8102E;
+  transition: all 0.05s ease-in-out;
+}
+
+.plan-btn:hover{
+  background-color: transparent;
+  color:  #C8102E;
+  border: 0.1vw solid #C8102E;
+}
+
+.plan-btn:active{
+  transform: scale(0.95);
+}
+
+.plan .not-active{
+  background-color: rgba( 0, 0, 116, 0.2);
+}
+
+.plan .not-active:hover{
+  background-color: rgba( 0, 0, 116, 0.2);
+  border: none;
+  color: white;
+}
+
+.plan .not-active:active{
+  transform: scale(1);
 }
 
 
@@ -876,6 +988,85 @@ footer p {
 
   .fee-menu .selected-option {
     border: 0.2vw solid #C8102E;
+  }
+
+
+  /* Table */
+  .table {
+    width: 88vw;
+    margin: 6vw 6vw 14vw 6vw;
+    padding-bottom: 5vw;
+    border-radius: 3vw;
+  }
+
+  .table h2 {
+    font-size: 4.8vw;
+    padding: 9vw 0 6vw 0;
+  }
+
+  .table .container{
+    overflow-x: scroll;
+    width: calc(100% - 6vw);
+    padding: 0 3vw;
+  }
+
+  .table__plans {
+    display: flex;
+    width: min-content;
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+  }
+
+  .plan {
+    width: 70vw;
+    margin: 0 2vw;
+    border: 0.3vw solid rgba( 0, 0, 116, 0.1);
+    border-radius: 1.5vw;
+    padding-bottom: 24vw;
+  }
+
+  .plan h4 {
+    font-size: 4vw;
+    margin: 6vw 0 2vw 0;
+  }
+
+  .plan h3 {
+    width: 84%;
+    margin: 0 8% 6vw 8%;
+    padding-bottom: 7vw;
+    border-bottom: 0.3vw solid rgba( 0, 0, 116, 0.1);
+    font-size: 10vw;
+  }
+
+  .plan h3 span {
+    font-size: 9vw;
+  }
+
+  .plan .plan__feature {
+    width: 84%;
+    margin: 0 8% 4vw 8%;
+  }
+
+  .plan .plan__feature img {
+    width: 4vw;
+    height: 4vw;
+    padding: 1vw 1.6vw 0 0;
+  }
+
+  .plan .plan__feature p {
+    font-size: 4.1vw;
+  }
+
+  .plan-btn{
+    bottom: 5vw;
+    height: 11vw;
+    font-size: 5vw;
+    border-radius: 3.5vw;
+  }
+
+  .plan-btn:hover{
+    border: 0.3vw solid #C8102E;
   }
 
 

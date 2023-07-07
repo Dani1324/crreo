@@ -102,10 +102,10 @@
 
     <!-- Toggle switch -->
     <div class="switches-container">
-      <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly" checked="checked" />
-      <input type="radio" id="switchYearly" name="switchPlan" value="Yearly" />
-      <label for="switchMonthly">Growth tools</label>
-      <label for="switchYearly">Monetization</label>
+      <input type="radio" id="switchGrowth" name="switchPlan" value="Monthly" checked="checked" />
+      <input type="radio" id="switchMonetization" name="switchPlan" value="Yearly" />
+      <label for="switchGrowth">Growth tools</label>
+      <label for="switchMonetization">Monetization</label>
       <div class="switch-wrapper">
         <div class="switch">
           <div>Growth tools</div>
@@ -114,84 +114,189 @@
       </div>
     </div>
 
-    <!-- Hero -->
-    <div class="hero" id="hero">
-      <h1><span>0%</span> cut <br>on payouts</h1>
-      <h2>You will receive 100% of the amount that CRREO collects from your members on<br> your behalf. That includes all monthly contributions and the sale of member licenses<br> if you offer any.</h2>
-    </div>
-
-    <!-- Call to action -->
-    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
-      <h5>Get started</h5>
-    </a>
-
-    <!-- Plans -->
-    <div class="subtitle">
-      <h2>Flat and predictable monthly <br>subscription fees</h2>
-      <h3>A flat platform fee that gives you and your members access to all tools<br> and capabilities.</h3>
-    </div>
-    <div class="plans">
-      <div class="card">
-        <h3>0 - 49 members</h3>
-        <h2>Free</h2>
+    <div id="growth">
+      <!-- Hero -->
+      <div class="hero" id="hero">
+        <h1><span>0%</span> cut <br>on payouts</h1>
+        <h2>You will receive 100% of the amount that CRREO collects from your members on<br> your behalf. That includes all monthly contributions and the sale of member licenses<br> if you offer any.</h2>
       </div>
-      <img src="resources/right.svg" alt="img">
-      <img src="resources/right.svg" alt="img">
-      <div class="card">
-        <h3>50+ members</h3>
-        <h2>$0.20<br><span>per paying member per month</span></h2>
+
+      <!-- Call to action -->
+      <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+        <h5>Get started</h5>
+      </a>
+
+      <!-- Plans -->
+      <div class="subtitle">
+        <h2>Flat and predictable monthly <br>subscription fees</h2>
+        <h3>A flat platform fee that gives you and your members access to all tools<br> and capabilities.</h3>
       </div>
-    </div>
-
-    <!-- Call to action -->
-    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
-      <h5>Get started</h5>
-    </a>
-
-    <!-- Calculations -->
-    <div class="subtitle">
-      <h2>Calculate your cost and savings</h2>
-    </div>
-    <div class="calculations">
-      <div class="fee-menu" id="options">
-        <div class="fee-menu__content">
-          <h5 id="fee">8%</h5>
-          <img src="resources/right.svg" alt="img">
+      <div class="plans">
+        <div class="card">
+          <h3>0 - 49 members</h3>
+          <h2>Free</h2>
         </div>
-        <div>
-          <p id="opt-1">8%</p>
-          <p id="opt-2">12%</p>
-          <p id="opt-3">20%</p>
+        <img src="resources/right.svg" alt="img">
+        <img src="resources/right.svg" alt="img">
+        <div class="card">
+          <h3>50+ members</h3>
+          <h2>$0.20<br><span>per paying member per month</span></h2>
         </div>
       </div>
-      <form class="block">
-        <h4>Estimated number of members in your program</h4>
-        <input type="number" id="input-1" placeholder="500" min="0" required step="1" oninput="calculations()">
-        <h4>Expected per member monthly contribution</h4>
-        <input type="number" id="input-2" placeholder="$20" min="0" required step="0.01" oninput="calculations()">
-      </form>
-      <div class="block second">
-        <img src="resources/logo.webp" alt="img">
-        <div class="line">
-          <p>Your monthly subscription</p>
-          <p id="fees-crreo">$100.00</p>
+
+      <!-- Call to action -->
+      <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+        <h5>Get started</h5>
+      </a>
+
+      <!-- Calculations -->
+      <div class="subtitle">
+        <h2>Calculate your cost and savings</h2>
+      </div>
+      <div class="calculations">
+        <div class="fee-menu" id="options">
+          <div class="fee-menu__content">
+            <h5 id="fee">8%</h5>
+            <img src="resources/right.svg" alt="img">
+          </div>
+          <div>
+            <p id="opt-1">8%</p>
+            <p id="opt-2">12%</p>
+            <p id="opt-3">20%</p>
+          </div>
         </div>
-        <h5>Other platforms</h5>
-        <div class="line">
-          <p>Monthly commission on payouts</p>
-          <p id="fees-competitor">$800.00</p>
+        <form class="block">
+          <h4>Estimated number of members in your program</h4>
+          <input type="number" id="input-1" placeholder="500" min="0" required step="1" oninput="calculations()">
+          <h4>Expected per member monthly contribution</h4>
+          <input type="number" id="input-2" placeholder="$20" min="0" required step="0.01" oninput="calculations()">
+        </form>
+        <div class="block second">
+          <img src="resources/logo.webp" alt="img">
+          <div class="line">
+            <p>Your monthly subscription</p>
+            <p id="fees-crreo">$100.00</p>
+          </div>
+          <h5>Other platforms</h5>
+          <div class="line">
+            <p>Monthly commission on payouts</p>
+            <p id="fees-competitor">$800.00</p>
+          </div>
+          <div class="line result">
+            <p>Your monthly savings</p>
+            <p id="savings">$700.00</p>
+          </div>
         </div>
-        <div class="line result">
-          <p>Your monthly savings</p>
-          <p id="savings">$700.00</p>
+      </div>
+
+      <!-- Call to action -->
+      <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
+        <h5>Get started</h5>
+      </a>
+    </div>
+
+    <div id="monetize">
+      <!-- Hero -->
+      <div class="hero" id="hero">
+        <h1>Plans</h1>
+      </div>
+      <!-- Table -->
+      <div class="table">
+        <h2>Script Writer</h2>
+        <div class="container">
+          <div class="table__plans">
+            <div class="plan">
+              <h4>START</h4>
+              <h3><span>Free</span></h3>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Unlimited Script Outline generation</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Unlimited Full Script generation</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Powered by Standard AI model</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Save unlimited history of your work</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Share and export</p>
+              </div>
+              <button class="plan-btn">Start free</button>
+            </div>
+            <div class="plan">
+              <h4>GROW</h4>
+              <h3>$10<span>/mo</span></h3>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>All the features from the “Start” plan</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Script Outline configuration options ⓘ</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Full Script configuration options ⓘ</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Powered by Advanced AI model</p>
+              </div>
+              <button class="plan-btn">Start 2 week trial</button>
+            </div>
+            <div class="plan">
+              <h4>PRO</h4>
+              <h3>$20<span>/mo</span></h3>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>All the features from the “Grow” plan</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Personalized generation learns your style & context ⓘ</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Keyword analysis for popular & searched terms ⓘ</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Powered by most advanced AI model</p>
+              </div>
+              <button class="plan-btn not-active">Coming soon</button>
+            </div>
+            <div class="plan">
+              <h4>ENTERPRISE</h4>
+              <h3><span>Contact us</span></h3>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Multi-user license<br><br></p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Access via API<br><br></p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Support for proprietary configuration options</p>
+              </div>
+              <div class="plan__feature">
+                <img src="resources/feature-check.webp" alt="img">
+                <p>Advanced analysis of company or user content ⓘ</p>
+              </div>
+              <button class="plan-btn">Contact us</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Call to action -->
-    <a class="cta ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'eexl0F', true)">
-      <h5>Get started</h5>
-    </a>
 
     <!-- Footer -->
     <footer>
@@ -210,7 +315,39 @@
     <script>
 
       // Toggle-switch
-      
+      var switchGrowth = document.getElementById('switchGrowth');
+      var switchMonetization = document.getElementById('switchMonetization');
+
+      document.getElementById('growth').style.transition = 'opacity 0.1s ease-in';
+      document.getElementById('monetize').style.transition = 'opacity 0.1s ease-in';
+      document.getElementById('growth').style.display = 'block';
+      document.getElementById('monetize').style.display = 'none';
+      document.getElementById('growth').style.opacity = 1;
+      document.getElementById('monetize').style.opacity = 0;
+
+      switchGrowth.addEventListener('change', function() {
+        if (switchGrowth.checked) {
+          document.getElementById('monetize').style.display = 'none';
+          document.getElementById('growth').style.display = 'block';
+
+          requestAnimationFrame(function() {
+            document.getElementById('growth').style.opacity = 1;
+            document.getElementById('monetize').style.opacity = 0;
+          });
+        }
+      });
+
+      switchMonetization.addEventListener('change', function() {
+        if (switchMonetization.checked) {
+          document.getElementById('growth').style.display = 'none';
+          document.getElementById('monetize').style.display = 'block';
+
+          requestAnimationFrame(function() {
+            document.getElementById('monetize').style.opacity = 1;
+            document.getElementById('growth').style.opacity = 0;
+          });
+        }
+      });
 
       // Fee calculator
       var feeMenu = document.querySelector("#options");
