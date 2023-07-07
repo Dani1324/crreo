@@ -32,8 +32,8 @@ button {
   top: 0;
   left: 0;
   z-index: 100;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(0.8vw);
+  -webkit-backdrop-filter: blur(0.8vw);
 }
 
 .header .logo {
@@ -431,15 +431,15 @@ footer p {
     z-index: 99;
     transform: translateY(-100vh);
     background-color: rgba(247, 247, 251, 0.92);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(0.8vw);
+    -webkit-backdrop-filter: blur(0.8vw);
     transition: all 0.3s;
   }
 
   .menu--header {
     background-color: rgba(247, 247, 251, 0);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
     transition: all 0.3s;
   }
 
