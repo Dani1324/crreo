@@ -6,6 +6,7 @@ body {
   top: 0;
   padding: 0;
   color: #000074;
+  box-sizing: border-box;
 }
 
 a {
@@ -88,11 +89,78 @@ button {
   transform-origin: bottom left;
 }
 
+
+/* Toggle-switch*/
+.switches-container {
+  position: relative;
+  display: flex;
+  width: 23vw;
+  padding: 0;
+  margin: 11.2vw auto 0 auto;
+  border-radius: 3vw;
+  font-size: 1.35vw;
+  font-weight: 300;
+  background: rgba(0, 0, 116, 0.03);
+  line-height: 4vw;
+}
+
+.switches-container input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.switches-container label {
+  width: 50%;
+  padding: 0;
+  margin: 0.2vw 0 0 0;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(0, 0, 116, 0.5);
+  border-radius: 50%;
+}
+
+.switch-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(50% - 0.6vw);
+  padding: 0.3vw 0.3vw 0.45vw 0.3vw;
+  z-index: 3;
+  transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+}
+
+.switch {
+  border-radius: 3vw;
+  background: white;
+  height: 100%;
+  border: 0.1vw solid #C8102E;
+}
+
+.switch div {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: block;
+  color: #C8102E;
+  transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
+  will-change: opacity;
+  position: absolute;
+  top: 0.2vw;
+  left: 0;
+}
+
+.switches-container input:nth-of-type(1):checked~.switch-wrapper { transform: translateX(0%);}
+.switches-container input:nth-of-type(2):checked~.switch-wrapper { transform: translateX(100%);}
+.switches-container input:nth-of-type(1):checked~.switch-wrapper .switch div:nth-of-type(1) { opacity: 1;}
+.switches-container input:nth-of-type(2):checked~.switch-wrapper .switch div:nth-of-type(2) { opacity: 1;}
+
+
 /* Hero */
 .hero h1 {
   font-size: 5.2vw;
   font-weight: 500;
-  padding-top: 10vw;
+  padding-top: 2.5vw;
   text-align: center;
   line-height: 1.28;
 }
@@ -524,11 +592,40 @@ footer p {
   }
 
 
+  /* Toggle-switch*/
+  .switches-container {
+    width: 75vw;
+    margin: 30vw auto 0 auto;
+    border-radius: 10vw;
+    font-size: 4.5vw;
+    line-height: 12vw;
+  }
+
+  .switches-container label {
+    width: 50%;
+    margin: 0.5vw 0 0 0;
+  }
+
+  .switch-wrapper {
+    width: calc(50% - 1.2vw);
+    padding: 0.6vw 0.6vw 1.1vw 0.6vw;
+  }
+
+  .switch {
+    border-radius: 10vw;
+    border: 0.3vw solid #C8102E;
+  }
+
+  .switch div {
+    top: 0.5vw;
+  }
+
+
   /* Hero */
   .hero h1 {
     font-size: 11.7vw;
     font-weight: 600;
-    padding-top: 17vh;
+    padding-top: 5vh;
   }
 
   .hero h1 br {

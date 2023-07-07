@@ -100,6 +100,20 @@
       </div>
     </div>
 
+    <!-- Toggle switch -->
+    <div class="switches-container">
+      <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly" checked="checked" />
+      <input type="radio" id="switchYearly" name="switchPlan" value="Yearly" />
+      <label for="switchMonthly">Growth tools</label>
+      <label for="switchYearly">Monetization</label>
+      <div class="switch-wrapper">
+        <div class="switch">
+          <div>Growth tools</div>
+          <div>Monetization</div>
+        </div>
+      </div>
+    </div>
+
     <!-- Hero -->
     <div class="hero" id="hero">
       <h1><span>0%</span> cut <br>on payouts</h1>
@@ -194,6 +208,10 @@
     <script src="membership-script.js"></script>
 
     <script>
+
+      // Toggle-switch
+      
+
       // Fee calculator
       var feeMenu = document.querySelector("#options");
       var option1 = document.querySelector("#opt-1");
