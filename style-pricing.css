@@ -609,7 +609,7 @@ footer p {
   .switch-wrapper {
     width: calc(50% - 1.2vw);
     padding: 0.6vw 0.6vw 1.1vw 0.6vw;
-    transition: transform .25s cubic-bezier(.77, 0, .175, 1);
+    transition: transform .3s cubic-bezier(.77, 0, .175, 1);
   }
 
   .switch {
@@ -619,7 +619,7 @@ footer p {
 
   .switch div {
     top: 0.5vw;
-    transition: opacity .12s cubic-bezier(.77, 0, .175, 1) .125s;
+    transition: opacity .15s cubic-bezier(.77, 0, .175, 1) .125s;
   }
 
 
