@@ -1019,6 +1019,10 @@ footer p {
     overflow-y: visible;
   }
 
+  .table__plans:last-child{
+    padding-right: 3vw;
+  }
+
   .plan {
     width: 70vw;
     margin: 0 2vw;
