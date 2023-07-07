@@ -609,6 +609,7 @@ footer p {
   .switch-wrapper {
     width: calc(50% - 1.2vw);
     padding: 0.6vw 0.6vw 1.1vw 0.6vw;
+    transition: transform .2s cubic-bezier(.77, 0, .175, 1);
   }
 
   .switch {
