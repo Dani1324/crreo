@@ -102,14 +102,14 @@
 
     <!-- Toggle switch -->
     <div class="switches-container" id="mio">
-      <input type="radio" id="switchGrowth" name="switchPlan" value="Monthly" checked="checked" />
-      <input type="radio" id="switchMonetization" name="switchPlan" value="Yearly" />
-      <label for="switchGrowth">Monetization</label>
+      <input type="radio" id="switchMonetization" name="switchPlan" value="Monthly" checked="checked" />
+      <input type="radio" id="switchGrowth" name="switchPlan" value="Yearly" />
       <label for="switchMonetization">Growth tools</label>
+      <label for="switchGrowth">Monetization</label>
       <div class="switch-wrapper">
         <div class="switch">
-          <div>Monetization</div>
           <div>Growth tools</div>
+          <div>Monetization</div>
         </div>
       </div>
     </div>
@@ -320,10 +320,10 @@
 
       document.getElementById('growth').style.transition = 'opacity 0.1s ease-in';
       document.getElementById('monetize').style.transition = 'opacity 0.1s ease-in';
-      document.getElementById('growth').style.display = 'block';
-      document.getElementById('monetize').style.display = 'none';
-      document.getElementById('growth').style.opacity = 1;
-      document.getElementById('monetize').style.opacity = 0;
+      document.getElementById('growth').style.display = 'none';
+      document.getElementById('monetize').style.display = 'block';
+      document.getElementById('growth').style.opacity = 0;
+      document.getElementById('monetize').style.opacity = 1;
 
       switchGrowth.addEventListener('change', function() {
         if (switchGrowth.checked) {
