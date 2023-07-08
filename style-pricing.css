@@ -849,7 +849,7 @@ footer p {
   .plans .card {
     border: 0.2vw solid rgba(0, 0, 116, 0.2);
     width: 76vw;
-    border-radius: 2vw;
+    border-radius: 3vw;
     padding: 6vw 6vw 7vw 6vw;
   }
 
@@ -892,7 +892,7 @@ footer p {
     margin: 2vw 0 10vw 0;
     padding: 3.2vw 5% 2.9vw 17%;
     border: 0.2vw solid rgba(0, 0, 116, 0.2);
-    border-radius: 2vw;
+    border-radius: 3vw;
     font-size: 5vw;
     background-size: 5vw 5vw;
     background-position: 5vw center;
@@ -913,7 +913,7 @@ footer p {
     margin: 6vw 0 15vw 0;
     padding: 6%;
     width: 88%;
-    border-radius: 2vw;
+    border-radius: 3vw;
   }
 
   .calculations .block img {
