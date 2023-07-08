@@ -1030,7 +1030,7 @@ footer p {
 
   .plan {
     width: 70vw;
-    margin: 0 2vw;
+    margin: 0 2vw 0.2vw 2vw;
     border: 0.3vw solid rgba( 0, 0, 116, 0.1);
     border-radius: 1.5vw;
     padding-bottom: 24vw;
