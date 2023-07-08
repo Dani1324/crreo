@@ -529,7 +529,7 @@ button {
   line-height: 1.5;
 }
 
-.plan-btn{
+.plan a{
   position: absolute;
   bottom: 1.8vw;
   width: 80%;
@@ -537,24 +537,29 @@ button {
   height: 3.2vw;
   font-size: 1.1vw;
   color: white;
-  border: none;
+  border: 0.1vw solid rgba( 0, 0, 116, 0) ;
   border-radius: 1.1vw;
   background-color: #C8102E;
   transition: all 0.05s ease-in-out;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-.plan-btn:hover{
+.plan a:hover{
   background-color: transparent;
   color:  #C8102E;
   border: 0.1vw solid #C8102E;
 }
 
-.plan-btn:active{
+.plan a:active{
   transform: scale(0.95);
 }
 
-.plan .not-active{
-  background-color: rgba( 0, 0, 116, 0.2);
+.not-active{
+  background-color: rgba( 0, 0, 116, 0.2) !important;
+  border: none !important;
+  color: white !important;
 }
 
 .plan .not-active:hover{
@@ -1063,14 +1068,15 @@ footer p {
     font-size: 4.1vw;
   }
 
-  .plan-btn{
+  .plan a{
     bottom: 5vw;
     height: 11.5vw;
     font-size: 4.8vw;
     border-radius: 3.5vw;
+    border: 0.3vw solid rgba( 0, 0, 116, 0);
   }
 
-  .plan-btn:hover{
+  .plan a:hover{
     border: 0.3vw solid #C8102E;
   }
 
