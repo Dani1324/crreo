@@ -513,6 +513,7 @@ button {
   display: flex;
   width: 82%;
   margin: 0 9% 1vw 9%;
+  position: relative;
 }
 
 .plan .plan__feature img {
@@ -527,6 +528,55 @@ button {
   font-size: 0.95vw;
   font-weight: 200;
   line-height: 1.5;
+}
+
+.plan .plan__feature .tooltiptext {
+  background-color: #F6F6FB;
+  border: 0.1vw solid #DDDDEE;
+  color: #000074;
+  position: absolute;
+  bottom: 120%;
+  left: 0%;
+  z-index: 3;
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  width: 92.5%;
+  border-radius: 0.35vw;
+  padding: 0.5vw;
+  font-size: 0.95vw;
+  font-weight: 200;
+  line-height: 1.5;
+  transition: all 0.12s ease-in-out;
+  transition-delay: 0.065s;
+}
+
+.plan .plan__feature .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -1.65vw;
+  border-width: 0.4vw;
+  border-style: solid;
+  border-color: #DDDDEE transparent transparent transparent;
+}
+
+.plan .plan__feature:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltip-1::after{
+  margin-left: 6.25vw;
+}
+
+#tooltip-2::after{
+  margin-left: 2.55vw;
+}
+
+#tooltip-3::after{
+  margin-left: 5.48vw;
 }
 
 .plan a{
@@ -1067,6 +1117,54 @@ footer p {
   .plan .plan__feature p {
     font-size: 4.1vw;
   }
+
+
+
+
+
+
+  .plan .plan__feature .tooltiptext {
+    border: 0.3vw solid #DDDDEE;
+    bottom: 125%;
+    left: 0%;
+    width: 92%;
+    border-radius: 0.7vw;
+    padding: 3vw 2vw;
+    font-size: 4.1vw;
+  }
+  
+  .plan .plan__feature .tooltiptext::after {
+    top: 100%;
+    left: 50%;
+    margin-left: -9.35vw;
+    border-width: 2vw;
+    border-style: solid;
+    border-color: #DDDDEE transparent transparent transparent;
+  }
+  
+  .plan .plan__feature:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #tooltip-1::after{
+    margin-left: 24.75vw;
+  }
+  
+  #tooltip-2::after{
+    margin-left: 8.6vw;
+  }
+  
+  #tooltip-3::after{
+    margin-left: 21.4vw;
+  }
+
+  
+
+
+
+
+
 
   .plan a{
     bottom: 5vw;
