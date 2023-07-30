@@ -22,6 +22,10 @@ button {
   white-space: nowrap;
 }
 
+.desktop{
+  display: block;
+}
+
 
 /* Header */
 .header {
@@ -225,6 +229,14 @@ button {
 .subtitle {
   width: 100vw;
   margin-bottom: 4vw;
+}
+
+.subtitle h1{
+  font-size: 2.6vw;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5vw;
+  line-height: 1.4;
 }
 
 .subtitle h2 {
@@ -461,8 +473,13 @@ button {
   width: 78vw;
   margin: 3vw 11vw 7vw 11vw;
   background-color: rgba( 0, 0, 116, 0.03);
+  padding-top: 1.5vw;
   padding-bottom: 1.5vw;
   border-radius: 1.2vw;
+}
+
+.table br{
+  user-select: none;
 }
 
 .table h2 {
@@ -470,7 +487,7 @@ button {
   font-weight: 200;
   text-align: center;
   text-transform: uppercase;
-  padding: 3.2vw 0 2.5vw 0;
+  padding: 1.7vw 0 2.5vw 0;
   opacity: 0.7;
 }
 
@@ -486,7 +503,6 @@ button {
   margin: 0 0.5vw;
   border: 0.1vw solid rgba( 0, 0, 116, 0.1);
   border-radius: 0.7vw;
-  padding-bottom: 7vw;
 }
 
 .plan h4 {
@@ -507,6 +523,16 @@ button {
 
 .plan h3 span {
   font-size: 2.35vw;
+}
+
+.plan__description{
+  width: 82%;
+  margin: 0 9% 1vw 9%;
+  user-select: none;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 .plan .plan__feature {
@@ -577,6 +603,14 @@ button {
 
 #tooltip-3::after{
   margin-left: 5.48vw;
+}
+
+.plan__feature__padding{
+  padding: 2.3vw 0 1vw 0;
+}
+
+.plan__description__padding{
+  padding-bottom: 7vw;
 }
 
 .plan a{
@@ -658,6 +692,10 @@ footer p {
 
 
 @media (max-width: 1025px) {
+
+  .desktop{
+    display: none;
+  }
 
   /* Header */
   .header {
@@ -1051,12 +1089,13 @@ footer p {
     width: 88vw;
     margin: 6vw 6vw 14vw 6vw;
     padding-bottom: 5vw;
+    padding-top: 5vw;
     border-radius: 3vw;
   }
 
   .table h2 {
     font-size: 4.8vw;
-    padding: 9vw 0 6vw 0;
+    padding: 6vw 0;
   }
 
   .table .container{
@@ -1103,6 +1142,11 @@ footer p {
     font-size: 9vw;
   }
 
+  .plan__description{
+    font-size: 4.5vw;
+    line-height: 1.4;
+  }
+
   .plan .plan__feature {
     width: 84%;
     margin: 0 8% 4vw 8%;
@@ -1117,11 +1161,6 @@ footer p {
   .plan .plan__feature p {
     font-size: 4.1vw;
   }
-
-
-
-
-
 
   .plan .plan__feature .tooltiptext {
     border: 0.3vw solid #DDDDEE;
@@ -1159,12 +1198,13 @@ footer p {
     margin-left: 21.4vw;
   }
 
+  .plan__feature__padding{
+    padding: 7vw 0 2vw 0;
+  }
   
-
-
-
-
-
+  .plan__description__padding{
+    padding-bottom: 0vw;
+  }
 
   .plan a{
     bottom: 5vw;
