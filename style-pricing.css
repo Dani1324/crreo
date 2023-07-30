@@ -1117,10 +1117,6 @@ footer p {
     overflow-y: visible;
   }
 
-  .table__plans:last-child{
-    padding-right: 3vw;
-  }
-
   .plan {
     width: 70vw;
     margin: 0 2vw 0.2vw 2vw;
@@ -1221,6 +1217,17 @@ footer p {
 
   .plan a:hover{
     border: 0.3vw solid #C8102E;
+  }
+
+  .plan-2{
+    margin: 2vw 0 9vw 0;
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+  }
+
+  .plan-2 h4{
+    margin-top: 0;
   }
 
 
