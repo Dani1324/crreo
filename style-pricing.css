@@ -866,6 +866,10 @@ footer p {
     margin: 0 6vw 8vw 6vw;
   }
 
+  .subtitle h1{
+    font-size: 6vw;
+  }
+
   .subtitle h2 {
     font-size: 9vw;
     font-weight: 500;
