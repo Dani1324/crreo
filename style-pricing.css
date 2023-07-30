@@ -1149,6 +1149,7 @@ footer p {
   .plan__description{
     font-size: 4.5vw;
     line-height: 1.4;
+    text-align: left;
   }
 
   .plan .plan__feature {
