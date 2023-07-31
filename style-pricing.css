@@ -656,6 +656,10 @@ button {
   transform: scale(1);
 }
 
+.plan-2{
+  display: none;
+}
+
 
 /* Footer */
 footer {
