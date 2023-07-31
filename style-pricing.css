@@ -657,7 +657,14 @@ button {
 }
 
 .plan-2{
-  display: none;
+  margin: 1vw 0 3vw 0;
+  border: 0;
+  border-radius: 0;
+  padding-bottom: 0;
+}
+
+.plan-2 h4{
+  margin-top: 0;
 }
 
 
@@ -1228,17 +1235,8 @@ footer p {
   }
 
   .plan-2{
-    display: block;
     margin: 2vw 0 9vw 0;
-    border: 0;
-    border-radius: 0;
-    padding-bottom: 0;
   }
-
-  .plan-2 h4{
-    margin-top: 0;
-  }
-
 
   /* Footer */
   footer {
