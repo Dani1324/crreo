@@ -1241,6 +1241,11 @@ footer p {
     padding-bottom: 0;
   }
 
+  .plan-2 h4{
+    margin-top: 0;
+  }
+  
+
   /* Footer */
   footer {
     margin: auto 0vw 10vw 0vw;
